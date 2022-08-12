@@ -1,0 +1,17 @@
+name: gencirc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - matplotlib
+  - xarray
+  - metpy
+  - cartopy
+  - sympy
+  - ffmpeg
+  - jupyter
+  - climlab
+  - numba
+  - nc-time-axis
+  - jupyter-book  # needed to rebuild the book from source

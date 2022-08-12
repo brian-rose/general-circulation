@@ -1,0 +1,22 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: home
+parts:
+  - caption: Course info
+    chapters:
+    - file: info/syllabus
+    - file: info/schedule
+    - file: info/how-to
+  - caption: Lectures
+    numbered: 1
+    chapters:
+    - file: lectures/radiation-budget.ipynb
+    - file: lectures/observed-circulation.ipynb
+  - caption: Assignments and labs
+    chapters:
+    - file: assignments/nothing
+  # - caption: The stuff at the end
+  #   chapters:
+  #     - file: references
