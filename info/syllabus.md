@@ -14,7 +14,7 @@ Instructor:
 : [Brian Rose](https://www.atmos.albany.edu/facstaff/brose/) (office is ETEC 425)
 
 Office hours:
-: TBD (or by appointment)
+: Tuesdays 2-3PM in ETEC 425 (or by appointment)
 
 Course website:
 : [https://brian-rose.github.io/general-circulation/home.html](https://brian-rose.github.io/general-circulation/home.html)
