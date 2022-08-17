@@ -11,6 +11,7 @@ dependencies:
   - sympy
   - ffmpeg
   - jupyter
+  - jupyterlab
   - climlab
   - numba
   - nc-time-axis
