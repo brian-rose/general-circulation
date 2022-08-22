@@ -15,4 +15,4 @@ dependencies:
   - climlab
   - numba
   - nc-time-axis
-  - jupyter-book < 0.13.1
+  - jupyter-book
