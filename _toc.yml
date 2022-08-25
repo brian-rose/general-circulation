@@ -12,8 +12,9 @@ parts:
   - caption: Lectures
     numbered: 1
     chapters:
-    - file: lectures/radiation-budget.ipynb
-    - file: lectures/observed-circulation.ipynb
+    - file: lectures/radiation-budget
+    - file: lectures/computing-seasonal
+    - file: lectures/observed-circulation
   - caption: Assignments and labs
     chapters:
     - file: assignments/nothing
