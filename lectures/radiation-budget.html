@@ -1564,6 +1564,8 @@ Coordinates:
 <section id="albedo">
 <h3>Albedo<a class="headerlink" href="#albedo" title="Permalink to this headline">#</a></h3>
 <p>The ratio of outgoing to incoming SW radiation:</p>
+<div class="math notranslate nohighlight">
+\[ \alpha = \frac{F_{SW}^{\uparrow}}{F_{SW}^{\downarrow}} \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># masking out points where the insolation is near zero</span>
@@ -1584,6 +1586,8 @@ Coordinates:
 <section id="absorbed-shortwave-radiation">
 <h3>Absorbed shortwave radiation<a class="headerlink" href="#absorbed-shortwave-radiation" title="Permalink to this headline">#</a></h3>
 <p>The residual between what comes in and what goes out:</p>
+<div class="math notranslate nohighlight">
+\[\text{ASR} = F_{SW}^{\downarrow} - F_{SW}^{\uparrow} = F_{SW}^{\downarrow} (1-\alpha)\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">absorbedSW</span> <span class="o">=</span> <span class="n">solar_clim</span> <span class="o">-</span> <span class="n">ztoa_sw_all_clim</span>
@@ -1603,6 +1607,8 @@ Coordinates:
 </section>
 <section id="outgoing-longwave-radiation">
 <h3>Outgoing longwave radiation<a class="headerlink" href="#outgoing-longwave-radiation" title="Permalink to this headline">#</a></h3>
+<div class="math notranslate nohighlight">
+\[ \text{OLR} = F_{LW}^{\uparrow} \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ztoa_lw_all_clim</span> <span class="o">=</span> <span class="n">ceres</span><span class="o">.</span><span class="n">toa_lw_all_mon</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;lon&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -1620,7 +1626,7 @@ Coordinates:
 <h3>Net radiation at TOA<a class="headerlink" href="#net-radiation-at-toa" title="Permalink to this headline">#</a></h3>
 <p>The net radiation is the difference between Absorbed Solar Radiation (ASR) and the Outgoing Longwave Radiation (OLR):</p>
 <div class="math notranslate nohighlight">
-\[ F_{net}^{\downarrow} = F_{SW}^{\downarrow} (1-\alpha) - F_{LW}^{\uparrow} \]</div>
+\[ F_{net}^{\downarrow} = \text{ASR} - \text{OLR} = F_{SW}^{\downarrow} (1-\alpha) - F_{LW}^{\uparrow} \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ztoa_net_all_clim</span> <span class="o">=</span> <span class="n">ceres</span><span class="o">.</span><span class="n">toa_net_all_mon</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;lon&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
