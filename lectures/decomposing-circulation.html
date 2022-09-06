@@ -640,9 +640,10 @@ title="Print to PDF"
 \[ \left[ A^\prime \right] = 0 \]</div>
 <p>as long as the averaging is the same as that used to find the perturbations.</p>
 <p>Also the averages permute:</p>
-<p>\begin{align*}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 \left[ \overline{A} \right] &amp;= \overline{ \left[ A \right] } &amp; \overline{ \overline{A} } &amp;= \overline{A} &amp; \left[ \left[A \right] \right]
-\end{align*}</p>
+\end{align*}\]</div>
 </section>
 <section id="combining-zonal-and-time-expansions">
 <h3>Combining zonal and time expansions<a class="headerlink" href="#combining-zonal-and-time-expansions" title="Permalink to this headline">#</a></h3>
@@ -1896,22 +1897,24 @@ Attributes:
 <section id="covariances-between-quantities">
 <h2>Covariances between quantities<a class="headerlink" href="#covariances-between-quantities" title="Permalink to this headline">#</a></h2>
 <p>We are often interested in covariances between two quantities, usually a component of the flow and another scalar (e.g. meridional wind and temperature)</p>
-<p>\begin{align*}
-\overline{AB} &amp;= \overline{\left( \overline{A} + A^\prime \right) \left(\overline{B} + B^\prime \right)} \
-&amp;= \overline{\overline{A} \overline{B}} + \overline{\overline{A} B^\prime} + \overline{A^\prime \overline{B}} + \overline{A^\prime B^\prime} \
-&amp;= \overline{A}\overline{B} + \overline{A} \overline{B^\prime} + \overline{B} \overline{A^\prime} + \overline{A^\prime B^\prime} \
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overline{AB} &amp;= \overline{\left( \overline{A} + A^\prime \right) \left(\overline{B} + B^\prime \right)} \\
+&amp;= \overline{\overline{A} \overline{B}} + \overline{\overline{A} B^\prime} + \overline{A^\prime \overline{B}} + \overline{A^\prime B^\prime} \\
+&amp;= \overline{A}\overline{B} + \overline{A} \overline{B^\prime} + \overline{B} \overline{A^\prime} + \overline{A^\prime B^\prime} \\
 &amp;= \overline{A}\overline{B} +  \overline{A^\prime B^\prime}
-\end{align*}</p>
+\end{align*}\]</div>
 <p>The last term is the covariance of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> in time.</p>
 <p>Similarly for the zonal average</p>
 <div class="math notranslate nohighlight">
 \[\left[ AB \right] = \left[A\right] \left[B\right] + \left[ A^* B^* \right] \]</div>
 <p>where the last term is the covariance of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> is longitude.</p>
 <p>We can also combine the time and zonal means</p>
-<p>\begin{align*}
-\left[\overline{AB}\right] &amp;= \left[ \overline{A}\overline{B} + \overline{A^\prime B^\prime} \right] \
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left[\overline{AB}\right] &amp;= \left[ \overline{A}\overline{B} + \overline{A^\prime B^\prime} \right] \\
 &amp;= \left[\overline{A}\right]\left[\overline{B}\right] + \left[ \overline{A}^* \overline{B}^* \right] + \left[\overline{A^\prime B^\prime} \right]
-\end{align*}</p>
+\end{align*}\]</div>
 <p>Three terms:</p>
 <ol class="simple">
 <li><p>Mean meridional component</p></li>
