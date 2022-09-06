@@ -15,7 +15,7 @@ parts:
     - file: lectures/radiation-budget
     - file: lectures/computing-seasonal
     - file: lectures/observed-circulation
-    - file: lectures/decompositions
+    - file: lectures/decomposing-circulation
   - caption: Assignments and labs
     chapters:
     - file: assignments/nothing
