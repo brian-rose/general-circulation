@@ -20,7 +20,7 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
   -
 * - 8/25
   - 1
-  - [Earth's radiation budget](lectures/radiation-budget)
+  - [Earth's radiation budget](../lectures/radiation-budget)
   -
 * - 8/30
   - 2
@@ -32,11 +32,11 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
   -
 * - 9/6
   - 4
-  - [Decomposition of the circulation](lectures/decomposing-circulation)
+  - [Decomposition of the circulation](../lectures/decomposing-circulation)
   -
 * - 9/8
   - 5
-  - [Decomposition of the circulation](lectures/decomposing-circulation), continued
+  - [Decomposition of the circulation](../lectures/decomposing-circulation), continued
   - [Assignment 1](assignmens/assignment-toa-budget) out, due in one week on 9/15
 * - 9/13
   - 6
@@ -45,7 +45,7 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
 * - 9/15
   - 7
   -
-  - [Assignment 1](assignmens/assignment-toa-budget) due!
+  - [Assignment 1](../assignmens/assignment-toa-budget) due!
 
 * - 9/20
   - 8
