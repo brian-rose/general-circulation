@@ -17,6 +17,7 @@ parts:
     - file: lectures/observed-circulation
     - file: lectures/decomposing-circulation
   - caption: Assignments and labs
+    numbered: 1
     chapters:
     - file: assignments/assignment-toa-budget
   - caption: The stuff at the end
