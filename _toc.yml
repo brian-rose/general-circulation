@@ -18,7 +18,7 @@ parts:
     - file: lectures/decomposing-circulation
   - caption: Assignments and labs
     chapters:
-    - file: assignments/nothing
+    - file: assignments/assignment-toa-budget
   - caption: The stuff at the end
     chapters:
       - file: info/references
