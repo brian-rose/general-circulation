@@ -559,6 +559,11 @@ title="Print to PDF"
 <section id="problem-1-global-annual-mean-energy-budgets">
 <h2>Problem 1: global, annual mean energy budgets<a class="headerlink" href="#problem-1-global-annual-mean-energy-budgets" title="Permalink to this headline">#</a></h2>
 <p>Consider the first figure in our lecture notes from <span id="id1">Stephens <em>et al.</em> [<a class="reference internal" href="../info/references.html#id2" title="Graeme L. Stephens, Juilin Li, Martin Wild, Carol Anne Clayson, Norman G. Loeb, Seiji Kato, Tristan L'Ecuyer, Paul W. Stackhouse Jr., Matthew Lebsock, and Timothy Andrews. An update on earth's energy balance in light of the latest global observations. Nature Geoscience, 5:691–696, 2012. doi:10.1038/NGEO1580.">2012</a>]</span> and reproduced again here:</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/stephens2012.png"><img alt="Earth's Energy Balance" class="bg-primary mb-1" src="../_images/stephens2012.png" style="width: 800px;" /></a>
+<p>Your task here is simply to <strong>reproduce as many of the values shown in this figure as you can</strong> from the CERES-EBAF dataset. Remember that these values all represent long-term time averages and global averages, and that global averages must be properly weighted to account for the area of grid cells. <em>If you’re looking for help on the area weighting, check out <a class="reference external" href="https://docs.xarray.dev/en/stable/examples/area_weighted_temperature.html?highlight=weighted%20average">this short lesson from the xarray docs</a></em>.</p>
+<p>Please include all your code here in the notebook, but also summarize your results clearly. This might be as a table, or formatted output from Python code, or any other way which is easy to read and compare against the values in the figure.</p>
+<p>Comment on any interesting similarities or differences that you find between your results and the values in the figure.</p>
+<p>To get you started, here is the same code we used in the lecture notes to access the CERES-EBAF data:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
