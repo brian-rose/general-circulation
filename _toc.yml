@@ -16,6 +16,7 @@ parts:
     - file: lectures/computing-seasonal
     - file: lectures/observed-circulation
     - file: lectures/decomposing-circulation
+    - file: lectures/angular-momentum-budget
   - caption: Assignments and labs
     numbered: 1
     chapters:
