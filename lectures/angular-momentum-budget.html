@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Syllabus &#8212; ATM 622: General Circulation of the Atmosphere</title>
+    <title>5. Angular Momentum Budget &#8212; ATM 622: General Circulation of the Atmosphere</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Schedule" href="schedule.html" />
-    <link rel="prev" title="ATM 622: General Circulation of the Atmosphere" href="../home.html" />
+    <link rel="next" title="1. Top-of-Atmosphere Radiation Budget and Meridional Energy Transport" href="../assignments/assignment-toa-budget.html" />
+    <link rel="prev" title="4. Decompositions of the circulation" href="decomposing-circulation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,19 +120,19 @@ const thebe_selector_output = ".output, .cell_output"
   Course info
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../info/syllabus.html">
    Syllabus
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="schedule.html">
+  <a class="reference internal" href="../info/schedule.html">
    Schedule
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="how-to.html">
+  <a class="reference internal" href="../info/how-to.html">
    How to use this book
   </a>
  </li>
@@ -140,29 +142,29 @@ const thebe_selector_output = ".output, .cell_output"
   Lectures
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/radiation-budget.html">
+  <a class="reference internal" href="radiation-budget.html">
    1. Earth’s radiation budget
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/computing-seasonal.html">
+  <a class="reference internal" href="computing-seasonal.html">
    2. Computing seasonal means from CFSR data
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/observed-circulation.html">
+  <a class="reference internal" href="observed-circulation.html">
    3. The observed circulation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/decomposing-circulation.html">
+  <a class="reference internal" href="decomposing-circulation.html">
    4. Decompositions of the circulation
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/angular-momentum-budget.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    5. Angular Momentum Budget
   </a>
  </li>
@@ -186,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="references.html">
+  <a class="reference internal" href="../info/references.html">
    References
   </a>
  </li>
@@ -241,6 +243,53 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/brian-rose/general-circulation/main?urlpath=lab/tree/./lectures/angular-momentum-budget.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://lore.atmos.albany.edu:8000/hub/user-redirect/git-pull?repo=https%3A//github.com/brian-rose/general-circulation&urlpath=lab/tree/general-circulation/./lectures/angular-momentum-budget.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -280,7 +329,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Finfo/syllabus.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Flectures/angular-momentum-budget.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -308,7 +357,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/info/syllabus.md"
+        <a href="../_sources/lectures/angular-momentum-budget.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -319,7 +368,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -368,28 +417,30 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-   A ATM 622: General Circulation of the Atmosphere (Fall 2022)
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-information">
-     Course information
+    <a class="reference internal nav-link" href="#vertical-integrals">
+     Vertical integrals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#angular-momentum-basics">
+   Angular momentum basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#length-of-day">
+     Length of day
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-description">
-     Course description
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#final-project">
-     Final project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#academic-integrity">
-     Academic integrity
+    <a class="reference internal nav-link" href="#definitions-and-notation">
+     Definitions and notation
     </a>
    </li>
   </ul>
@@ -403,7 +454,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Syllabus</h1>
+                <h1>Angular Momentum Budget</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -414,28 +465,30 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-   A ATM 622: General Circulation of the Atmosphere (Fall 2022)
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-information">
-     Course information
+    <a class="reference internal nav-link" href="#vertical-integrals">
+     Vertical integrals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#angular-momentum-basics">
+   Angular momentum basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#length-of-day">
+     Length of day
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-description">
-     Course description
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#final-project">
-     Final project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#academic-integrity">
-     Academic integrity
+    <a class="reference internal nav-link" href="#definitions-and-notation">
+     Definitions and notation
     </a>
    </li>
   </ul>
@@ -450,56 +503,66 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="syllabus">
-<h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline">#</a></h1>
-<section id="a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-<h2>A ATM 622: General Circulation of the Atmosphere (Fall 2022)<a class="headerlink" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022" title="Permalink to this headline">#</a></h2>
-<section id="course-information">
-<h3>Course information<a class="headerlink" href="#course-information" title="Permalink to this headline">#</a></h3>
-<dl class="simple myst">
-<dt>Class number:</dt><dd><p>9225</p>
-</dd>
-<dt>Meeting time:</dt><dd><p>Tuesday / Thursday 12-1:20 PM in ETEC 482</p>
-</dd>
-<dt>Instructor:</dt><dd><p><a class="reference external" href="https://www.atmos.albany.edu/facstaff/brose/">Brian Rose</a> (office is ETEC 425)</p>
-</dd>
-<dt>Office hours:</dt><dd><p>Tuesdays 2-3PM in ETEC 425 (or by appointment)</p>
-</dd>
-<dt>Course website:</dt><dd><p><a class="reference external" href="https://brian-rose.github.io/general-circulation/home.html">https://brian-rose.github.io/general-circulation/home.html</a></p>
-</dd>
-<dt>Grading: A-E, 3 credit</dt><dd><ul class="simple">
-<li><p>Assignments and Labs: 40%</p></li>
-<li><p>Midterm exam: 20%</p></li>
-<li><p>Term project and presentation: 40%</p></li>
-</ul>
-</dd>
-</dl>
-<p>Late assignments/labs, makeup exams, late term projects/presentations will only be allowed for university recognized reasons. Please discuss absences and late work with Prof. Rose in advance whenever possible.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="angular-momentum-budget">
+<h1><span class="section-number">5. </span>Angular Momentum Budget<a class="headerlink" href="#angular-momentum-budget" title="Permalink to this headline">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>We’re going to talk about three key budgets of materially conserved quantities:</p>
+<ol class="simple">
+<li><p>Angular Momentum</p></li>
+<li><p>Energy</p></li>
+<li><p>Water Vapor</p></li>
+</ol>
+<p>The general idea running through these topics is that we have a quantity that <em>obeys some conservation principle</em> embeded in the equations of motion, and that over a “long enough” time period that quantity must be in <strong>steady state</strong> in the atmosphere.</p>
+<p>For any quantity in steady state, we must have a balance between local <em>sources</em> and <em>sinks</em> of that quantity and <em>flux divergence / convergence</em> of the same quantity.</p>
+<section id="vertical-integrals">
+<h3>Vertical integrals<a class="headerlink" href="#vertical-integrals" title="Permalink to this headline">#</a></h3>
+<p>In addition to zonal and time averages, we will sometimes employ a vertical integral (weighted by mass):</p>
+<div class="math notranslate nohighlight">
+\[ &lt;A&gt; = \frac{1}{g} \int_0^{p_s} A dp \approx \int_0^{\infty} A \rho dz \]</div>
+<p>where <span class="math notranslate nohighlight">\(p_s\)</span> is the surface pressure.</p>
 </section>
-<section id="course-description">
-<h3>Course description<a class="headerlink" href="#course-description" title="Permalink to this headline">#</a></h3>
-<p>The course will explore fundamental questions about why the circulation looks the way it does, bringing together observations, theory, and models. The <a class="reference external" href="https://www.albany.edu/graduatebulletin/a_atm.htm">bulletin description</a> says</p>
-<blockquote>
-<div><p>Processes which maintain the general circulation of the Earth’s atmosphere; investigation of observed angular momentum, energy and water vapor budgets of the atmosphere; atmospheric energetics; application of numerical methods to studies of the general circulation.</p>
-</div></blockquote>
-<p>Our approach will be hands-on and data-centric wherever possible. We will put significant emphasis on reproducible workflows to generate the maps and diagnostics we look at. So in addition to fundamental science, the course should arm you with a useful toolkit of modern Python-based analysis tools. We will also spend some time in the new Fluids lab carrying out rotating tank experiments to complement the observations and theory.</p>
 </section>
-<section id="final-project">
-<h3>Final project<a class="headerlink" href="#final-project" title="Permalink to this headline">#</a></h3>
-<p>Each student will investigate some aspect of the general circulation of atmosphere or ocean. A wide variety of topics are possible, but it must fit into the themes of the class. The project should include some original calculations using real data. Possible ideas include:</p>
-<ul class="simple">
-<li><p>Using methods introduced in class in some aspect of your own thesis research</p></li>
-<li><p>Revisit a classic study from the literature with a modern dataset</p></li>
-<li><p>Design and implement your own laboratory / tank experiment to investigate some analog of the general circulation</p></li>
-</ul>
-<p>Students can work alone or in teams of two, subject to approval. Students will write short proposals for their project ideas and get feedback from the instructor before starting (due dates TBD).</p>
-<p>Both written and oral presentations are required. Oral presentations will happen in the last week of class. Details for these and the written presentations will follow later, but expect a focus on <em>reproducibility</em> of calculations. Written reports will likely take the form of self-computing Jupyter notebooks.</p>
+<section id="angular-momentum-basics">
+<h2>Angular momentum basics<a class="headerlink" href="#angular-momentum-basics" title="Permalink to this headline">#</a></h2>
+<p>The total angular momentum of the solid Earth and its fluid components is approximately conserved.</p>
+<p>Angular momentum is exchanged between the solid Earth and the atmosphere, but on greater than annual timescales, there should be no net exchange.</p>
+<section id="length-of-day">
+<h3>Length of day<a class="headerlink" href="#length-of-day" title="Permalink to this headline">#</a></h3>
+<p>Changes in the angular momentum of the solid Earth are reflected in fluctuations of the <a class="reference external" href="https://en.wikipedia.org/wiki/Day_length_fluctuations">Length of Day</a>:</p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Deviation_of_day_length_from_SI_day.svg#/media/File:Deviation_of_day_length_from_SI_day.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Deviation_of_day_length_from_SI_day.svg/1200px-Deviation_of_day_length_from_SI_day.svg.png" alt="Deviation of day length from SI day.svg"></a><br>By &lt;a href="//commons.wikimedia.org/w/index.php?title=User:%E2%85%A1_%E2%85%A6_%E2%85%AB&amp;amp;action=edit&amp;amp;redlink=1" class="new" title="User:Ⅱ Ⅶ Ⅻ (page does not exist)"&gt;Ⅱ Ⅶ Ⅻ&lt;/a&gt; - &lt;span class="int-own-work" lang="en"&gt;Own work&lt;/span&gt;, data: &lt;a href="https://en.wikipedia.org/wiki/IERS" class="extiw" title="en:IERS"&gt;IERS&lt;/a&gt; &lt;a rel="nofollow" class="external autonumber" href="http://hpiers.obspm.fr/eoppc/eop/eopc04/eopc04.62-now"&gt;[1]&lt;/a&gt;, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=9395571">Link</a></p>
+<p>There’s clearly lots of interesting low-frequency variability, but for our purposes we’ll pay most attention to the annual timescale: fluctuations of order 1 ms. It turns out that these are well-correlated with seasonal flucutations in atmospheric angular momentum.</p>
+<p>Hopefully we’ll be able to calculate this shortly directly from the CFSR data!</p>
 </section>
-<section id="academic-integrity">
-<h3>Academic integrity<a class="headerlink" href="#academic-integrity" title="Permalink to this headline">#</a></h3>
-<p>In this class we will strive to be interactive, learning by doing and by discussion. Some collaboration on exercises is therefore encouraged. However you are ultimately expected to submit your own work and your own thoughts, and to give proper credit to others for previous work and ideas.</p>
-<p>This is very important when writing computer code! There is nothing wrong with borrowing useful pieces of code from classmates or online sources – that is in fact the central principle of open-source software. However, you must always acknowledge the original author(s). You must also, wherever practical, understand the code you are borrowing and be able to explain what it does.</p>
-<p>It is every student’s responsibility to become familiar with the standards of academic integrity at UAlbany. Claims of ignorance, of unintentional error, or of academic or personal pressures are not sufficient reasons for violations of academic integrity. Please refer to the UAlbany academic integrity policies here: <a class="reference external" href="http://www.albany.edu/graduatebulletin/requirements_degree.htm#standards_integrity">http://www.albany.edu/graduatebulletin/requirements_degree.htm#standards_integrity</a></p>
+<section id="definitions-and-notation">
+<h3>Definitions and notation<a class="headerlink" href="#definitions-and-notation" title="Permalink to this headline">#</a></h3>
+<p>Let <span class="math notranslate nohighlight">\(\vec{r}\)</span> be the position vector from the axis of rotation, and let <span class="math notranslate nohighlight">\(\vec{u}_a\)</span> be the absolute velocity as measured in the <em>inertial</em> frame.</p>
+<p><strong>Sketch of sphere</strong></p>
+<p>Then we define the <strong>angular momentum</strong></p>
+<div class="math notranslate nohighlight">
+\[\vec{M} = \vec{r} \times \vec{u}_a \]</div>
+<p>and its changes are governed by</p>
+<div class="math notranslate nohighlight">
+\[ \frac{d\vec{M}}{dt} = \vec{r} \times \vec{F} \]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{F}\)</span> is the net force, and <span class="math notranslate nohighlight">\(\vec{r} \times \vec{F}\)</span> is the net <strong>torque</strong>.</p>
+<p>Two important torques we will discuss include the frictional torque and the mountain torque.</p>
+<p>Now define the relative velocity <span class="math notranslate nohighlight">\(\vec{u}\)</span> through</p>
+<div class="math notranslate nohighlight">
+\[ \vec{u}_a = \vec{\Omega} \times \vec{r} + \vec{u} \]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{\Omega}\)</span> is the Earth’s rotation vector. So the angular momentum can be written</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{M} &amp;= \vec{r} \times \left( \vec{\Omega} \times \vec{r} + \vec{u} \right) \\
+&amp;= \Omega (a \cos\phi)^2 \hat{\Omega} + \vec{r} \times \vec{u}
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{\Omega}\)</span> is a unit vector aligned with the axis of rotation. This is valid for the thin-shell approximation, <span class="math notranslate nohighlight">\(z&lt;&lt;a\)</span> where <span class="math notranslate nohighlight">\(a\)</span> is the radius of the Earth.</p>
+<p>The planetary component dictates the predominant direction of <span class="math notranslate nohighlight">\(\vec{M}\)</span>, so we are most interested in the component of <span class="math notranslate nohighlight">\(\vec{r} \times \vec{u}\)</span> also parallel to $\hat{\Omega}:</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\Omega} \cdot (\vec{r} \times \vec{u}) = u a \cos\phi \]</div>
+<p>So let’s define this (scalar) quantity:</p>
+<div class="math notranslate nohighlight">
+\[ M = \Omega a^2 \cos^2\phi + u a \cos\phi \]</div>
+<p>where the first term is the <strong>planetary angular momentum</strong> and the second term is the <strong>relative angular momentum</strong>.</p>
 </section>
 </section>
 </section>
@@ -513,16 +576,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "aug22"
         },
         kernelOptions: {
-            kernelName: "python3",
-            path: "./info"
+            kernelName: "aug22",
+            path: "./lectures"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'aug22'</script>
 
               </div>
               
@@ -531,17 +594,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../home.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="decomposing-circulation.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">ATM 622: General Circulation of the Atmosphere</p>
+            <p class="prev-next-title"><span class="section-number">4. </span>Decompositions of the circulation</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="schedule.html" title="next page">
+    <a class='right-next' id="next-link" href="../assignments/assignment-toa-budget.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Schedule</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Top-of-Atmosphere Radiation Budget and Meridional Energy Transport</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
