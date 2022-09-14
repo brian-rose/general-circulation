@@ -500,6 +500,23 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conservation-of-angular-momentum">
+   Conservation of angular momentum
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-motionless-parcel-moves-poleward">
+     A motionless parcel moves poleward…
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#torques-on-the-atmosphere">
+   Torques on the atmosphere
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -602,6 +619,23 @@ title="Print to PDF"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conservation-of-angular-momentum">
+   Conservation of angular momentum
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-motionless-parcel-moves-poleward">
+     A motionless parcel moves poleward…
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#torques-on-the-atmosphere">
+   Torques on the atmosphere
+  </a>
  </li>
 </ul>
 
@@ -2777,6 +2811,48 @@ Coordinates:
 </div>
 </div>
 </section>
+</section>
+<section id="conservation-of-angular-momentum">
+<h2>Conservation of angular momentum<a class="headerlink" href="#conservation-of-angular-momentum" title="Permalink to this headline">#</a></h2>
+<section id="a-motionless-parcel-moves-poleward">
+<h3>A motionless parcel moves poleward…<a class="headerlink" href="#a-motionless-parcel-moves-poleward" title="Permalink to this headline">#</a></h3>
+<p>The total angular momentum of a parcel is conserved in the absence of torques:</p>
+<div class="math notranslate nohighlight">
+\[\frac{DM}{dt} = 0\]</div>
+<p>or in other words, the quantity</p>
+<div class="math notranslate nohighlight">
+\[\Omega a^2 \cos^2\phi + u a \cos\phi \]</div>
+<p>is conserved for a moving parcel.</p>
+<p>The fact that we <strong>live on a sphere</strong> becomes an interesting part of this problem.</p>
+<p>Consider what happens to a parcel that starts out <em>motionless</em> (<span class="math notranslate nohighlight">\(u = 0\)</span>) at the equator (<span class="math notranslate nohighlight">\(\phi = 0\)</span>). Its initial angular momentum is</p>
+<div class="math notranslate nohighlight">
+\[ M = \Omega a^2 \]</div>
+<p>Now suppose this parcel moves toward the pole. Its <em>planetary</em> angular momentum decreases (since <span class="math notranslate nohighlight">\(\cos\phi\)</span> is a decreasing function). This reflects the fact that the moment arm of the parcel (distance to the axis of rotation) gets smaller as the parcel moves poleward.</p>
+<p>So to conserve total <span class="math notranslate nohighlight">\(M\)</span>, the zonal wind must increase!</p>
+<p>Specifically in this situation, setting <span class="math notranslate nohighlight">\(M = \Omega a^2\)</span> and solving for <span class="math notranslate nohighlight">\(u\)</span> gives
+$<span class="math notranslate nohighlight">\( u = \Omega a \frac{ \sin^2\phi }{\cos\phi} \)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">u_conserved</span> <span class="o">=</span> <span class="p">(</span><span class="n">Omega</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">)))</span>
+<span class="n">u_conserved</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;long_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;zonal wind&#39;</span>
+<span class="n">u_conserved</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;m s-1&#39;</span>
+<span class="n">u_conserved</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">70</span><span class="p">,</span><span class="mi">70</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Zonal wind required for angular momentum conservation&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/angular-momentum-budget_24_0.png" src="../_images/angular-momentum-budget_24_0.png" />
+</div>
+</div>
+<p>Key point here: notice that these required zonal wind values get very large (many hundreds of m/s)!</p>
+<p>The effect of the shrinking moment arm as a parcel moves poleward seems to require <strong>much larger zonal winds</strong> that we actually observe.</p>
+<p><em>Keep an eye on this as we explore the angular momentum budget of the observed atmosphere more fully.</em></p>
+</section>
+</section>
+<section id="torques-on-the-atmosphere">
+<h2>Torques on the atmosphere<a class="headerlink" href="#torques-on-the-atmosphere" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
