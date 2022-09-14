@@ -570,6 +570,26 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<figure class="align-default" id="markdown-fig">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/angular-momentum-randall.png"><img alt="Absolute and relative angular momentum" class="bg-primary mb-1" src="../_images/angular-momentum-randall.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">The observed absolute (left panels) and relative (right panels) atmopspheric angular momentum per unit mass, for January and July. The units are <span class="math notranslate nohighlight">\(10^{7}\)</span> m<span class="math notranslate nohighlight">\(^{2}\)</span> s<span class="math notranslate nohighlight">\(^{-1}\)</span>. Source: <span id="id1">Randall [<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">2015</a>]</span></span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Try to make our own plots (use a single calendar year for simplicity)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+
+<span class="n">cfsr_path</span> <span class="o">=</span> <span class="s1">&#39;/cfsr/data/&#39;</span>
+<span class="n">year</span> <span class="o">=</span> <span class="s1">&#39;2021&#39;</span>
+
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">cfsr_path</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s1">&#39;/u.&#39;</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s1">&#39;.0p5.anl.nc&#39;</span><span class="p">)</span>
+<span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -583,16 +603,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "aug22"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "aug22",
+            kernelName: "python3",
             path: "./lectures"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'aug22'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
