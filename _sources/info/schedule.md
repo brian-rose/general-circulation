@@ -24,15 +24,15 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
   -
 * - 8/30
   - 2
-  - The observed circulation
+  - [Earth's radiation budget](../lectures/radiation-budget), continued.
   -
 * - 9/1
   - 3
-  - The observed circulation, continued
+  - The observed circulation
   -
 * - 9/6
   - 4
-  - [Decomposition of the circulation](../lectures/decomposing-circulation)
+  - The observed circulation, continued. [Decomposition of the circulation](../lectures/decomposing-circulation), introduction.
   -
 * - 9/8
   - 5
@@ -40,20 +40,20 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
   - [Assignment 1](../assignments/assignment-toa-budget) out, due in one week on 9/15
 * - 9/13
   - 6
-  - Angular momentum budget
+  - In-class clarifications on [Assignment 1](../assignments/assignment-toa-budget). [Decomposition of the circulation](../lectures/decomposing-circulation), completed.
   -
 * - 9/15
   - 7
-  -
-  - [Assignment 1](../assignments/assignment-toa-budget) due!
+  - [Angular momentum budget](../lectures/angular-momentum-budget)
+  - [Assignment 1](../assignments/assignment-toa-budget) due! **Actual due date extended to Friday 9/16**
 
 * - 9/20
   - 8
-  - Energy budgets
+  - [Angular momentum budget](../lectures/angular-momentum-budget), continued.
   -
 * - 9/22
   - 9
-  -
+  - Energy budgets
   -
 * - 9/27
   - 10
