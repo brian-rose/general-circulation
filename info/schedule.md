@@ -49,19 +49,19 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
 
 * - 9/20
   - 8
-  - [Angular momentum budget](../lectures/angular-momentum-budget), continued.
+  - [Angular momentum budget: conservations and torques](../lectures/angular-momentum-budget)
   -
 * - 9/22
   - 9
-  - Energy budgets
+  - [Angular momentum budget: fluxes](../lectures/angular-momentum-budget)
   -
 * - 9/27
   - 10
-  - Lorenz energy cycle
+  - Energy budgets
   -
 * - 9/29
   - 11
-  -
+  - Lorenz energy cycle
   -
 * - 10/4
   - 12
