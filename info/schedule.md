@@ -57,22 +57,22 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
   -
 * - 9/27
   - 10
-  - Energy budgets
+  - [Angular momentum budget: computing fluxes from CFSR data](../lectures/angular-momentum-budget)
   -
 * - 9/29
   - 11
-  - Lorenz energy cycle
+  - Energy budgets
   -
 * - 10/4
   - 12
-  - Hadley circulation
+  - 
   -
 * - 10/6
   - 13
-  -
+  - Lorenz energy cycle
   -
 * - 10/11
-  -
+  - Hadley circulation
   -
   - **NO CLASS** (Fall break)
 * - 10/13
