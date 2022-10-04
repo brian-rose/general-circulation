@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Syllabus &#8212; ATM 622: General Circulation of the Atmosphere</title>
+    <title>6. Energy Budget &#8212; ATM 622: General Circulation of the Atmosphere</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Schedule" href="schedule.html" />
-    <link rel="prev" title="ATM 622: General Circulation of the Atmosphere" href="../home.html" />
+    <link rel="next" title="1. Top-of-Atmosphere Radiation Budget and Meridional Energy Transport" href="../assignments/assignment-toa-budget.html" />
+    <link rel="prev" title="5. Angular Momentum Budget" href="angular-momentum-budget.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,19 +120,19 @@ const thebe_selector_output = ".output, .cell_output"
   Course info
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../info/syllabus.html">
    Syllabus
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="schedule.html">
+  <a class="reference internal" href="../info/schedule.html">
    Schedule
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="how-to.html">
+  <a class="reference internal" href="../info/how-to.html">
    How to use this book
   </a>
  </li>
@@ -140,34 +142,34 @@ const thebe_selector_output = ".output, .cell_output"
   Lectures
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/radiation-budget.html">
+  <a class="reference internal" href="radiation-budget.html">
    1. Earth’s radiation budget
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/computing-seasonal.html">
+  <a class="reference internal" href="computing-seasonal.html">
    2. Computing seasonal means from CFSR data
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/observed-circulation.html">
+  <a class="reference internal" href="observed-circulation.html">
    3. The observed circulation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/decomposing-circulation.html">
+  <a class="reference internal" href="decomposing-circulation.html">
    4. Decompositions of the circulation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/angular-momentum-budget.html">
+  <a class="reference internal" href="angular-momentum-budget.html">
    5. Angular Momentum Budget
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/energy-budget.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    6. Energy Budget
   </a>
  </li>
@@ -191,7 +193,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="references.html">
+  <a class="reference internal" href="../info/references.html">
    References
   </a>
  </li>
@@ -246,6 +248,53 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/brian-rose/general-circulation/main?urlpath=lab/tree/./lectures/energy-budget.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://lore.atmos.albany.edu:8000/hub/user-redirect/git-pull?repo=https%3A//github.com/brian-rose/general-circulation&urlpath=lab/tree/general-circulation/./lectures/energy-budget.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -285,7 +334,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Finfo/syllabus.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Flectures/energy-budget.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -313,7 +362,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/info/syllabus.md"
+        <a href="../_sources/lectures/energy-budget.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -324,7 +373,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -373,31 +422,46 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-   A ATM 622: General Circulation of the Atmosphere (Fall 2022)
+  <a class="reference internal nav-link" href="#definitions">
+   Definitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#budget-equations-for-energy-components">
+   Budget equations for energy components
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-information">
-     Course information
+    <a class="reference internal nav-link" href="#potential-energy">
+     Potential energy
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-description">
-     Course description
+    <a class="reference internal nav-link" href="#latent-energy">
+     Latent energy
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#final-project">
-     Final project
+    <a class="reference internal nav-link" href="#internal-energy">
+     Internal energy
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#academic-integrity">
-     Academic integrity
+    <a class="reference internal nav-link" href="#kinetic-energy">
+     Kinetic energy
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-total-energy-equation-and-global-conservation">
+   A total energy equation and global conservation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alternate-form-and-moist-static-energy">
+   Alternate form and Moist Static Energy
+  </a>
  </li>
 </ul>
 
@@ -408,7 +472,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Syllabus</h1>
+                <h1>Energy Budget</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -419,31 +483,46 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-   A ATM 622: General Circulation of the Atmosphere (Fall 2022)
+  <a class="reference internal nav-link" href="#definitions">
+   Definitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#budget-equations-for-energy-components">
+   Budget equations for energy components
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-information">
-     Course information
+    <a class="reference internal nav-link" href="#potential-energy">
+     Potential energy
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-description">
-     Course description
+    <a class="reference internal nav-link" href="#latent-energy">
+     Latent energy
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#final-project">
-     Final project
+    <a class="reference internal nav-link" href="#internal-energy">
+     Internal energy
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#academic-integrity">
-     Academic integrity
+    <a class="reference internal nav-link" href="#kinetic-energy">
+     Kinetic energy
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-total-energy-equation-and-global-conservation">
+   A total energy equation and global conservation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alternate-form-and-moist-static-energy">
+   Alternate form and Moist Static Energy
+  </a>
  </li>
 </ul>
 
@@ -455,57 +534,63 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="syllabus">
-<h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline">#</a></h1>
-<section id="a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-<h2>A ATM 622: General Circulation of the Atmosphere (Fall 2022)<a class="headerlink" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022" title="Permalink to this headline">#</a></h2>
-<section id="course-information">
-<h3>Course information<a class="headerlink" href="#course-information" title="Permalink to this headline">#</a></h3>
-<dl class="simple myst">
-<dt>Class number:</dt><dd><p>9225</p>
-</dd>
-<dt>Meeting time:</dt><dd><p>Tuesday / Thursday 12-1:20 PM in ETEC 482</p>
-</dd>
-<dt>Instructor:</dt><dd><p><a class="reference external" href="https://www.atmos.albany.edu/facstaff/brose/">Brian Rose</a> (office is ETEC 425)</p>
-</dd>
-<dt>Office hours:</dt><dd><p>Tuesdays 2-3PM in ETEC 425 (or by appointment)</p>
-</dd>
-<dt>Course website:</dt><dd><p><a class="reference external" href="https://brian-rose.github.io/general-circulation/home.html">https://brian-rose.github.io/general-circulation/home.html</a></p>
-</dd>
-<dt>Grading: A-E, 3 credit</dt><dd><ul class="simple">
-<li><p>Assignments and Labs: 40%</p></li>
-<li><p>Midterm exam: 20%</p></li>
-<li><p>Term project and presentation: 40%</p></li>
-</ul>
-</dd>
-</dl>
-<p>Late assignments/labs, makeup exams, late term projects/presentations will only be allowed for university recognized reasons. Please discuss absences and late work with Prof. Rose in advance whenever possible.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="energy-budget">
+<h1><span class="section-number">6. </span>Energy Budget<a class="headerlink" href="#energy-budget" title="Permalink to this headline">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<p>There are four types of energy (per unit mass) that we need to keep track of in the fluid:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(I = c_v T\)</span> is the <strong>internal energy</strong> <em>(valid for an ideal gas, see e.g. <span id="id1">Vallis [<a class="reference internal" href="../info/references.html#id9" title="Geoffrey K. Vallis. Atmospheric and Oceanic Fluid Dynamics: fundamentals and large-scale circulation. Cambridge University Press, Cambridge, U.K., 2nd edition, 2017.">2017</a>]</span>)</em> – this is a measure of the disorganized molecular-scale motion in the fluid</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Phi = g z\)</span> is the gravitational <strong>potential energy</strong></p></li>
+<li><p><span class="math notranslate nohighlight">\(L = L_v q\)</span> is the <strong>latent energy</strong> associated with the evaporated water in the air (<span class="math notranslate nohighlight">\(L_v\)</span> is the latent heat of vaporization and <span class="math notranslate nohighlight">\(q\)</span> is the specific humidity)</p></li>
+<li><p><span class="math notranslate nohighlight">\(K = \frac{1}{2} \left(u^2 + v^2 + w^2 \right)\)</span> is the <strong>kinetic energy</strong> of organized motion of the fluid</p></li>
+</ol>
+<p>We’ll define the <strong>total energy</strong> per unit mass in the atmosphere as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E &amp;= I + \Phi + L + K \\
+&amp;= c_v T + gz + L_v q + \frac{1}{2} \left(u^2 + v^2 + w^2 \right) 
+\end{align*}\]</div>
 </section>
-<section id="course-description">
-<h3>Course description<a class="headerlink" href="#course-description" title="Permalink to this headline">#</a></h3>
-<p>The course will explore fundamental questions about why the circulation looks the way it does, bringing together observations, theory, and models. The <a class="reference external" href="https://www.albany.edu/graduatebulletin/a_atm.htm">bulletin description</a> says</p>
-<blockquote>
-<div><p>Processes which maintain the general circulation of the Earth’s atmosphere; investigation of observed angular momentum, energy and water vapor budgets of the atmosphere; atmospheric energetics; application of numerical methods to studies of the general circulation.</p>
-</div></blockquote>
-<p>Our approach will be hands-on and data-centric wherever possible. We will put significant emphasis on reproducible workflows to generate the maps and diagnostics we look at. So in addition to fundamental science, the course should arm you with a useful toolkit of modern Python-based analysis tools. We will also spend some time in the new Fluids lab carrying out rotating tank experiments to complement the observations and theory.</p>
+<section id="budget-equations-for-energy-components">
+<h2>Budget equations for energy components<a class="headerlink" href="#budget-equations-for-energy-components" title="Permalink to this headline">#</a></h2>
+<section id="potential-energy">
+<h3>Potential energy<a class="headerlink" href="#potential-energy" title="Permalink to this headline">#</a></h3>
 </section>
-<section id="final-project">
-<h3>Final project<a class="headerlink" href="#final-project" title="Permalink to this headline">#</a></h3>
-<p>Each student will investigate some aspect of the general circulation of atmosphere or ocean. A wide variety of topics are possible, but it must fit into the themes of the class. The project should include some original calculations using real data. Possible ideas include:</p>
-<ul class="simple">
-<li><p>Using methods introduced in class in some aspect of your own thesis research</p></li>
-<li><p>Revisit a classic study from the literature with a modern dataset</p></li>
-<li><p>Design and implement your own laboratory / tank experiment to investigate some analog of the general circulation</p></li>
-</ul>
-<p>Students can work alone or in teams of two, subject to approval. Students will write short proposals for their project ideas and get feedback from the instructor before starting (due dates TBD).</p>
-<p>Both written and oral presentations are required. Oral presentations will happen in the last week of class. Details for these and the written presentations will follow later, but expect a focus on <em>reproducibility</em> of calculations. Written reports will likely take the form of self-computing Jupyter notebooks.</p>
+<section id="latent-energy">
+<h3>Latent energy<a class="headerlink" href="#latent-energy" title="Permalink to this headline">#</a></h3>
 </section>
-<section id="academic-integrity">
-<h3>Academic integrity<a class="headerlink" href="#academic-integrity" title="Permalink to this headline">#</a></h3>
-<p>In this class we will strive to be interactive, learning by doing and by discussion. Some collaboration on exercises is therefore encouraged. However you are ultimately expected to submit your own work and your own thoughts, and to give proper credit to others for previous work and ideas.</p>
-<p>This is very important when writing computer code! There is nothing wrong with borrowing useful pieces of code from classmates or online sources – that is in fact the central principle of open-source software. However, you must always acknowledge the original author(s). You must also, wherever practical, understand the code you are borrowing and be able to explain what it does.</p>
-<p>It is every student’s responsibility to become familiar with the standards of academic integrity at UAlbany. Claims of ignorance, of unintentional error, or of academic or personal pressures are not sufficient reasons for violations of academic integrity. Please refer to the UAlbany academic integrity policies here: <a class="reference external" href="http://www.albany.edu/graduatebulletin/requirements_degree.htm#standards_integrity">http://www.albany.edu/graduatebulletin/requirements_degree.htm#standards_integrity</a></p>
+<section id="internal-energy">
+<h3>Internal energy<a class="headerlink" href="#internal-energy" title="Permalink to this headline">#</a></h3>
 </section>
+<section id="kinetic-energy">
+<h3>Kinetic energy<a class="headerlink" href="#kinetic-energy" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="a-total-energy-equation-and-global-conservation">
+<h2>A total energy equation and global conservation<a class="headerlink" href="#a-total-energy-equation-and-global-conservation" title="Permalink to this headline">#</a></h2>
+<p>After some work and cancellation of various conversion terms:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{DE}{Dt} = -\alpha \nabla \cdot \left( \vec{v} p \right) - \alpha \nabla \cdot \vec{F}_{rad} + D_h \]</div>
+<p>with <span class="math notranslate nohighlight">\(D_h = c_p D_T + L_v D_q\)</span> the net surface enthalpy flux and <span class="math notranslate nohighlight">\(\vec{F}_{rad}\)</span> the radiative flux.</p>
+</section>
+<section id="alternate-form-and-moist-static-energy">
+<h2>Alternate form and Moist Static Energy<a class="headerlink" href="#alternate-form-and-moist-static-energy" title="Permalink to this headline">#</a></h2>
+<p>We can rewrite the first law of thermodynamics as</p>
+<p>\begin{align*}
+dQ &amp;= dI + p d\alpha \
+&amp;= dI + d(p\alpha) - \alpha dp \
+&amp;= d(c_v T + RT) - \alpha dp \
+&amp;= d(c_p T ) - \alpha dp
+\begin{align*}</p>
+<p>where <span class="math notranslate nohighlight">\(c_p T\)</span> is refered to as the <strong>sensible energy</strong> <span class="math notranslate nohighlight">\(S\)</span></p>
+<p>Using this, we can define another form of total energy</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{E} = S + \Phi + L + K \]</div>
+<p>and we’ll find it useful to define the <strong>moist static energy</strong> <span class="math notranslate nohighlight">\(m\)</span> as the first three terms of <span class="math notranslate nohighlight">\(mathcal{E}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ m = S + \Phi + L = c_p T + g z + L_v q \]</div>
+<p>We’ll see from the data that <span class="math notranslate nohighlight">\(K\)</span> is typically a small fraction of <span class="math notranslate nohighlight">\(\mathcal{E}\)</span> so is often ignored in the total energy budget, and we will talk instead about fluxes of moist static energy rather than fluxes of total energy.</p>
 </section>
 </section>
 
@@ -518,16 +603,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "aug22"
         },
         kernelOptions: {
-            kernelName: "python3",
-            path: "./info"
+            kernelName: "aug22",
+            path: "./lectures"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'aug22'</script>
 
               </div>
               
@@ -536,17 +621,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../home.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="angular-momentum-budget.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">ATM 622: General Circulation of the Atmosphere</p>
+            <p class="prev-next-title"><span class="section-number">5. </span>Angular Momentum Budget</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="schedule.html" title="next page">
+    <a class='right-next' id="next-link" href="../assignments/assignment-toa-budget.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Schedule</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Top-of-Atmosphere Radiation Budget and Meridional Energy Transport</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
