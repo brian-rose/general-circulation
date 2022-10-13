@@ -50,6 +50,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4. Decompositions of the circulation" href="decomposing-circulation.html" />
@@ -434,6 +436,11 @@ title="Print to PDF"
    List of figures
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overturning-circulation">
+   Overturning circulation
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -466,6 +473,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#list-of-figures">
    List of figures
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overturning-circulation">
+   Overturning circulation
   </a>
  </li>
 </ul>
@@ -3055,6 +3067,31 @@ Data variables:
 </li>
 <li><p>Schematic: Lagrangian vs Eulerian overturning</p></li>
 </ol>
+</section>
+<section id="overturning-circulation">
+<h2>Overturning circulation<a class="headerlink" href="#overturning-circulation" title="Permalink to this headline">#</a></h2>
+<p>An element of northward mass flux (in units of kg s<span class="math notranslate nohighlight">\({^-1}\)</span>) across latitude line <span class="math notranslate nohighlight">\(\phi\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[ d\psi = a \cos\phi d\lambda ~ v ~ \frac{dp}{g} \]</div>
+<p>So the total northward mass flux across <span class="math notranslate nohighlight">\(\phi\)</span> above pressure level <span class="math notranslate nohighlight">\(p\)</span> is given by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+\psi(p) &amp;= \int_0^{2\pi} \int_0^p a \cos\phi d\lambda ~ v ~ \frac{dp}{g} \\
+&amp;= 2\pi a \frac{\cos\phi}{g} \int_0^p [v] dp 
+\end{align*}\]</div>
+<p>Th zonally- and time-averaged mass conservation in pressure coordinates is</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{a \cos\phi} \frac{\partial}{\partial \phi} \left( [\overline{v}] \cos\phi \right) + \frac{\partial [\overline{\omega}]}{\partial p} = 0 \]</div>
+<p>In other words, the vector with components <span class="math notranslate nohighlight">\([\overline{v}], [\overline{\omega}]\)</span> is non-divergent. So we can represent it with a scalar streamfunction $\psi, the <strong>mass transport streamfunction</strong>:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+2\pi a \cos\phi [\overline{v}] &amp;= \frac{\partial \psi}{\partial p} \\
+2\pi a^2 \cos\phi \left( [\overline{\omega}]\right) = -\frac{\partial \psi}{\partial \phi}
+\end{align*}\]</div>
+<p>consistent with the definition of <span class="math notranslate nohighlight">\(\psi\)</span> above!</p>
+<p>It it thus possible to compute and plot the mass streamfunction from just the zonal wind data, using</p>
+<div class="math notranslate nohighlight">
+\[ \psi = \frac{2\pi a \cos\phi}{g} \int_0^p [\overline{v}] dp \]</div>
 </section>
 </section>
 
