@@ -18,6 +18,7 @@ parts:
     - file: lectures/decomposing-circulation
     - file: lectures/angular-momentum-budget
     - file: lectures/energy-budget
+    - file: lectures/ape
   - caption: Assignments and labs
     numbered: 1
     chapters:
