@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Available Potential Energy &#8212; ATM 622: General Circulation of the Atmosphere</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">ATM 622: General Circulation of the Atmosphere</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../home.html">
+                    ATM 622: General Circulation of the Atmosphere
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course info
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../info/syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../info/schedule.html">
+   Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../info/how-to.html">
+   How to use this book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="radiation-budget.html">
+   1. Earth’s radiation budget
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="computing-seasonal.html">
+   2. Computing seasonal and monthly means from CFSR data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observed-circulation.html">
+   3. The observed circulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="decomposing-circulation.html">
+   4. Decompositions of the circulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="angular-momentum-budget.html">
+   5. Angular Momentum Budget
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energy-budget.html">
+   6. Energy Budget
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Assignments and labs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/assignment-toa-budget.html">
+   1. Top-of-Atmosphere Radiation Budget and Meridional Energy Transport
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  The stuff at the end
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../info/references.html">
+   References
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/brian-rose/general-circulation/main?urlpath=lab/tree/./lectures/ape.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://lore.atmos.albany.edu:8000/hub/user-redirect/git-pull?repo=https%3A//github.com/brian-rose/general-circulation&urlpath=lab/tree/general-circulation/./lectures/ape.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/brian-rose/general-circulation"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Flectures/ape.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/lectures/ape.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definitions">
+   Definitions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#column-energetics">
+     Column energetics
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hydrostatic-relations">
+       Hydrostatic relations
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#column-enthalpy">
+       Column enthalpy
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#available-potential-idea-basic-definition">
+     Available potential idea: basic definition
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quantifying-ape">
+   Quantifying APE
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#properties-of-the-a-state">
+     Properties of the A-state
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-concept-of-the-massless-layer">
+     The concept of the massless layer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivation-of-the-ape-formula">
+     Derivation of the APE formula
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Available Potential Energy</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definitions">
+   Definitions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#column-energetics">
+     Column energetics
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hydrostatic-relations">
+       Hydrostatic relations
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#column-enthalpy">
+       Column enthalpy
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#available-potential-idea-basic-definition">
+     Available potential idea: basic definition
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quantifying-ape">
+   Quantifying APE
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#properties-of-the-a-state">
+     Properties of the A-state
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-concept-of-the-massless-layer">
+     The concept of the massless layer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivation-of-the-ape-formula">
+     Derivation of the APE formula
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="available-potential-energy">
+<h1>Available Potential Energy<a class="headerlink" href="#available-potential-energy" title="Permalink to this headline">#</a></h1>
+<p>These notes largely follow Chapter 7 of David Randall’s <em>An Introduction to the Global Circulation of the Atmosphere</em> <span id="id1">Randall [<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">2015</a>]</span></p>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<section id="column-energetics">
+<h3>Column energetics<a class="headerlink" href="#column-energetics" title="Permalink to this headline">#</a></h3>
+<p>Under dry adiabatic and frictionless processes, the total energy of the atmosphere is conserved:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{d}{dt} \int_V (c_v T + \Phi + K ) \rho dV \]</div>
+<p>where the integral is over the mass of the whole atmopshere.</p>
+<section id="hydrostatic-relations">
+<h4>Hydrostatic relations<a class="headerlink" href="#hydrostatic-relations" title="Permalink to this headline">#</a></h4>
+<p>Consider a single column of air. The total (vertically integrated) potential energy in a column is</p>
+<div class="math notranslate nohighlight">
+\[P \equiv \int_0^\infty g z \rho dz \]</div>
+<p>which, for a hydrostatic column where</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial p}{\partial z} = -\rho g \]</div>
+<p>is equivalent to</p>
+<div class="math notranslate nohighlight">
+\[P = \int_0^\infty \rho R T dz \]</div>
+<p><em>(can you see why?)</em></p>
+<p>This essentially expresses the fact a warmer column is “taller” than a cooler column and so contains more potential energy.</p>
+</section>
+<section id="column-enthalpy">
+<h4>Column enthalpy<a class="headerlink" href="#column-enthalpy" title="Permalink to this headline">#</a></h4>
+<p>Now the internal energy of the column is</p>
+<div class="math notranslate nohighlight">
+\[ I \equiv \int_0^\infty c_v T \rho dz \]</div>
+<p>so the sum of the internal and potential energies is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P + I &amp;= \int_0^\infty g z \rho dz + \int_0^\infty c_v T \rho dz \\
+&amp;= \int_0^\infty (c_v + R) T \rho dz \\
+&amp;= \int_0^\infty c_p T \rho dz
+\end{align*}\]</div>
+<p>The vertically integrated sum of internal and potential energies is equal to the vertically integrated sum  of the <em>enthalpy</em> <span class="math notranslate nohighlight">\(H\)</span> defined by
+$<span class="math notranslate nohighlight">\( H \equiv \int_0^\infty c_p T \rho dz \)</span>$</p>
+<p>that is,</p>
+<div class="math notranslate nohighlight">
+\[ P+I = H \]</div>
+<p>(these statements are only true for the vertically mass-weighted integrals!)</p>
+<p>It then follows that for a frictionless, adiabatic atmosphere</p>
+<div class="math notranslate nohighlight">
+\[ \frac{d}{dt} (H + K) = 0 \]</div>
+</section>
+</section>
+<section id="available-potential-idea-basic-definition">
+<h3>Available potential idea: basic definition<a class="headerlink" href="#available-potential-idea-basic-definition" title="Permalink to this headline">#</a></h3>
+<p>Suppose we rearrange the atmopshere by moving parcels around adiabatically and without friction. The parcels’ potential temperature (or entropy) do not change but their enthalpy / temperature do change. Suppose there is a unique state that minimizes <span class="math notranslate nohighlight">\(H\)</span> – i.e. we have reduced <span class="math notranslate nohighlight">\(H\)</span> as much as possible from its given initial value.</p>
+<p>Because <span class="math notranslate nohighlight">\(H +K\)</span> does not change, <span class="math notranslate nohighlight">\(K\)</span> must be maximized in this special state.</p>
+<p>The special state was called the <em>reference state</em> in the seminal work on this subject by Ed Lorenz <span id="id2">Lorenz [<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">1955</a>]</span>. Following <span id="id3">Randall [<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">2015</a>]</span> here, we’ll call it the A-state.</p>
+<p>A key point is that the mass-integrated potential energy of the entire atmosphere is lower in the A-state than in the given state. In other words, the “center of gravity” of the atmosphere descends as the atmopshere adjusts from the given state to the A-state.</p>
+<p>Two keys processes that reduce <span class="math notranslate nohighlight">\(H\)</span> and increase <span class="math notranslate nohighlight">\(K\)</span> are convection and baroclinic instability.</p>
+<p>[SKETCHES]</p>
+<p>We can write the energetics of this adjustment like so:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+H_{\text{given}} &amp;\rightarrow H_{\text{min}} \\
+K_{\text{given}} &amp;\rightarrow K_{\text{given}} + (H_{\text{given}} - H_{\text{min}} ) = K_{\text{max}}
+\end{align*}\]</div>
+<p>where H_{\text{min}}$ is the enthalpy in the A-state. We thus define the <em>available potential energy</em> or APE through</p>
+<div class="math notranslate nohighlight">
+\[ A = H_{\text{given}} - H_{\text{min}} \ge 0 \]</div>
+<p>This is the fundamental definition of APE as first quantified by <span id="id4">[<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">Lorenz, 1955</a>]</span>. It is the fraction of the total potential energy that can be converted to kinetic energy through adiabatic, frictionless rearrangements.</p>
+<p>Under such conditions, we can express energy conservation as</p>
+<div class="math notranslate nohighlight">
+\[ \frac{d}{dt} ( A + K) = 0 \]</div>
+<p>Adiabatic, frictionless processes only convert between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(K\)</span>. The APE of the A-state itself is zero.</p>
+</section>
+</section>
+<section id="quantifying-ape">
+<h2>Quantifying APE<a class="headerlink" href="#quantifying-ape" title="Permalink to this headline">#</a></h2>
+<section id="properties-of-the-a-state">
+<h3>Properties of the A-state<a class="headerlink" href="#properties-of-the-a-state" title="Permalink to this headline">#</a></h3>
+<p>To compute <span class="math notranslate nohighlight">\(A\)</span>, we have to find the enthalpy of the A-state. Some properties of the A-state include:</p>
+<ul class="simple">
+<li><p>no horizontal pressure gradients, because otherwise there would be accelerations (generation of kinetic energy)</p></li>
+<li><p>potential temperature <span class="math notranslate nohighlight">\(\theta\)</span> must be constant on isobaric surfaces</p></li>
+<li><p><span class="math notranslate nohighlight">\(p\)</span> is constant on isentropic surfaces (these statement are all consistent with each other)</p></li>
+</ul>
+<p>These properties suggest that we can quantify the APE either through variance of <span class="math notranslate nohighlight">\(\theta\)</span> on <span class="math notranslate nohighlight">\(p\)</span> surfaces or variance of <span class="math notranslate nohighlight">\(p\)</span> on <span class="math notranslate nohighlight">\(\theta\)</span> surfaces</p>
+<p>[SKETCH Randall’s Figure 7.3]</p>
+<p>To reach the A-state (i.e. to release APE), warm air must rise (move to lower pressure) and cold air must sink (more to higher pressure)!</p>
+</section>
+<section id="the-concept-of-the-massless-layer">
+<h3>The concept of the massless layer<a class="headerlink" href="#the-concept-of-the-massless-layer" title="Permalink to this headline">#</a></h3>
+<p>Following Lorenz, we will deal with the lower boundary (where <span class="math notranslate nohighlight">\(\theta\)</span> surfaces intersect the ground) by thinking about so-called massless layers</p>
+<p>[SKETCH Randalls’ Figure 7.2]</p>
+<p>which allows to convert between integrals in pressure and integrals in isentropic coordinates like</p>
+<div class="math notranslate nohighlight">
+\[ \int_0^{p_s} (~) dp = \int_0^\infty (~) \frac{\partial p}{\partial \theta} d\theta \]</div>
+<p>The massless layer concept lets us set the lower bound on the integral on the right-hand side to zero.</p>
+</section>
+<section id="derivation-of-the-ape-formula">
+<h3>Derivation of the APE formula<a class="headerlink" href="#derivation-of-the-ape-formula" title="Permalink to this headline">#</a></h3>
+<p>We want to express <span class="math notranslate nohighlight">\(A\)</span> in terms of <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> rather than <span class="math notranslate nohighlight">\(T\)</span>. Recall that</p>
+<div class="math notranslate nohighlight">
+\[ T = \theta \left( \frac{p}{p_0} \right)^{\kappa} \]</div>
+<p>with <span class="math notranslate nohighlight">\(\kappa = \frac{R}{c_p}\)</span></p>
+<p>So the total enthalpy is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+H &amp;= c_p \int_M T dM \\
+&amp;= c_p p_0^{-\kappa} \int_M p^\kappa \theta dM \\
+&amp;= \frac{c_p a^2}{g p_0^\kappa} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^{p_s} p^\kappa \theta \cos\phi dp d\lambda d\phi
+\end{align*}\]</div>
+<p>which, using integration by parts, can be rewritten in terms of an integral over <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ H = \frac{c_p a^2}{(1+\kappa) g p_0^\kappa} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty p^{(1+\kappa)} \cos\phi d\theta d\lambda d\phi \]</div>
+<p>We then let <span class="math notranslate nohighlight">\(\overline{p}^\theta\)</span> by the average pressure on an isentropic surface, which must be the same in the A-state.</p>
+<p>Thus</p>
+<div class="math notranslate nohighlight">
+\[ A = \frac{c_p a^2}{(1+\kappa) g p_0^\kappa} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty \left[ p^{(1+\kappa)} - (\overline{p}^\theta)^{(1+\kappa)} \right] \cos\phi d\theta d\lambda d\phi \]</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "aug22"
+        },
+        kernelOptions: {
+            kernelName: "aug22",
+            path: "./lectures"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'aug22'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Brian E. J. Rose<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
