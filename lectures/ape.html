@@ -782,9 +782,11 @@ making use of the fact that \)</span>\overline{p^\prime(\theta)} = 0$ (since the
 <p>Hydrostatic balance can be expressed as</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial \theta}{\partial p} -\frac{\kappa \theta}{p} \left(\frac{\Gamma_d - \Gamma}{\Gamma_d} \right) \]</div>
-<p>which allows us to finally express the integral in terms of <strong>temperature variance on pressure surfaces</strong>:</p>
+<p>with <span class="math notranslate nohighlight">\(\Gamma = -dT/dz\)</span> the lapse rate, and <span class="math notranslate nohighlight">\(\Gamma_d = g/c_p\)</span> the dry adiabatic lapse rate.</p>
+<p>This allows us to finally express the integral in terms of <strong>temperature variance on pressure surfaces</strong>:</p>
 <div class="math notranslate nohighlight">
-\[ A \approx \frac{a^2}{2} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty \frac{\overline{T}}{\Gamma_d - \Gamma} \left[ \frac{T^\prime(p)}{\overline{T}} \right]^2 \cos\phi d\theta d\lambda d\phi \]</div>
+\[ A \approx \frac{a^2}{2} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^{p_s} \frac{\overline{T}}{\Gamma_d - \Gamma} \left[ \frac{T^\prime(p)}{\overline{T}} \right]^2 \cos\phi dp d\lambda d\phi \]</div>
+<p>where now the integral is taken over all pressure surfaces, rather than over all potential temperature surfaces.</p>
 </section>
 <section id="conclusions">
 <h4>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">#</a></h4>
