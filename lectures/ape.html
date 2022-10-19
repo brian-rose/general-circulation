@@ -474,6 +474,41 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#derivation-of-the-ape-formula">
      Derivation of the APE formula
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-total-enthalpy">
+       The total enthalpy
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#expressing-a-as-the-difference-in-total-enthalpy">
+       Expressing
+       <span class="math notranslate nohighlight">
+        \(A\)
+       </span>
+       as the difference in total enthalpy
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces">
+       Expressing
+       <span class="math notranslate nohighlight">
+        \(A\)
+       </span>
+       as a variance of pressure on isentropic surfaces
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#more-readily-computable-form-variance-of-temperature-on-isobaric-surfaces">
+       More readily computable form: variance of temperature on isobaric surfaces
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conclusions">
+       Conclusions
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -544,6 +579,41 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#derivation-of-the-ape-formula">
      Derivation of the APE formula
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-total-enthalpy">
+       The total enthalpy
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#expressing-a-as-the-difference-in-total-enthalpy">
+       Expressing
+       <span class="math notranslate nohighlight">
+        \(A\)
+       </span>
+       as the difference in total enthalpy
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces">
+       Expressing
+       <span class="math notranslate nohighlight">
+        \(A\)
+       </span>
+       as a variance of pressure on isentropic surfaces
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#more-readily-computable-form-variance-of-temperature-on-isobaric-surfaces">
+       More readily computable form: variance of temperature on isobaric surfaces
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conclusions">
+       Conclusions
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -612,14 +682,14 @@ $<span class="math notranslate nohighlight">\( H \equiv \int_0^\infty c_p T \rho
 <p>The special state was called the <em>reference state</em> in the seminal work on this subject by Ed Lorenz <span id="id2">[<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">Lorenz, 1955</a>]</span>. Following <span id="id3">Randall [<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">2015</a>]</span> here, we’ll call it the A-state.</p>
 <p>A key point is that the mass-integrated potential energy of the entire atmosphere is lower in the A-state than in the given state. In other words, the “center of gravity” of the atmosphere descends as the atmopshere adjusts from the given state to the A-state.</p>
 <p>Two keys processes that reduce <span class="math notranslate nohighlight">\(H\)</span> and increase <span class="math notranslate nohighlight">\(K\)</span> are convection and baroclinic instability.</p>
-<p>[SKETCHES]</p>
+<p>[SKETCHES: differentially heated atmosphere]</p>
 <p>We can write the energetics of this adjustment like so:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 H_{\text{given}} &amp;\rightarrow H_{\text{min}} \\
 K_{\text{given}} &amp;\rightarrow K_{\text{given}} + (H_{\text{given}} - H_{\text{min}} ) = K_{\text{max}}
 \end{align*}\]</div>
-<p>where H_{\text{min}}$ is the enthalpy in the A-state. We thus define the <em>available potential energy</em> or APE through</p>
+<p>where <span class="math notranslate nohighlight">\(H_{\text{min}}\)</span> is the enthalpy in the A-state. We thus define the <em>available potential energy</em> or APE through</p>
 <div class="math notranslate nohighlight">
 \[ A = H_{\text{given}} - H_{\text{min}} \ge 0 \]</div>
 <p>This is the fundamental definition of APE as first quantified by <span id="id4">Lorenz [<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">1955</a>]</span>. It is the fraction of the total potential energy that can be converted to kinetic energy through adiabatic, frictionless rearrangements.</p>
@@ -635,9 +705,12 @@ K_{\text{given}} &amp;\rightarrow K_{\text{given}} + (H_{\text{given}} - H_{\tex
 <h3>Properties of the A-state<a class="headerlink" href="#properties-of-the-a-state" title="Permalink to this headline">#</a></h3>
 <p>To compute <span class="math notranslate nohighlight">\(A\)</span>, we have to find the enthalpy of the A-state. Some properties of the A-state include:</p>
 <ul class="simple">
-<li><p>no horizontal pressure gradients, because otherwise there would be accelerations (generation of kinetic energy)</p></li>
-<li><p>potential temperature <span class="math notranslate nohighlight">\(\theta\)</span> must be constant on isobaric surfaces</p></li>
-<li><p><span class="math notranslate nohighlight">\(p\)</span> is constant on isentropic surfaces (these statement are all consistent with each other)</p></li>
+<li><p>No horizontal pressure gradients! Because otherwise there would be accelerations (generation of kinetic energy)</p>
+<ul>
+<li><p>This implies that temperature (and also potential temperature <span class="math notranslate nohighlight">\(\theta\)</span>) must be constant on isobaric surfaces</p></li>
+</ul>
+</li>
+<li><p>If <span class="math notranslate nohighlight">\(\theta\)</span> is constant on <span class="math notranslate nohighlight">\(p\)</span> surfaces, then equally <span class="math notranslate nohighlight">\(p\)</span> must be constant on isentropic surfaces (surfaces of constant <span class="math notranslate nohighlight">\(\theta\)</span>)</p></li>
 </ul>
 <p>These properties suggest that we can quantify the APE either through variance of <span class="math notranslate nohighlight">\(\theta\)</span> on <span class="math notranslate nohighlight">\(p\)</span> surfaces or variance of <span class="math notranslate nohighlight">\(p\)</span> on <span class="math notranslate nohighlight">\(\theta\)</span> surfaces</p>
 <p>[SKETCH Randall’s Figure 7.3]</p>
@@ -645,6 +718,8 @@ K_{\text{given}} &amp;\rightarrow K_{\text{given}} + (H_{\text{given}} - H_{\tex
 </section>
 <section id="the-concept-of-the-massless-layer">
 <h3>The concept of the massless layer<a class="headerlink" href="#the-concept-of-the-massless-layer" title="Permalink to this headline">#</a></h3>
+<p>Since we’re limiting our analysis to dry adiabatic processes, <span class="math notranslate nohighlight">\(\theta\)</span> is conserved on every parcel. So our rearrangements cannot involve mass crossing isentropic surfaces!</p>
+<p>This then implies that the average pressure on an isentropic surface cannot change, so must be the same in the A-state. We’ll denote this average pressure by <span class="math notranslate nohighlight">\(\overline{p}^\theta\)</span>.</p>
 <p>Following Lorenz, we will deal with the lower boundary (where <span class="math notranslate nohighlight">\(\theta\)</span> surfaces intersect the ground) by thinking about so-called massless layers</p>
 <p>[SKETCH Randalls’ Figure 7.2]</p>
 <p>which allows to convert between integrals in pressure and integrals in isentropic coordinates like</p>
@@ -654,6 +729,8 @@ K_{\text{given}} &amp;\rightarrow K_{\text{given}} + (H_{\text{given}} - H_{\tex
 </section>
 <section id="derivation-of-the-ape-formula">
 <h3>Derivation of the APE formula<a class="headerlink" href="#derivation-of-the-ape-formula" title="Permalink to this headline">#</a></h3>
+<section id="the-total-enthalpy">
+<h4>The total enthalpy<a class="headerlink" href="#the-total-enthalpy" title="Permalink to this headline">#</a></h4>
 <p>We want to express <span class="math notranslate nohighlight">\(A\)</span> in terms of <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> rather than <span class="math notranslate nohighlight">\(T\)</span>. Recall that</p>
 <div class="math notranslate nohighlight">
 \[ T = \theta \left( \frac{p}{p_0} \right)^{\kappa} \]</div>
@@ -668,10 +745,57 @@ H &amp;= c_p \int_M T dM \\
 <p>which, using integration by parts, can be rewritten in terms of an integral over <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ H = \frac{c_p a^2}{(1+\kappa) g p_0^\kappa} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty p^{(1+\kappa)} \cos\phi d\theta d\lambda d\phi \]</div>
-<p>We then let <span class="math notranslate nohighlight">\(\overline{p}^\theta\)</span> by the average pressure on an isentropic surface, which must be the same in the A-state.</p>
-<p>Thus</p>
+</section>
+<section id="expressing-a-as-the-difference-in-total-enthalpy">
+<h4>Expressing <span class="math notranslate nohighlight">\(A\)</span> as the difference in total enthalpy<a class="headerlink" href="#expressing-a-as-the-difference-in-total-enthalpy" title="Permalink to this headline">#</a></h4>
+<p>We now apply the difference</p>
+<div class="math notranslate nohighlight">
+\[ A = H_{\text{given}} - H_{\text{min}} \]</div>
+<p>To calculate <span class="math notranslate nohighlight">\(H_{\text{min}}\)</span> (the enthalpy of the A-state), we can replace <span class="math notranslate nohighlight">\(p\)</span> with its average on isentropic surfaces <span class="math notranslate nohighlight">\(\overline{p}^\theta\)</span> – which we already argued must be the same in the A-state as in the given state.</p>
+<p>Thus the APE is given by</p>
 <div class="math notranslate nohighlight">
 \[ A = \frac{c_p a^2}{(1+\kappa) g p_0^\kappa} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty \left[ p^{(1+\kappa)} - (\overline{p}^\theta)^{(1+\kappa)} \right] \cos\phi d\theta d\lambda d\phi \]</div>
+</section>
+<section id="expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces">
+<h4>Expressing <span class="math notranslate nohighlight">\(A\)</span> as a variance of pressure on isentropic surfaces<a class="headerlink" href="#expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces" title="Permalink to this headline">#</a></h4>
+<p>The above expression is accurate but unwieldy. Following <span id="id5">Lorenz [<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">1955</a>]</span>, we can decompose $<span class="math notranslate nohighlight">\( p(\theta) = \overline{p}^\theta + p^\prime(\theta) \)</span><span class="math notranslate nohighlight">\(
+where \)</span>p^\prime(\theta)$ is departures from the average value on isentropic surfaces.</p>
+<p>Then we can express the power <span class="math notranslate nohighlight">\(p^{(1+\kappa)}\)</span> (which appears in the above formula for <span class="math notranslate nohighlight">\(A\)</span>) as
+$<span class="math notranslate nohighlight">\( p^{1+\kappa}(\theta) = (\overline{p}^\theta)^{1+\kappa} \left[ 1 + \frac{p^\prime(\theta)}{\overline{p}^\theta}\right]^{1+\kappa} \)</span><span class="math notranslate nohighlight">\(
+and use the binomial theorem to write this as a series expansion like
+\)</span><span class="math notranslate nohighlight">\( p^{1+\kappa}(\theta) = (\overline{p}^\theta)^{1+\kappa} \left\{ 1 + (1+\kappa) \frac{p^\prime(\theta)}{\overline{p}^\theta} + \frac{\kappa (1+\kappa)}{2!} \left[ \frac{p^\prime(\theta)}{\overline{p}^\theta} \right]^2 + \ldots \right\} \)</span>$</p>
+<p>If we now take the average on isentropic surfaces, and truncate the expansion at the 2nd order, we get Lorenz’s expression
+$<span class="math notranslate nohighlight">\( \overline{p^{1+\kappa}(\theta)} \approx (\overline{p}^\theta)^{1+\kappa} \left\{ 1 + \frac{\kappa (1+\kappa)}{2!} \overline{\left[ \frac{p^\prime(\theta)}{\overline{p}^\theta} \right]^2 } \right\} \)</span><span class="math notranslate nohighlight">\(
+making use of the fact that \)</span>\overline{p^\prime(\theta)} = 0$ (since the prime means deviation away from that mean!)</p>
+<p>The idea here is that we can substitute this expression into the integral above for <span class="math notranslate nohighlight">\(A\)</span>, since we have are integrating <span class="math notranslate nohighlight">\(p^{1+\kappa}\)</span> over all <span class="math notranslate nohighlight">\(\theta\)</span> – we replace the integrand with its mean value.</p>
+<p>Substituting in and canceling terms gives us</p>
+<div class="math notranslate nohighlight">
+\[ A \approx \frac{R a^2}{2 g p_0^\kappa} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty (\overline{p}^\theta)^{1+\kappa} \left[ \frac{p^\prime(\theta)}{\overline{p}^\theta} \right]^2 \cos\phi d\theta d\lambda d\phi \]</div>
+<p>which says that the APE proportional to the total (integral) variance of pressure on isentropic surfaces.</p>
+</section>
+<section id="more-readily-computable-form-variance-of-temperature-on-isobaric-surfaces">
+<h4>More readily computable form: variance of temperature on isobaric surfaces<a class="headerlink" href="#more-readily-computable-form-variance-of-temperature-on-isobaric-surfaces" title="Permalink to this headline">#</a></h4>
+<p>Since we usually have data on pressure surfaces rather than <span class="math notranslate nohighlight">\(\theta\)</span> surfaces, it’s more practical to transform this expression back into pressure coordinates using</p>
+<div class="math notranslate nohighlight">
+\[ p^\prime(\theta) = \theta^\prime(p) \left(\frac{\partial \overline{\theta}}{\partial p}\right)^{-1} \]</div>
+<p>where now <span class="math notranslate nohighlight">\(\theta^\prime(p)\)</span> represents deviations of <span class="math notranslate nohighlight">\(\theta\)</span> away from its mean value on <span class="math notranslate nohighlight">\(p\)</span>-surfaces.</p>
+<p>Hydrostatic balance can be expressed as</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial \theta}{\partial p} -\frac{\kappa \theta}{p} \left(\frac{\Gamma_d - \Gamma}{\Gamma_d} \right) \]</div>
+<p>which allows us to finally express the integral in terms of <strong>temperature variance on pressure surfaces</strong>:</p>
+<div class="math notranslate nohighlight">
+\[ A \approx \frac{a^2}{2} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty \frac{\overline{T}}{\Gamma_d - \Gamma} \left[ \frac{T^\prime(p)}{\overline{T}} \right]^2 \cos\phi d\theta d\lambda d\phi \]</div>
+</section>
+<section id="conclusions">
+<h4>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">#</a></h4>
+<p>The formula above shows us that APE increases in two different ways:</p>
+<ol class="simple">
+<li><p>APE increases with the variance of temperature on pressure surfaces</p></li>
+<li><p>APE increases with lapse rate, i.e. as the atmopshere gets closer to neutral stability</p></li>
+</ol>
+<p>Hence, we get a sense that the APE has (roughly speaking) two components: a vertical component related to static stability, and a horizontal component related to horizontal temperature variations.</p>
+<p>This is also formula we can readily compute from standard data sources!</p>
+</section>
 </section>
 </section>
 </section>
