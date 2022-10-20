@@ -512,6 +512,52 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#balance-equations-for-mean-and-eddy-ape-and-ke">
+   Balance equations for mean and eddy APE and KE
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goal">
+     Goal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variance-budgets-for-a-general-scalar">
+     Variance budgets for a general scalar
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mean-component">
+       Mean component
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#eddy-component">
+       Eddy component
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interpretation-of-terms">
+       Interpretation of terms
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kinetic-energy-equations">
+     Kinetic energy equations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-from-mean-ape-to-mean-ke">
+       Conversion from mean APE to mean KE
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </nav>
@@ -611,6 +657,52 @@ title="Print to PDF"
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#conclusions">
        Conclusions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#balance-equations-for-mean-and-eddy-ape-and-ke">
+   Balance equations for mean and eddy APE and KE
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goal">
+     Goal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variance-budgets-for-a-general-scalar">
+     Variance budgets for a general scalar
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mean-component">
+       Mean component
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#eddy-component">
+       Eddy component
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interpretation-of-terms">
+       Interpretation of terms
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kinetic-energy-equations">
+     Kinetic energy equations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-from-mean-ape-to-mean-ke">
+       Conversion from mean APE to mean KE
       </a>
      </li>
     </ul>
@@ -787,16 +879,141 @@ making use of the fact that \)</span>\overline{p^\prime(\theta)} = 0$ (since the
 <div class="math notranslate nohighlight">
 \[ A \approx \frac{a^2}{2} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^{p_s} \frac{\overline{T}}{\Gamma_d - \Gamma} \left[ \frac{T^\prime(p)}{\overline{T}} \right]^2 \cos\phi dp d\lambda d\phi \]</div>
 <p>where now the integral is taken over all pressure surfaces, rather than over all potential temperature surfaces.</p>
+<p>Another way of writing the static stability is using</p>
+<div class="math notranslate nohighlight">
+\[ \tilde{\Gamma} \equiv -\frac{R \theta}{p} \left( \frac{\partial \theta}{\partial p} \right)^{-1} \]</div>
+<p>(an inverse measure of the static stability in units of J kg<span class="math notranslate nohighlight">\(^{-1}\)</span> K<span class="math notranslate nohighlight">\(^{-1}\)</span>, which we can calculate from mean values of <span class="math notranslate nohighlight">\(\theta\)</span>)</p>
+<p>so that APE can be calculated from</p>
+<div class="math notranslate nohighlight">
+\[ A \approx \frac{a^2}{2 g} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^{p_s} \tilde{\Gamma} \frac{T^\prime(p)^2}{\overline{T}} \cos\phi dp d\lambda d\phi \]</div>
 </section>
 <section id="conclusions">
 <h4>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">#</a></h4>
 <p>The formula above shows us that APE increases in two different ways:</p>
 <ol class="simple">
 <li><p>APE increases with the variance of temperature on pressure surfaces</p></li>
-<li><p>APE increases with lapse rate, i.e. as the atmopshere gets closer to neutral stability</p></li>
+<li><p>APE increases with lapse rate, i.e. as the atmopshere gets closer to neutral stability (<span class="math notranslate nohighlight">\(\Gamma\)</span> approaches <span class="math notranslate nohighlight">\(\Gamma_d\)</span>, or <span class="math notranslate nohighlight">\(\tilde{\Gamma}\)</span> approaches zero)</p></li>
 </ol>
 <p>Hence, we get a sense that the APE has (roughly speaking) two components: a vertical component related to static stability, and a horizontal component related to horizontal temperature variations.</p>
 <p>This is also formula we can readily compute from standard data sources!</p>
+<p>As we will see, APE (or <span class="math notranslate nohighlight">\(A\)</span>) is around 0.5% of <span class="math notranslate nohighlight">\(H = P + I\)</span>, and somewhat larger (but of comparable magnitude) to <span class="math notranslate nohighlight">\(K\)</span>.</p>
+</section>
+</section>
+</section>
+<section id="balance-equations-for-mean-and-eddy-ape-and-ke">
+<h2>Balance equations for mean and eddy APE and KE<a class="headerlink" href="#balance-equations-for-mean-and-eddy-ape-and-ke" title="Permalink to this headline">#</a></h2>
+<section id="goal">
+<h3>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">#</a></h3>
+<p>We want to consider how energy flows through a system containing four distinct energy reservoirs</p>
+<ul class="simple">
+<li><p>mean kinetic energy <span class="math notranslate nohighlight">\(K_M\)</span></p></li>
+<li><p>eddy kinetic energy <span class="math notranslate nohighlight">\(K_E\)</span></p></li>
+<li><p>mean available potential energy <span class="math notranslate nohighlight">\(A_M\)</span></p></li>
+<li><p>eddy available potential energy <span class="math notranslate nohighlight">\(A_E\)</span></p></li>
+</ul>
+<p>For this purpose, “eddy” here is going to mean deviations from the zonal mean, i.e. we’ll decompose scalars like
+$<span class="math notranslate nohighlight">\( B = [B] + B^* \)</span>$</p>
+<p>So the kinetic energy will be decomposed like</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= K_M + K_E \\
+&amp;= \frac{1}{2} \int_M ([u]^2 + [v]^2) dm  + \frac{1}{2} \int_M ([u^{*2}] + [v^{*2}]) dm
+\end{align*}\]</div>
+<p>(we’ll ignore vertical velocity contributions since they are very small)</p>
+<p>We’ll need to go back to the equations of motion to see how to quantify <em>conversions</em> between the various reservoirs.</p>
+</section>
+<section id="variance-budgets-for-a-general-scalar">
+<h3>Variance budgets for a general scalar<a class="headerlink" href="#variance-budgets-for-a-general-scalar" title="Permalink to this headline">#</a></h3>
+<p>It will help to write down some generic formulas that are true for any scalar for which we have a budget equation in flux form:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial B}{\partial t} = - \nabla \cdot (\vec{v} B) + \dot{B} \]</div>
+<p>where <span class="math notranslate nohighlight">\(\dot{B}\)</span> are any local sources/sinks of <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p>Our goal here is to come up with expressions for the <strong>variance</strong> of the mean and eddy components of <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<section id="mean-component">
+<h4>Mean component<a class="headerlink" href="#mean-component" title="Permalink to this headline">#</a></h4>
+<p>Start by taking the zonal mean and multiplying through by <span class="math notranslate nohighlight">\([B]\)</span> so that</p>
+<div class="math notranslate nohighlight">
+\[ [B] \frac{\partial [B]}{\partial t} = -\frac{[B]}{a \cos \phi} \frac{\partial}{\partial \phi} \left( [vB] \cos\phi \right) -[B] \frac{\partial}{\partial p} [\omega B] + [B] \dot{B} \]</div>
+<p>Rerranging the LHS, we now have a budget for the variance of the mean, <span class="math notranslate nohighlight">\(\frac{1}{2}\frac{\partial [B]^2}{\partial t}\)</span>.</p>
+<p>Now split the fluxes <span class="math notranslate nohighlight">\([vB], [\omega B]\)</span> into mean and eddy components, and use mass continuity
+$<span class="math notranslate nohighlight">\( \nabla \cdot \vec{v} = 0 \)</span>$
+(in the pressure coordinate form) to rewrite the budget as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2} \frac{\partial [B]^2 }{\partial t} = &amp;-\frac{1}{2 a \cos\phi} \frac{\partial}{\partial \phi} \left( [v][B]^2 \cos\phi \right) -\frac{1}{2} \frac{\partial}{\partial p} \left( [\omega][B]^2 \right) \\
+&amp;-\frac{1}{a\cos\phi} \frac{\partial}{\partial \phi} \left( [v^*B^*][B] \cos\phi \right) -\frac{\partial}{\partial p} \left( [\omega^* B^*][B] \right) \\
+&amp;+ \frac{[v^*B^*]}{a} \frac{\partial}{\partial \phi} [B] + [\omega^* B^*] \frac{\partial}{\partial p} [B] \\
+&amp;+ [B] \dot{B}
+\end{align*}\]</div>
+</section>
+<section id="eddy-component">
+<h4>Eddy component<a class="headerlink" href="#eddy-component" title="Permalink to this headline">#</a></h4>
+<p>We’ll omit details here, but see Chapter 7 of <span id="id6">[<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">Randall, 2015</a>]</span>.</p>
+<p>The steps are essentially</p>
+<ol class="simple">
+<li><p>Substract <span class="math notranslate nohighlight">\(\frac{\partial B}{\partial t} - \frac{\partial [B]}{\partial t}\)</span> to get an equation for <span class="math notranslate nohighlight">\(\frac{\partial B^*}{\partial t}\)</span></p></li>
+<li><p>Multiply through by <span class="math notranslate nohighlight">\(B^*\)</span> to get an equation for the variance budget <span class="math notranslate nohighlight">\(\frac{1}{2} \frac{\partial B^{*2}}{\partial t}\)</span></p></li>
+<li><p>Take the zonal average</p></li>
+</ol>
+<p>The result looks like this:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2} \frac{\partial }{\partial t} [B^{*2}] = &amp;-\frac{1}{2 a \cos\phi} \frac{\partial}{\partial \phi} \left( [v][B^{*2}] \cos\phi \right) - \frac{1}{2} \frac{\partial}{\partial p} \left( [\omega][B^{*2}] \right) \\
+&amp;-\frac{1}{2 a \cos\phi} \frac{\partial}{\partial \phi} \left( [v^* B^{*2}] \cos\phi \right) - \frac{1}{2} \frac{\partial}{\partial p} \left( [\omega^* B^{*2}] \right) \\
+&amp;-\frac{[v^*B^*]}{a} \frac{\partial}{\partial \phi} [B] - [\omega^* B^*] \frac{\partial}{\partial p} [B] \\
+&amp;+ [B^* \dot{B^*}]
+\end{align*}\]</div>
+</section>
+<section id="interpretation-of-terms">
+<h4>Interpretation of terms<a class="headerlink" href="#interpretation-of-terms" title="Permalink to this headline">#</a></h4>
+<p>For both the mean and eddy variance equations, the rows of terms are</p>
+<ol class="simple">
+<li><p>Flux divergence terms due to mean zonal flow</p>
+<ul class="simple">
+<li><p>Boundary sources for budgets integrated over limited domains</p></li>
+<li><p>Vanish for the whole-atmosphere budget</p></li>
+</ul>
+</li>
+<li><p>Flux divergence terms due to eddy flow</p>
+<ul class="simple">
+<li><p>Similarly, these represent boundary sources for limited domain budgets</p></li>
+<li><p>Vanish for the whole atmosphere</p></li>
+</ul>
+</li>
+<li><p><strong>Conversion terms</strong> between mean and eddy components!</p></li>
+<li><p>Source/sink terms for mean and eddy components</p></li>
+</ol>
+</section>
+</section>
+<section id="kinetic-energy-equations">
+<h3>Kinetic energy equations<a class="headerlink" href="#kinetic-energy-equations" title="Permalink to this headline">#</a></h3>
+<p>We can straightaway apply the above variance equations since kinetic energy is the sum of the variance of the velocity components <span class="math notranslate nohighlight">\(u, v\)</span>.</p>
+<p>Horizontal momentum equations look like</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{\partial u}{\partial t} &amp;= -\nabla \cdot (\vec{v} u) + fv -\frac{g}{a \cos\phi} \frac{\partial z}{\partial \lambda} + F_u \\
+\frac{\partial v}{\partial t} &amp;= -\nabla \cdot (\vec{v} v) - fu -\frac{g}{a} \frac{\partial z}{\partial \phi} + F_v 
+\end{align*}\]</div>
+<p>where the terms on the RHS aside from the flux divergence represent our local sources/sinks <span class="math notranslate nohighlight">\(\dot{u}, \dot{v}\)</span> (including Coriolis forces, pressure gradient forces, and friction)</p>
+<p>Let’s use the variance budgets expressions above to write down a budget for the <em>zonal mean kinetic energy</em> for the whole atmosphere.</p>
+<p>Since we’re integrating over the whole atmosphere, the boundary terms vanish.  The budget becomes</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2} \frac{\partial}{\partial t} \int_M \left( [u]^2 + [v]^2 \right) dm = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] + \int [\omega^* u^*] \frac{\partial}{\partial p} [u] \\
+&amp;+\int f[u][v] - \int \frac{g [u]}{a \cos\phi} \left[\frac{\partial z}{\partial \lambda}\right] + \int [u] [F_u] \\
+&amp;+ \int \frac{[v^{*2}]}{a} \frac{\partial}{\partial \phi} [v] + \int [\omega^* v^*] \frac{\partial}{\partial p} [v] \\
+&amp;-\int f[v][u] - \int \frac{g [v]}{a} \frac{\partial [z]}{\partial \phi} + \int [v][F_v]
+\end{align*}\]</div>
+<p>We’ve already seen some of this when we were writing out total energy budgets for the atmosphere. Notice that the Coriolis terms cancel out, as they must (the apparent force does no work).</p>
+<p>We will also neglect the mountain term here, assuming it is small compared the meridional geopotential height gradient.</p>
+<section id="conversion-from-mean-ape-to-mean-ke">
+<h4>Conversion from mean APE to mean KE<a class="headerlink" href="#conversion-from-mean-ape-to-mean-ke" title="Permalink to this headline">#</a></h4>
+<p>One of the terms on the RHS side above we are going to a-priori call the <strong>conversion from mean APE to mean KE</strong>:</p>
+<div class="math notranslate nohighlight">
+\[ C(A_M, K_M) = - \int \frac{g [v]}{a} \frac{\partial [z]}{\partial \phi} dm \]</div>
+<p>with the mass element
+$<span class="math notranslate nohighlight">\( dm = \frac{a^2 \cos\phi}{g} d\phi d\lambda dp \)</span>$</p>
+<p>This term represents conversion of mean APE to mean KE by cross-isobaric flow down the north-south geopotential or pressure gradient.</p>
 </section>
 </section>
 </section>
@@ -811,16 +1028,16 @@ making use of the fact that \)</span>\overline{p^\prime(\theta)} = 0$ (since the
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "aug22"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "aug22",
+            kernelName: "python3",
             path: "./lectures"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'aug22'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
