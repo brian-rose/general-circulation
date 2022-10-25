@@ -627,9 +627,46 @@ title="Print to PDF"
        Conversion from eddy to mean APE
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-between-mean-ke-and-mean-ape">
+       Conversion between mean KE and mean APE
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diabatic-source-term">
+       Diabatic source term
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#eddy-ape-budget">
+     Eddy APE budget
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-and-generation-terms">
+       Conversion and generation terms
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Summary
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diagram-of-the-lorenz-energy-cycle">
+   Diagram of the Lorenz energy cycle
+  </a>
  </li>
 </ul>
 
@@ -851,9 +888,46 @@ title="Print to PDF"
        Conversion from eddy to mean APE
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-between-mean-ke-and-mean-ape">
+       Conversion between mean KE and mean APE
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diabatic-source-term">
+       Diabatic source term
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#eddy-ape-budget">
+     Eddy APE budget
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-and-generation-terms">
+       Conversion and generation terms
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Summary
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diagram-of-the-lorenz-energy-cycle">
+   Diagram of the Lorenz energy cycle
+  </a>
  </li>
 </ul>
 
@@ -1287,12 +1361,12 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 <p>Since APE is proportional to temperature variance on pressure surfaces, we will need to look at the variance budget for temperature! For the physical constraints governing temperature variations, we make use of the <strong>thermodynamic equation</strong>, which we can write in pressure coordinates as</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial T}{\partial t} = -\vec{v} \cdot \nabla T - \omega \frac{T}{\theta} \frac{\partial \theta}{\partial p} + \frac{\dot{Q}}{c_p} \]</div>
-<p>The approach here is the use our generic expression for the variance budget of the mean, while multiplying the budget through by <span class="math notranslate nohighlight">\(\frac{\tilde{Gamma}}{\bar{T}}\)</span>.</p>
+<p>The approach here is the use our generic expression for the variance budget of the mean, while multiplying the budget through by <span class="math notranslate nohighlight">\(\frac{\tilde{\Gamma}}{\bar{T}}\)</span>.</p>
 <p>The result looks like</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{1}{2} \frac{\partial}{\partial t} \int \tilde{\Gamma} \frac{[T^{\prime 2}]}{\overline{T}} dm = &amp;+\int \frac{[v^*T^*]}{a} \frac{\partial}{\partial\phi} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) + \int [\omega^*T^*] \frac{\partial}{\partial p} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) \\
-&amp;-\int [T^\prime] \left[ \frac{\omega}{\bar{T}} \frac{T}{\theta} \frac{\partial \theta}{\partial p} \tilde{\Gamma} \right] + \int [T^\prime] \left[ \frac{\dot{Q}}{c_p} \frac{\tilde{\Gamma}}{\bar{T}} \right]
+\frac{1}{2} \frac{\partial}{\partial t} \int \tilde{\Gamma} \frac{[T^{\prime}]^2}{\overline{T}} dm = &amp;+\int \frac{[v^*T^*]}{a} \frac{\partial}{\partial\phi} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) + \int [\omega^*T^*] \frac{\partial}{\partial p} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) \\
+&amp;-\int [T^\prime] \left[ \frac{\omega}{\bar{T}} \frac{T}{\theta} \frac{\partial \theta}{\partial p} \tilde{\Gamma} \right] + \int [T^\prime] \left( \frac{\tilde{\Gamma}[\dot{Q}]}{c_p \bar{T}} \right)
 \end{align*}\]</div>
 <section id="conversion-from-eddy-to-mean-ape">
 <h4>Conversion from eddy to mean APE<a class="headerlink" href="#conversion-from-eddy-to-mean-ape" title="Permalink to this headline">#</a></h4>
@@ -1304,7 +1378,80 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 <p>[SKETCH]</p>
 <p>In this situation, the eddies are transporting heat DOWN the mean zonal temperature gradient.</p>
 </section>
+<section id="conversion-between-mean-ke-and-mean-ape">
+<h4>Conversion between mean KE and mean APE<a class="headerlink" href="#conversion-between-mean-ke-and-mean-ape" title="Permalink to this headline">#</a></h4>
+<p>In our mean KE budget, we previously identified a conversion term</p>
+<div class="math notranslate nohighlight">
+\[ C(A_M, K_M) = -\int [\omega] [\alpha] dm \]</div>
+<p>This ought to show up as an equal-and-opposite conversion <span class="math notranslate nohighlight">\(C(K_M, A_M)\)</span> in our mean APE budget. It’s actually hiding in the first term on the second line above:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+C(K_M, A_M) &amp;= -\int [T^\prime] \left[ \frac{\omega}{\bar{T}} \frac{T}{\theta} \frac{\partial \theta}{\partial p} \tilde{\Gamma} \right] \\
+&amp;= \int [\omega] [\alpha^\prime] dm 
+\end{align*}\]</div>
+<p><em>To see this, use the definition of <span class="math notranslate nohighlight">\(\tilde{\Gamma}\)</span> along with hydrostatic balance and the relationship between temperature and potential temperature <span class="math notranslate nohighlight">\(\frac{T}{\bar{T}} = \frac{\theta}{\bar{\theta}}\)</span> – details omitted here.</em></p>
 </section>
+<section id="diabatic-source-term">
+<h4>Diabatic source term<a class="headerlink" href="#diabatic-source-term" title="Permalink to this headline">#</a></h4>
+<p>The last term in our mean APE budget is a key <em>generation</em> or source term</p>
+<div class="math notranslate nohighlight">
+\[ G(A_M) = \int \frac{\tilde{\Gamma}[T^\prime] [\dot{Q}]}{c_p \bar{T}} dm \]</div>
+<p>which expresses the generation of mean APE via diabatic heating.</p>
+<p>APE is generated through heating of relative warm air (e.g. at low latitudes) and cooling of relatively cold air (e.g. at higher latitudes)</p>
+<p>[SKETCH]</p>
+<p>As we will see when we look at the numbers, this radiative heating process tends to <strong>increase the mean APE</strong> of the atmosphere by tilting isentropic surfaces.</p>
+</section>
+<section id="id9">
+<h4>Summary<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
+<p>We have written the mean APE budget as</p>
+<div class="math notranslate nohighlight">
+\[\frac{d A_M}{dt} = +C(A_E, A_M) - C(A_M, K_M) + G(A_M) \]</div>
+</section>
+</section>
+<section id="eddy-ape-budget">
+<h3>Eddy APE budget<a class="headerlink" href="#eddy-ape-budget" title="Permalink to this headline">#</a></h3>
+<p>Finally we can write a budget for the eddy component of the APE:</p>
+<div class="math notranslate nohighlight">
+\[ A_E = \frac{1}{2} \int \tilde{\Gamma} \frac{[T^{\prime*2}]}{\bar{T}} dm \]</div>
+<p>The approach is similar to what we’ve done so far. We can use the eddy component of the variance budget we wrote down above, along with some similar manipulations to get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2} \frac{\partial}{\partial t} \int \tilde{\Gamma} \frac{[T^{\prime * 2}]}{\overline{T}} dm = &amp;-\int \frac{[v^*T^*]}{a} \frac{\partial}{\partial\phi} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) - \int [\omega^*T^*] \frac{\partial}{\partial p} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) \\
+&amp;+\int [\alpha^{\prime*} \omega^*] + \int \frac{\tilde{\Gamma}[T^{\prime*} \dot{Q}^* ]}{c_p \bar{T}} 
+\end{align*}\]</div>
+<section id="conversion-and-generation-terms">
+<h4>Conversion and generation terms<a class="headerlink" href="#conversion-and-generation-terms" title="Permalink to this headline">#</a></h4>
+<p>We can identify the following</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+C(A_M, A_E) &amp;= -C(A_E, A_M) \\
+C(K_E, A_E) &amp;= -C(A_E, K_E) \\
+G(A_E) &amp;= \int \frac{\tilde{\Gamma}[T^{\prime*} \dot{Q}^* ]}{c_p \bar{T}} dm
+\end{align*}\]</div>
+<p>This last term is generation of eddy APE by heating of warm anomalies and cooling of cold anomalies.</p>
+<p>E.g. along a latitude circle:</p>
+<p>[SKETCH]</p>
+<p>which increases the east-west variance of temperature.</p>
+</section>
+<section id="id10">
+<h4>Summary<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
+<p>We have written the eddy APE budget as</p>
+<div class="math notranslate nohighlight">
+\[\frac{d A_E}{dt} = C(A_M, A_E) - C(A_E, K_E) + G(A_E) \]</div>
+</section>
+</section>
+</section>
+<section id="diagram-of-the-lorenz-energy-cycle">
+<h2>Diagram of the Lorenz energy cycle<a class="headerlink" href="#diagram-of-the-lorenz-energy-cycle" title="Permalink to this headline">#</a></h2>
+<p>Our four budget equations are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d A_M}{dt} &amp;= -C(A_M, A_E) - C(A_M, K_M) + G(A_M) \\
+\frac{d A_E}{dt} &amp;= +C(A_M, A_E) - C(A_E, K_E) + G(A_E) \\
+\frac{d K_M}{dt} &amp;= +C(K_E, K_M) + C(A_M, K_M) - D(K_M) \\
+\frac{d K_E}{dt} &amp;= -C(K_E, K_M) + C(A_E, K_E) - D(K_E) 
+\end{align*}\]</div>
+<p>where we have chosen the signs of the conversion terms to be consistent with the typical conversions that actually occur in the global average.</p>
 </section>
 </section>
 
