@@ -617,6 +617,18 @@ title="Print to PDF"
      </li>
     </ul>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mean-ape-budget-for-the-whole-atmosphere">
+     Mean APE budget for the whole atmosphere
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-from-eddy-to-mean-ape">
+       Conversion from eddy to mean APE
+      </a>
+     </li>
+    </ul>
+   </li>
   </ul>
  </li>
 </ul>
@@ -825,6 +837,18 @@ title="Print to PDF"
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#id8">
        Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mean-ape-budget-for-the-whole-atmosphere">
+     Mean APE budget for the whole atmosphere
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-from-eddy-to-mean-ape">
+       Conversion from eddy to mean APE
       </a>
      </li>
     </ul>
@@ -1038,8 +1062,9 @@ H &amp;= c_p \int_M T dM \\
 <li><p>mean available potential energy <span class="math notranslate nohighlight">\(A_M\)</span></p></li>
 <li><p>eddy available potential energy <span class="math notranslate nohighlight">\(A_E\)</span></p></li>
 </ul>
-<p>For this purpose, “eddy” here is going to mean deviations from the zonal mean, i.e. we’ll decompose scalars like
-$<span class="math notranslate nohighlight">\( B = [B] + B^* \)</span>$</p>
+<p>For this purpose, “eddy” here is going to mean deviations from the zonal mean, i.e. we’ll decompose scalars like</p>
+<div class="math notranslate nohighlight">
+\[ B = [B] + B^* \]</div>
 <p>So the kinetic energy will be decomposed like</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1251,6 +1276,33 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 <p>The budget for eddy KE looks like</p>
 <div class="math notranslate nohighlight">
 \[\frac{1}{2} \frac{\partial}{\partial t} \int_M \left( [u^{*2}] + [v^{*2}] \right) dm = -C(K_E, K_M) + C(A_E, K_E) - D(K_E) \]</div>
+</section>
+</section>
+<section id="mean-ape-budget-for-the-whole-atmosphere">
+<h3>Mean APE budget for the whole atmosphere<a class="headerlink" href="#mean-ape-budget-for-the-whole-atmosphere" title="Permalink to this headline">#</a></h3>
+<p>From our (hard) work above, we can write the mean Available Potential Energy for the entire atmosphere as</p>
+<div class="math notranslate nohighlight">
+\[A_M = \frac{1}{2} \int \tilde{\Gamma} \frac{[T^{\prime 2}]}{\overline{T}} dm \]</div>
+<p>where, as a reminder, the bar and prime refer to averages on pressures surfaces, and <span class="math notranslate nohighlight">\(\tilde{\Gamma}\)</span> is the inverse static stability parameter in pressure coordinates.</p>
+<p>Since APE is proportional to temperature variance on pressure surfaces, we will need to look at the variance budget for temperature! For the physical constraints governing temperature variations, we make use of the <strong>thermodynamic equation</strong>, which we can write in pressure coordinates as</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial T}{\partial t} = -\vec{v} \cdot \nabla T - \omega \frac{T}{\theta} \frac{\partial \theta}{\partial p} + \frac{\dot{Q}}{c_p} \]</div>
+<p>The approach here is the use our generic expression for the variance budget of the mean, while multiplying the budget through by <span class="math notranslate nohighlight">\(\frac{\tilde{Gamma}}{\bar{T}}\)</span>.</p>
+<p>The result looks like</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2} \frac{\partial}{\partial t} \int \tilde{\Gamma} \frac{[T^{\prime 2}]}{\overline{T}} dm = &amp;+\int \frac{[v^*T^*]}{a} \frac{\partial}{\partial\phi} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) + \int [\omega^*T^*] \frac{\partial}{\partial p} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) \\
+&amp;-\int [T^\prime] \left[ \frac{\omega}{\bar{T}} \frac{T}{\theta} \frac{\partial \theta}{\partial p} \tilde{\Gamma} \right] + \int [T^\prime] \left[ \frac{\dot{Q}}{c_p} \frac{\tilde{\Gamma}}{\bar{T}} \right]
+\end{align*}\]</div>
+<section id="conversion-from-eddy-to-mean-ape">
+<h4>Conversion from eddy to mean APE<a class="headerlink" href="#conversion-from-eddy-to-mean-ape" title="Permalink to this headline">#</a></h4>
+<p>The eddy-to-mean conversion term here is</p>
+<div class="math notranslate nohighlight">
+\[ C(A_E, A_M) = \int \frac{[v^*T^*]}{a} \frac{\partial}{\partial\phi} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) + \int [\omega^*T^*] \frac{\partial}{\partial p} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right)\]</div>
+<p>This looks a little complicated, but we can interpret this in terms of the correlation between eddy heat flux and mean temperature gradients.</p>
+<p>E.g. For the first term, mean APE is converted to eddy APE when the mean north-south temperature gradient is perturbed by eddies to produce warm and cold sectors along a latitude circle</p>
+<p>[SKETCH]</p>
+<p>In this situation, the eddies are transporting heat DOWN the mean zonal temperature gradient.</p>
 </section>
 </section>
 </section>
