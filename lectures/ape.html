@@ -545,10 +545,15 @@ title="Print to PDF"
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#kinetic-energy-equations">
-     Kinetic energy equations
+    <a class="reference internal nav-link" href="#mean-kinetic-energy-budget">
+     Mean kinetic energy budget
     </a>
     <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#zonal-mean-ke-budget-and-conversion-terms">
+       Zonal mean KE budget and conversion terms
+      </a>
+     </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#conversion-from-mean-ape-to-mean-ke">
        Conversion from mean APE to mean KE
@@ -566,6 +571,16 @@ title="Print to PDF"
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#conversion-between-eddy-and-mean-ke">
        Conversion between eddy and mean KE
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#frictional-sink">
+       Frictional sink
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#summary">
+       Summary
       </a>
      </li>
     </ul>
@@ -710,10 +725,15 @@ title="Print to PDF"
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#kinetic-energy-equations">
-     Kinetic energy equations
+    <a class="reference internal nav-link" href="#mean-kinetic-energy-budget">
+     Mean kinetic energy budget
     </a>
     <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#zonal-mean-ke-budget-and-conversion-terms">
+       Zonal mean KE budget and conversion terms
+      </a>
+     </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#conversion-from-mean-ape-to-mean-ke">
        Conversion from mean APE to mean KE
@@ -731,6 +751,16 @@ title="Print to PDF"
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#conversion-between-eddy-and-mean-ke">
        Conversion between eddy and mean KE
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#frictional-sink">
+       Frictional sink
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#summary">
+       Summary
       </a>
      </li>
     </ul>
@@ -1019,8 +1049,8 @@ K &amp;= K_M + K_E \\
 </ol>
 </section>
 </section>
-<section id="kinetic-energy-equations">
-<h3>Kinetic energy equations<a class="headerlink" href="#kinetic-energy-equations" title="Permalink to this headline">#</a></h3>
+<section id="mean-kinetic-energy-budget">
+<h3>Mean kinetic energy budget<a class="headerlink" href="#mean-kinetic-energy-budget" title="Permalink to this headline">#</a></h3>
 <p>We can straightaway apply the above variance equations since kinetic energy is the sum of the variance of the velocity components <span class="math notranslate nohighlight">\(u, v\)</span>.</p>
 <p>Horizontal momentum equations look like</p>
 <div class="amsmath math notranslate nohighlight">
@@ -1029,6 +1059,8 @@ K &amp;= K_M + K_E \\
 \frac{\partial v}{\partial t} &amp;= -\nabla \cdot (\vec{v} v) - fu -\frac{g}{a} \frac{\partial z}{\partial \phi} + F_v 
 \end{align*}\]</div>
 <p>where the terms on the RHS aside from the flux divergence represent our local sources/sinks <span class="math notranslate nohighlight">\(\dot{u}, \dot{v}\)</span> (including Coriolis forces, pressure gradient forces, and friction)</p>
+<section id="zonal-mean-ke-budget-and-conversion-terms">
+<h4>Zonal mean KE budget and conversion terms<a class="headerlink" href="#zonal-mean-ke-budget-and-conversion-terms" title="Permalink to this headline">#</a></h4>
 <p>Let’s use the variance budgets expressions above to write down a budget for the <em>zonal mean kinetic energy</em> for the whole atmosphere.</p>
 <p>Since we’re integrating over the whole atmosphere, the boundary terms vanish.  The budget becomes</p>
 <div class="amsmath math notranslate nohighlight">
@@ -1038,8 +1070,9 @@ K &amp;= K_M + K_E \\
 &amp;+ \int \frac{[v^{*2}]}{a} \frac{\partial}{\partial \phi} [v] + \int [\omega^* v^*] \frac{\partial}{\partial p} [v] \\
 &amp;-\int f[v][u] - \int \frac{g [v]}{a} \frac{\partial [z]}{\partial \phi} + \int [v][F_v]
 \end{align*}\]</div>
-<p>We’ve already seen some of this when we were writing out total energy budgets for the atmosphere. Notice that the Coriolis terms cancel out, as they must (the apparent force does no work).</p>
+<p>We’ve already seen some of this when we were writing out total energy budgets for the atmosphere. Notice that the <strong>Coriolis terms cancel out</strong>, as they must (the apparent force does no work).</p>
 <p>We will also neglect the mountain term here, assuming it is small compared the meridional geopotential height gradient.</p>
+</section>
 <section id="conversion-from-mean-ape-to-mean-ke">
 <h4>Conversion from mean APE to mean KE<a class="headerlink" href="#conversion-from-mean-ape-to-mean-ke" title="Permalink to this headline">#</a></h4>
 <p>One of the terms on the RHS side above we are going to a-priori call the <strong>conversion from mean APE to mean KE</strong>:</p>
@@ -1081,6 +1114,30 @@ C(A_M, K_M) &amp;= - \int \frac{g}{a \cos\phi} \frac{\partial}{\partial \phi} \l
 </section>
 <section id="conversion-between-eddy-and-mean-ke">
 <h4>Conversion between eddy and mean KE<a class="headerlink" href="#conversion-between-eddy-and-mean-ke" title="Permalink to this headline">#</a></h4>
+<p>We can write the conversion FROM eddy KE TO mean KE as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] + \int [\omega^* u^*] \frac{\partial}{\partial p} [u] \\
+&amp;+ \int \frac{[v^{*2}]}{a} \frac{\partial}{\partial \phi} [v] + \int [\omega^* v^*] \frac{\partial}{\partial p} [v] 
+\end{align*}\]</div>
+<p>These are relationships between the <em>shear</em> of the mean flow and the <em>tilt</em> of the eddies.</p>
+<p>E.g. a zonal jet and eddies with a tilt in the horizontal plane</p>
+<p>[SKETCH]</p>
+<p>The eddy momentum transport here is <em>up the mean gradient</em>, leading to an increase in the mean KE.</p>
+</section>
+<section id="frictional-sink">
+<h4>Frictional sink<a class="headerlink" href="#frictional-sink" title="Permalink to this headline">#</a></h4>
+<p>The last term in our mean KE budget is the destruction of mean KE by friction:</p>
+<div class="math notranslate nohighlight">
+\[ D(K_M) = \int \left( [u][F_u] + [v][F_v] \right) dm \]</div>
+<p>which is clearly <em>positive</em> if the frictional forces act the opposite direction to the velocity vector.</p>
+</section>
+<section id="summary">
+<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h4>
+<p>We have written the mean KE budget as</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{2} \frac{\partial}{\partial t} \int_M \left( [u]^2 + [v]^2 \right) dm = C(K_E, K_M) + C(A_M, K_M) - D(K_M) \]</div>
+<p>and worked out both mathematical forms and physical interpretations of the various RHS terms.</p>
 </section>
 </section>
 </section>
