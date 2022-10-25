@@ -585,6 +585,38 @@ title="Print to PDF"
      </li>
     </ul>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#eddy-kinetic-energy-budget">
+     Eddy kinetic energy budget
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Conversion between eddy and mean KE
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-between-eddy-ape-and-eddy-ke">
+       Conversion between eddy APE and eddy KE
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interpretation-in-terms-of-vertical-motion">
+       Interpretation in terms of vertical motion
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#frictional-sink-eddies">
+       Frictional sink: eddies
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
   </ul>
  </li>
 </ul>
@@ -760,6 +792,38 @@ title="Print to PDF"
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#summary">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#eddy-kinetic-energy-budget">
+     Eddy kinetic energy budget
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Conversion between eddy and mean KE
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-between-eddy-ape-and-eddy-ke">
+       Conversion between eddy APE and eddy KE
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interpretation-in-terms-of-vertical-motion">
+       Interpretation in terms of vertical motion
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#frictional-sink-eddies">
+       Frictional sink: eddies
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
        Summary
       </a>
      </li>
@@ -1138,6 +1202,55 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 <div class="math notranslate nohighlight">
 \[ \frac{1}{2} \frac{\partial}{\partial t} \int_M \left( [u]^2 + [v]^2 \right) dm = C(K_E, K_M) + C(A_M, K_M) - D(K_M) \]</div>
 <p>and worked out both mathematical forms and physical interpretations of the various RHS terms.</p>
+</section>
+</section>
+<section id="eddy-kinetic-energy-budget">
+<h3>Eddy kinetic energy budget<a class="headerlink" href="#eddy-kinetic-energy-budget" title="Permalink to this headline">#</a></h3>
+<p>Applying the formula above for the eddy component of the variance budget gives the following budget for eddy KE (for the entire atmosphere – boundary fluxes must vanish again):</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2} \frac{\partial}{\partial t} \int_M \left( [u^{*2}] + [v^{*2}] \right) dm = &amp;-\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] - \int [\omega^* u^*] \frac{\partial}{\partial p} [u] \\
+&amp;+\int f[u^* v^*] - \int \frac{g }{a \cos\phi} \left[u^* \frac{\partial z^*}{\partial \lambda}\right] + \int [u^* F_u^*] \\
+&amp;- \int \frac{[v^{*2}]}{a} \frac{\partial}{\partial \phi} [v] - \int [\omega^* v^*] \frac{\partial}{\partial p} [v] \\
+&amp;-\int f[v^*u^*] - \int \frac{g}{a} \left[ v^* \frac{\partial z^*}{\partial \phi} \right] + \int [v^* F_v^*]
+\end{align*}\]</div>
+<p>and the Coriolis terms cancel out again, as they must.</p>
+<section id="id7">
+<h4>Conversion between eddy and mean KE<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h4>
+<p>We can see some equal-and-opposite conversion terms here between eddy and mean KE, i.e.,</p>
+<div class="math notranslate nohighlight">
+\[ C(K_M, K_E) = -C(K_E, K_M) \]</div>
+</section>
+<section id="conversion-between-eddy-ape-and-eddy-ke">
+<h4>Conversion between eddy APE and eddy KE<a class="headerlink" href="#conversion-between-eddy-ape-and-eddy-ke" title="Permalink to this headline">#</a></h4>
+<p>The new conversion term appearing in this budget is</p>
+<div class="math notranslate nohighlight">
+\[ C(A_E, K_E) = - \int \left( \frac{g }{a \cos\phi} \left[u^* \frac{\partial z^*}{\partial \lambda}\right] + \frac{g}{a} \left[ v^* \frac{\partial z^*}{\partial \phi} \right]   \right)dm\]</div>
+<p>or in more compact vector form,</p>
+<div class="math notranslate nohighlight">
+\[ C(A_E, K_E) = -\int g \left( \vec{v^*} \cdot \nabla z^* \right) dm \]</div>
+<p>which says that conversion FROM eddy potential energy TO eddy kinetic energy occurs when eddy velocities are anticorrelated with pressure gradient anomalies.</p>
+<p>E.g. a sketch of eddy flow along a latitude circle [SKETCH]</p>
+<p>Another way of saying this is that <strong>eddy flow that has an ageostrophic component down the pressure gradient</strong> generates eddy KE.</p>
+</section>
+<section id="interpretation-in-terms-of-vertical-motion">
+<h4>Interpretation in terms of vertical motion<a class="headerlink" href="#interpretation-in-terms-of-vertical-motion" title="Permalink to this headline">#</a></h4>
+<p>As was the case for the mean conversion term <span class="math notranslate nohighlight">\(C(A_M, K_M)\)</span>, we can rewrite this using continuity and hydrostatic balance as a statement about eddy vertical motions:</p>
+<div class="math notranslate nohighlight">
+\[ C(A_E, K_E) = -\int [\omega^* \alpha^*] dm \]</div>
+<p>which says that eddy KE is created when less-dense air rises and more-dense air sinks along a latitude circle. [SKETCH]</p>
+</section>
+<section id="frictional-sink-eddies">
+<h4>Frictional sink: eddies<a class="headerlink" href="#frictional-sink-eddies" title="Permalink to this headline">#</a></h4>
+<p>The sink term is just</p>
+<div class="math notranslate nohighlight">
+\[ D(K_E) = \int  \left( [u^* F_u^*] + \int [v^* F_v^*] \right) dm \]</div>
+</section>
+<section id="id8">
+<h4>Summary<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h4>
+<p>The budget for eddy KE looks like</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2} \frac{\partial}{\partial t} \int_M \left( [u^{*2}] + [v^{*2}] \right) dm = -C(K_E, K_M) + C(A_E, K_E) - D(K_E) \]</div>
 </section>
 </section>
 </section>
