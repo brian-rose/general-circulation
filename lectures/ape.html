@@ -554,6 +554,20 @@ title="Print to PDF"
        Conversion from mean APE to mean KE
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#converstion-from-mean-ape-to-mean-ke-is-thermally-direct-overturning">
+       Converstion from mean APE to mean KE is
+       <em>
+        Thermally Direct
+       </em>
+       overturning
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-between-eddy-and-mean-ke">
+       Conversion between eddy and mean KE
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -705,6 +719,20 @@ title="Print to PDF"
        Conversion from mean APE to mean KE
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#converstion-from-mean-ape-to-mean-ke-is-thermally-direct-overturning">
+       Converstion from mean APE to mean KE is
+       <em>
+        Thermally Direct
+       </em>
+       overturning
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversion-between-eddy-and-mean-ke">
+       Conversion between eddy and mean KE
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -850,15 +878,20 @@ H &amp;= c_p \int_M T dM \\
 </section>
 <section id="expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces">
 <h4>Expressing <span class="math notranslate nohighlight">\(A\)</span> as a variance of pressure on isentropic surfaces<a class="headerlink" href="#expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces" title="Permalink to this headline">#</a></h4>
-<p>The above expression is accurate but unwieldy. Following <span id="id5">Lorenz [<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">1955</a>]</span>, we can decompose $<span class="math notranslate nohighlight">\( p(\theta) = \overline{p}^\theta + p^\prime(\theta) \)</span><span class="math notranslate nohighlight">\(
-where \)</span>p^\prime(\theta)$ is departures from the average value on isentropic surfaces.</p>
-<p>Then we can express the power <span class="math notranslate nohighlight">\(p^{(1+\kappa)}\)</span> (which appears in the above formula for <span class="math notranslate nohighlight">\(A\)</span>) as
-$<span class="math notranslate nohighlight">\( p^{1+\kappa}(\theta) = (\overline{p}^\theta)^{1+\kappa} \left[ 1 + \frac{p^\prime(\theta)}{\overline{p}^\theta}\right]^{1+\kappa} \)</span><span class="math notranslate nohighlight">\(
-and use the binomial theorem to write this as a series expansion like
-\)</span><span class="math notranslate nohighlight">\( p^{1+\kappa}(\theta) = (\overline{p}^\theta)^{1+\kappa} \left\{ 1 + (1+\kappa) \frac{p^\prime(\theta)}{\overline{p}^\theta} + \frac{\kappa (1+\kappa)}{2!} \left[ \frac{p^\prime(\theta)}{\overline{p}^\theta} \right]^2 + \ldots \right\} \)</span>$</p>
-<p>If we now take the average on isentropic surfaces, and truncate the expansion at the 2nd order, we get Lorenz’s expression
-$<span class="math notranslate nohighlight">\( \overline{p^{1+\kappa}(\theta)} \approx (\overline{p}^\theta)^{1+\kappa} \left\{ 1 + \frac{\kappa (1+\kappa)}{2!} \overline{\left[ \frac{p^\prime(\theta)}{\overline{p}^\theta} \right]^2 } \right\} \)</span><span class="math notranslate nohighlight">\(
-making use of the fact that \)</span>\overline{p^\prime(\theta)} = 0$ (since the prime means deviation away from that mean!)</p>
+<p>The above expression is accurate but unwieldy. Following <span id="id5">Lorenz [<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">1955</a>]</span>, we can decompose</p>
+<div class="math notranslate nohighlight">
+\[ p(\theta) = \overline{p}^\theta + p^\prime(\theta) \]</div>
+<p>where <span class="math notranslate nohighlight">\(p^\prime(\theta)\)</span> is departures from the average value on isentropic surfaces.</p>
+<p>Then we can express the power <span class="math notranslate nohighlight">\(p^{(1+\kappa)}\)</span> (which appears in the above formula for <span class="math notranslate nohighlight">\(A\)</span>) as</p>
+<div class="math notranslate nohighlight">
+\[ p^{1+\kappa}(\theta) = (\overline{p}^\theta)^{1+\kappa} \left[ 1 + \frac{p^\prime(\theta)}{\overline{p}^\theta}\right]^{1+\kappa} \]</div>
+<p>and use the binomial theorem to write this as a series expansion like</p>
+<div class="math notranslate nohighlight">
+\[ p^{1+\kappa}(\theta) = (\overline{p}^\theta)^{1+\kappa} \left\{ 1 + (1+\kappa) \frac{p^\prime(\theta)}{\overline{p}^\theta} + \frac{\kappa (1+\kappa)}{2!} \left[ \frac{p^\prime(\theta)}{\overline{p}^\theta} \right]^2 + \ldots \right\} \]</div>
+<p>If we now take the average on isentropic surfaces, and truncate the expansion at the 2nd order, we get Lorenz’s expression</p>
+<div class="math notranslate nohighlight">
+\[ \overline{p^{1+\kappa}(\theta)} \approx (\overline{p}^\theta)^{1+\kappa} \left\{ 1 + \frac{\kappa (1+\kappa)}{2!} \overline{\left[ \frac{p^\prime(\theta)}{\overline{p}^\theta} \right]^2 } \right\} \]</div>
+<p>making use of the fact that <span class="math notranslate nohighlight">\(\overline{p^\prime(\theta)} = 0\)</span> (since the prime means deviation away from that mean!)</p>
 <p>The idea here is that we can substitute this expression into the integral above for <span class="math notranslate nohighlight">\(A\)</span>, since we have are integrating <span class="math notranslate nohighlight">\(p^{1+\kappa}\)</span> over all <span class="math notranslate nohighlight">\(\theta\)</span> – we replace the integrand with its mean value.</p>
 <p>Substituting in and canceling terms gives us</p>
 <div class="math notranslate nohighlight">
@@ -935,9 +968,10 @@ K &amp;= K_M + K_E \\
 <div class="math notranslate nohighlight">
 \[ [B] \frac{\partial [B]}{\partial t} = -\frac{[B]}{a \cos \phi} \frac{\partial}{\partial \phi} \left( [vB] \cos\phi \right) -[B] \frac{\partial}{\partial p} [\omega B] + [B] \dot{B} \]</div>
 <p>Rerranging the LHS, we now have a budget for the variance of the mean, <span class="math notranslate nohighlight">\(\frac{1}{2}\frac{\partial [B]^2}{\partial t}\)</span>.</p>
-<p>Now split the fluxes <span class="math notranslate nohighlight">\([vB], [\omega B]\)</span> into mean and eddy components, and use mass continuity
-$<span class="math notranslate nohighlight">\( \nabla \cdot \vec{v} = 0 \)</span>$
-(in the pressure coordinate form) to rewrite the budget as</p>
+<p>Now split the fluxes <span class="math notranslate nohighlight">\([vB], [\omega B]\)</span> into mean and eddy components, and use mass continuity</p>
+<div class="math notranslate nohighlight">
+\[ \nabla \cdot \vec{v} = 0 \]</div>
+<p>(in the pressure coordinate form) to rewrite the budget as</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{1}{2} \frac{\partial [B]^2 }{\partial t} = &amp;-\frac{1}{2 a \cos\phi} \frac{\partial}{\partial \phi} \left( [v][B]^2 \cos\phi \right) -\frac{1}{2} \frac{\partial}{\partial p} \left( [\omega][B]^2 \right) \\
@@ -1011,9 +1045,42 @@ $<span class="math notranslate nohighlight">\( \nabla \cdot \vec{v} = 0 \)</span
 <p>One of the terms on the RHS side above we are going to a-priori call the <strong>conversion from mean APE to mean KE</strong>:</p>
 <div class="math notranslate nohighlight">
 \[ C(A_M, K_M) = - \int \frac{g [v]}{a} \frac{\partial [z]}{\partial \phi} dm \]</div>
-<p>with the mass element
-$<span class="math notranslate nohighlight">\( dm = \frac{a^2 \cos\phi}{g} d\phi d\lambda dp \)</span>$</p>
+<p>with the mass element</p>
+<div class="math notranslate nohighlight">
+\[ dm = \frac{a^2 \cos\phi}{g} d\phi d\lambda dp \]</div>
 <p>This term represents conversion of mean APE to mean KE by cross-isobaric flow down the north-south geopotential or pressure gradient.</p>
+</section>
+<section id="converstion-from-mean-ape-to-mean-ke-is-thermally-direct-overturning">
+<h4>Converstion from mean APE to mean KE is <em>Thermally Direct</em> overturning<a class="headerlink" href="#converstion-from-mean-ape-to-mean-ke-is-thermally-direct-overturning" title="Permalink to this headline">#</a></h4>
+<p>There is another, possibly more physically intuitive way of writing this same term as a weighted integral of vertical motion. To get there, we need some integration by parts and conservation of mass.</p>
+<p>Since by the product rule</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{\cos\phi} \frac{\partial}{\partial \phi} \left( [v][z] \cos \phi \right) = [v] \frac{\partial [z]}{\partial \phi}  + \frac{[z]}{\cos\phi} \frac{\partial}{\partial \phi} \left( [v]\cos \phi \right) \]</div>
+<p>then we can write the integral as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+C(A_M, K_M) &amp;= - \int \frac{g}{a \cos\phi} \frac{\partial}{\partial \phi} \left([v][z]\cos\phi \right) dm + \int \frac{g [z]}{a \cos\phi} \frac{\partial}{\partial \phi} \left( [v] \cos\phi \right) dm
+\end{align*}\]</div>
+<p>and the first term on the RHS drops out. [WHY? <em>(think about boundary conditions)</em>]</p>
+<p>Now using the zonal continuity equation</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{a \cos\phi} \frac{\partial}{\partial \phi} \left( [v] \cos\phi \right) + \frac{\partial}{\partial p} [\omega] = 0 \]</div>
+<p>we can rewrite our conversion term as</p>
+<div class="math notranslate nohighlight">
+\[ C(A_M, K_M) = -\int g [z] \frac{\partial [\omega] }{\partial \phi} dm \]</div>
+<p>One more round of integration by parts (and cancellation of another boundary term) yields</p>
+<div class="math notranslate nohighlight">
+\[ C(A_M, K_M) = \int g [\omega] \frac{\partial [z] }{\partial \phi} dm \]</div>
+<p>Finally, we make use of hydrostatic balance</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial [z]}{\partial p} = -\frac{[\alpha]}{g} \]</div>
+<p>to write the conversion as</p>
+<div class="math notranslate nohighlight">
+\[ C(A_M, K_M) = -\int [\omega] [\alpha] dm \]</div>
+<p>This says that there is conversion FROM mean APE TO mean KE when / wherever light air (high specific volume) rises and heavy air (low specific volume) sinks in symmetric meridional overturning circulations that are so-called <strong>THERMALLY DIRECT</strong>.</p>
+</section>
+<section id="conversion-between-eddy-and-mean-ke">
+<h4>Conversion between eddy and mean KE<a class="headerlink" href="#conversion-between-eddy-and-mean-ke" title="Permalink to this headline">#</a></h4>
 </section>
 </section>
 </section>
