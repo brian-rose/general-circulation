@@ -668,6 +668,35 @@ title="Print to PDF"
    Diagram of the Lorenz energy cycle
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computing-terms-in-the-lorenz-energy-cycle">
+   Computing terms in the Lorenz energy cycle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recap-of-formulas">
+     Recap of formulas
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#amounts">
+       Amounts
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversions">
+       Conversions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#other-definitions">
+       Other definitions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </nav>
@@ -928,6 +957,35 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#diagram-of-the-lorenz-energy-cycle">
    Diagram of the Lorenz energy cycle
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computing-terms-in-the-lorenz-energy-cycle">
+   Computing terms in the Lorenz energy cycle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recap-of-formulas">
+     Recap of formulas
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#amounts">
+       Amounts
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conversions">
+       Conversions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#other-definitions">
+       Other definitions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -1459,6 +1517,42 @@ G(A_E) &amp;= \int \frac{\tilde{\Gamma}[T^{\prime*} \dot{Q}^* ]}{c_p \bar{T}} dm
 <p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">Source: <span id="id12">Marques <em>et al.</em> [<a class="reference internal" href="../info/references.html#id11" title="Carlos A. F. Marques, Alfredo Rocha, João Corte-Real, José M. Castanheira, Juan Ferreira, and Paulo Melo-Gonçalves. Global atmospheric energetics from ncep-reanalysis 2 and ecmwf-era40 reanalysis. Int. J. Climatol., 2008. doi:10.1002/joc.1704.">2008</a>]</span></span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+<section id="computing-terms-in-the-lorenz-energy-cycle">
+<h2>Computing terms in the Lorenz energy cycle<a class="headerlink" href="#computing-terms-in-the-lorenz-energy-cycle" title="Permalink to this headline">#</a></h2>
+<section id="recap-of-formulas">
+<h3>Recap of formulas<a class="headerlink" href="#recap-of-formulas" title="Permalink to this headline">#</a></h3>
+<section id="amounts">
+<h4>Amounts<a class="headerlink" href="#amounts" title="Permalink to this headline">#</a></h4>
+<p>Our four budget quantities are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K_M &amp;=  \frac{1}{2} \int_M ([u]^2 + [v]^2) dm   \\
+K_E &amp;= \frac{1}{2} \int_M ([u^{*2}] + [v^{*2}]) dm \\
+A_M &amp;= \frac{1}{2} \int \tilde{\Gamma} \frac{[T^{\prime 2}]}{\overline{T}} dm \\
+A_E &amp;= \frac{1}{2} \int \tilde{\Gamma} \frac{[T^{\prime*2}]}{\bar{T}} dm 
+\end{align*}\]</div>
+</section>
+<section id="conversions">
+<h4>Conversions<a class="headerlink" href="#conversions" title="Permalink to this headline">#</a></h4>
+<p>The four conversion terms are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+C(A_M, K_M) &amp;= -\int [\omega] [\alpha] dm \\
+C(A_E, K_E) &amp;= -\int [\omega^* \alpha^*] dm \\
+C(A_M, A_E) &amp;= -\int \frac{[v^*T^*]}{a} \frac{\partial}{\partial\phi} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) - \int [\omega^*T^*] \frac{\partial}{\partial p} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) \\
+C(K_E, K_M) &amp;= +\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] + \int [\omega^* u^*] \frac{\partial}{\partial p} [u] \\
+&amp;+ \int \frac{[v^{*2}]}{a} \frac{\partial}{\partial \phi} [v] + \int [\omega^* v^*] \frac{\partial}{\partial p} [v] 
+\end{align*}\]</div>
+</section>
+<section id="other-definitions">
+<h4>Other definitions<a class="headerlink" href="#other-definitions" title="Permalink to this headline">#</a></h4>
+<p>The inverse static stability parameter appearing in our APE formulas is</p>
+<div class="math notranslate nohighlight">
+\[ \tilde{\Gamma} \equiv -\frac{R \theta}{p} \left( \frac{\partial \theta}{\partial p} \right)^{-1} \]</div>
+<p>and recall that we defined <span class="math notranslate nohighlight">\(\overline{T}\)</span> as the global mean temperature on pressure surfaces, while <span class="math notranslate nohighlight">\(T^\prime\)</span> is the local deviation from this global mean.</p>
+</section>
+</section>
 </section>
 </section>
 
