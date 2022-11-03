@@ -19,6 +19,7 @@ parts:
     - file: lectures/angular-momentum-budget
     - file: lectures/energy-budget
     - file: lectures/ape
+    - file: lectures/hadley
   - caption: Assignments and labs
     numbered: 1
     chapters:
