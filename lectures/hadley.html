@@ -458,6 +458,18 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#frictional-solution-pure-radiative-convective-equilibrium">
+   Frictional solution: pure radiative-convective equilibrium
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solving-for-the-zonal-wind-profile">
+     Solving for the zonal wind profile
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </nav>
@@ -504,6 +516,18 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#frictional-solution-pure-radiative-convective-equilibrium">
+   Frictional solution: pure radiative-convective equilibrium
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solving-for-the-zonal-wind-profile">
+     Solving for the zonal wind profile
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
                         </nav>
@@ -540,7 +564,7 @@ title="Print to PDF"
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \text{Momentum:} &amp; &amp; \nabla\cdot (\vec{v} u) - \left( f + \frac{u \tan\phi}{a} \right) v &amp;= \frac{\partial}{\partial z} \left( \nu \frac{\partial u}{\partial z} \right) \\
-&amp;&amp; (\vec{v} v) + \left( f + \frac{u \tan\phi}{a} \right) u &amp;= -\frac{1}{a}\frac{\partial \Phi}{\partial \phi} + \frac{\partial}{\partial z} \left( \nu \frac{\partial v}{\partial z} \right) \\
+&amp; &amp; (\vec{v} v) + \left( f + \frac{u \tan\phi}{a} \right) u &amp;= -\frac{1}{a}\frac{\partial \Phi}{\partial \phi} + \frac{\partial}{\partial z} \left( \nu \frac{\partial v}{\partial z} \right) \\
 \text{Continuity} &amp; &amp; \nabla \cdot \vec{v} &amp;= 0 \\
 \text{Thermodynamic} &amp; &amp; \nabla \cdot ( \vec{v} \theta ) &amp;= \frac{\partial}{\partial z} \left( \nu \frac{\partial \theta}{\partial z} \right) - \frac{(\theta-\theta_{eq})}{\tau} \\
 \text{Hydrostatic} &amp; &amp; \frac{\partial \Phi}{\partial z} &amp;= g \frac{\theta}{\theta_0} 
@@ -553,7 +577,7 @@ title="Print to PDF"
 </section>
 <section id="the-radiative-convective-equilibrium-temperature-profile">
 <h3>The radiative-convective equilibrium temperature profile<a class="headerlink" href="#the-radiative-convective-equilibrium-temperature-profile" title="Permalink to this headline">#</a></h3>
-<p>Following <a href="#id2"><span class="problematic" id="id3">:citet:`Held:1980hu`</span></a>, we define our equilibrium temperature like this</p>
+<p>Following <span id="id2">Held and Hou [<a class="reference internal" href="../info/references.html#id12" title="Isaac M. Held and Arthur Y. Hou. Nonlinear axially symmetric circulations in a nearly inviscid atmosphere. J. Atmos. Sci., 37:515–533, March 1980. doi:10.1175/1520-0469(1980)037&lt;0515:NASCIA&gt;2.0.CO;2.">1980</a>]</span>, we define our equilibrium temperature like this</p>
 <div class="math notranslate nohighlight">
 \[ \theta_{eq} = \theta_0 \left[ 1 - \Delta_H \sin^2\phi + \Delta_V \left( \frac{z}{H} - \frac{1}{2} \right) \right] \]</div>
 <p>where we take</p>
@@ -565,6 +589,63 @@ title="Print to PDF"
 </section>
 <section id="boundary-conditions">
 <h3>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">#</a></h3>
+<p>At the tropopause <span class="math notranslate nohighlight">\(z=H\)</span> we apply <em>no-flow</em> and <em>free-slip</em> conditions:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+w(H) &amp;= 0 \\
+\frac{\partial \theta}{\partial z}\Big|_{z=H} &amp;= 0 \\
+\frac{\partial u}{\partial z}\Big|_{z=H} &amp; = 0 \\
+\frac{\partial v}{\partial z}\Big|_{z=H} &amp; = 0 
+\end{align*}\]</div>
+<p>At the surface, we apply <em>no-flow</em> and a simple Rayleigh drag condition:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+w(0) &amp;= 0 \\
+\frac{\partial \theta}{\partial z}\Big|_{z=0} &amp;= 0 \\
+\nu\frac{\partial u}{\partial z}\Big|_{z=0} &amp; = c u \\
+\nu\frac{\partial v}{\partial z}\Big|_{z=0} &amp; = c v 
+\end{align*}\]</div>
+<p>Finally, we impose <em>interhemispheric symmetry</em> – no cross-equatorial flow:</p>
+<div class="math notranslate nohighlight">
+\[ v = 0  \]</div>
+<p>at <span class="math notranslate nohighlight">\(\phi = 0\)</span>.</p>
+</section>
+</section>
+<section id="frictional-solution-pure-radiative-convective-equilibrium">
+<h2>Frictional solution: pure radiative-convective equilibrium<a class="headerlink" href="#frictional-solution-pure-radiative-convective-equilibrium" title="Permalink to this headline">#</a></h2>
+<p>First, let’s look at the case of a purely frictionless / non-turbulent flow where</p>
+<div class="math notranslate nohighlight">
+\[\nu = 0\]</div>
+<p>A solution to the governing equations exists for which the flow is purely zonal with no overturning:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+u &amp;= u_{eq} \\
+v &amp;= 0 \\
+w &amp;= 0
+\end{align*}\]</div>
+<p>In such a case, the thermodynamic equation tells us that</p>
+<div class="math notranslate nohighlight">
+\[ \theta = \theta_{eq} \]</div>
+<p>everywhere, i.e. the atmosphere is in a state of radiative-convective equilibrium.</p>
+<section id="solving-for-the-zonal-wind-profile">
+<h3>Solving for the zonal wind profile<a class="headerlink" href="#solving-for-the-zonal-wind-profile" title="Permalink to this headline">#</a></h3>
+<p>We would like to see what this model predicts for the vertical and meridional profile of the zonal wind <span class="math notranslate nohighlight">\(u_{eq}\)</span> in the radiative-convective equilibrium state.</p>
+<p>The zonal momentum equation becomes</p>
+<div class="math notranslate nohighlight">
+\[ f u_{eq} + \frac{u_{eq}^2 \tan\phi}{a} = -\frac{1}{a} \frac{\partial \Phi}{\partial \phi} \]</div>
+<p>Deriving a thermal wind equation by taking the vertical derivative and using hydrostatic balance:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial}{\partial z} \left( f u_{eq} + \frac{u_{eq}^2 \tan\phi}{a} \right) = -\frac{g}{a \theta_0} \frac{\partial \theta_{eq}}{\partial \phi}\]</div>
+<p>From the definition of <span class="math notranslate nohighlight">\(\theta_{eq}\)</span> we get</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial \theta_{eq}}{\partial \phi} = -2\Delta_H \theta_0 \sin\phi \cos\phi \]</div>
+<p>So, integrating the thermal wind equation in the vertical and applying the boundary condition <span class="math notranslate nohighlight">\(u_{eq}(0) = 0\)</span>, we get</p>
+<div class="math notranslate nohighlight">
+\[f u_{eq} + \frac{u_{eq}^2 \tan\phi}{a} = \frac{2 g \Delta_H}{a} \sin\phi \cos\phi z\]</div>
+<p>which is a quadratic equation in <span class="math notranslate nohighlight">\(u_{eq}\)</span> that we can solve:</p>
+<div class="math notranslate nohighlight">
+\[u_{eq} = \Omega a \cos\phi \left( \sqrt{1 + \frac{2 z}{H} \left(\frac{g H \delta_H}{(\Omega a)^2}\right)} - 1 \right)\]</div>
+<p>… more to come</p>
 </section>
 </section>
 </section>
