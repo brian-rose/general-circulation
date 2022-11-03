@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Syllabus &#8212; ATM 622: General Circulation of the Atmosphere</title>
+    <title>8. Theories of the Hadley circulation &#8212; ATM 622: General Circulation of the Atmosphere</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Schedule" href="schedule.html" />
-    <link rel="prev" title="ATM 622: General Circulation of the Atmosphere" href="../home.html" />
+    <link rel="next" title="1. Top-of-Atmosphere Radiation Budget and Meridional Energy Transport" href="../assignments/assignment-toa-budget.html" />
+    <link rel="prev" title="7. Available Potential Energy" href="ape.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,19 +120,19 @@ const thebe_selector_output = ".output, .cell_output"
   Course info
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../info/syllabus.html">
    Syllabus
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="schedule.html">
+  <a class="reference internal" href="../info/schedule.html">
    Schedule
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="how-to.html">
+  <a class="reference internal" href="../info/how-to.html">
    How to use this book
   </a>
  </li>
@@ -140,44 +142,44 @@ const thebe_selector_output = ".output, .cell_output"
   Lectures
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/radiation-budget.html">
+  <a class="reference internal" href="radiation-budget.html">
    1. Earth’s radiation budget
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/computing-seasonal.html">
+  <a class="reference internal" href="computing-seasonal.html">
    2. Computing seasonal and monthly means from CFSR data
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/observed-circulation.html">
+  <a class="reference internal" href="observed-circulation.html">
    3. The observed circulation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/decomposing-circulation.html">
+  <a class="reference internal" href="decomposing-circulation.html">
    4. Decompositions of the circulation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/angular-momentum-budget.html">
+  <a class="reference internal" href="angular-momentum-budget.html">
    5. Angular Momentum Budget
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/energy-budget.html">
+  <a class="reference internal" href="energy-budget.html">
    6. Energy Budget
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/ape.html">
+  <a class="reference internal" href="ape.html">
    7. Available Potential Energy
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/hadley.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    8. Theories of the Hadley circulation
   </a>
  </li>
@@ -201,7 +203,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="references.html">
+  <a class="reference internal" href="../info/references.html">
    References
   </a>
  </li>
@@ -256,6 +258,53 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/brian-rose/general-circulation/main?urlpath=lab/tree/./lectures/hadley.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://lore.atmos.albany.edu:8000/hub/user-redirect/git-pull?repo=https%3A//github.com/brian-rose/general-circulation&urlpath=lab/tree/general-circulation/./lectures/hadley.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -295,7 +344,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Finfo/syllabus.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Flectures/hadley.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -323,7 +372,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/info/syllabus.md"
+        <a href="../_sources/lectures/hadley.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -334,7 +383,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -383,28 +432,28 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-   A ATM 622: General Circulation of the Atmosphere (Fall 2022)
+  <a class="reference internal nav-link" href="#motivation">
+   Motivation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumptions-and-governing-equations">
+   Assumptions and governing equations
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-information">
-     Course information
+    <a class="reference internal nav-link" href="#governing-equations">
+     Governing equations
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-description">
-     Course description
+    <a class="reference internal nav-link" href="#the-radiative-convective-equilibrium-temperature-profile">
+     The radiative-convective equilibrium temperature profile
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#final-project">
-     Final project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#academic-integrity">
-     Academic integrity
+    <a class="reference internal nav-link" href="#boundary-conditions">
+     Boundary conditions
     </a>
    </li>
   </ul>
@@ -418,7 +467,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Syllabus</h1>
+                <h1>Theories of the Hadley circulation</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -429,28 +478,28 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-   A ATM 622: General Circulation of the Atmosphere (Fall 2022)
+  <a class="reference internal nav-link" href="#motivation">
+   Motivation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumptions-and-governing-equations">
+   Assumptions and governing equations
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-information">
-     Course information
+    <a class="reference internal nav-link" href="#governing-equations">
+     Governing equations
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#course-description">
-     Course description
+    <a class="reference internal nav-link" href="#the-radiative-convective-equilibrium-temperature-profile">
+     The radiative-convective equilibrium temperature profile
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#final-project">
-     Final project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#academic-integrity">
-     Academic integrity
+    <a class="reference internal nav-link" href="#boundary-conditions">
+     Boundary conditions
     </a>
    </li>
   </ul>
@@ -465,56 +514,57 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="syllabus">
-<h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline">#</a></h1>
-<section id="a-atm-622-general-circulation-of-the-atmosphere-fall-2022">
-<h2>A ATM 622: General Circulation of the Atmosphere (Fall 2022)<a class="headerlink" href="#a-atm-622-general-circulation-of-the-atmosphere-fall-2022" title="Permalink to this headline">#</a></h2>
-<section id="course-information">
-<h3>Course information<a class="headerlink" href="#course-information" title="Permalink to this headline">#</a></h3>
-<dl class="simple myst">
-<dt>Class number:</dt><dd><p>9225</p>
-</dd>
-<dt>Meeting time:</dt><dd><p>Tuesday / Thursday 12-1:20 PM in ETEC 482</p>
-</dd>
-<dt>Instructor:</dt><dd><p><a class="reference external" href="https://www.atmos.albany.edu/facstaff/brose/">Brian Rose</a> (office is ETEC 425)</p>
-</dd>
-<dt>Office hours:</dt><dd><p>Tuesdays 2-3PM in ETEC 425 (or by appointment)</p>
-</dd>
-<dt>Course website:</dt><dd><p><a class="reference external" href="https://brian-rose.github.io/general-circulation/home.html">https://brian-rose.github.io/general-circulation/home.html</a></p>
-</dd>
-<dt>Grading: A-E, 3 credit</dt><dd><ul class="simple">
-<li><p>Assignments and Labs: 40%</p></li>
-<li><p>Midterm exam: 20%</p></li>
-<li><p>Term project and presentation: 40%</p></li>
-</ul>
-</dd>
-</dl>
-<p>Late assignments/labs, makeup exams, late term projects/presentations will only be allowed for university recognized reasons. Please discuss absences and late work with Prof. Rose in advance whenever possible.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="theories-of-the-hadley-circulation">
+<h1><span class="section-number">8. </span>Theories of the Hadley circulation<a class="headerlink" href="#theories-of-the-hadley-circulation" title="Permalink to this headline">#</a></h1>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
+<p>We follow the classic paper by Held and Hou <span id="id1">[<a class="reference internal" href="../info/references.html#id12" title="Isaac M. Held and Arthur Y. Hou. Nonlinear axially symmetric circulations in a nearly inviscid atmosphere. J. Atmos. Sci., 37:515–533, March 1980. doi:10.1175/1520-0469(1980)037&lt;0515:NASCIA&gt;2.0.CO;2.">Held and Hou, 1980</a>]</span>.</p>
+<p>See also Lindzen’s book, Vallis, etc.</p>
 </section>
-<section id="course-description">
-<h3>Course description<a class="headerlink" href="#course-description" title="Permalink to this headline">#</a></h3>
-<p>The course will explore fundamental questions about why the circulation looks the way it does, bringing together observations, theory, and models. The <a class="reference external" href="https://www.albany.edu/graduatebulletin/a_atm.htm">bulletin description</a> says</p>
-<blockquote>
-<div><p>Processes which maintain the general circulation of the Earth’s atmosphere; investigation of observed angular momentum, energy and water vapor budgets of the atmosphere; atmospheric energetics; application of numerical methods to studies of the general circulation.</p>
-</div></blockquote>
-<p>Our approach will be hands-on and data-centric wherever possible. We will put significant emphasis on reproducible workflows to generate the maps and diagnostics we look at. So in addition to fundamental science, the course should arm you with a useful toolkit of modern Python-based analysis tools. We will also spend some time in the new Fluids lab carrying out rotating tank experiments to complement the observations and theory.</p>
-</section>
-<section id="final-project">
-<h3>Final project<a class="headerlink" href="#final-project" title="Permalink to this headline">#</a></h3>
-<p>Each student will investigate some aspect of the general circulation of atmosphere or ocean. A wide variety of topics are possible, but it must fit into the themes of the class. The project should include some original calculations using real data. Possible ideas include:</p>
+<section id="assumptions-and-governing-equations">
+<h2>Assumptions and governing equations<a class="headerlink" href="#assumptions-and-governing-equations" title="Permalink to this headline">#</a></h2>
+<p>We will make the following assumptions</p>
 <ul class="simple">
-<li><p>Using methods introduced in class in some aspect of your own thesis research</p></li>
-<li><p>Revisit a classic study from the literature with a modern dataset</p></li>
-<li><p>Design and implement your own laboratory / tank experiment to investigate some analog of the general circulation</p></li>
+<li><p>We can model the troposphere as a Boussinesq system of depth <span class="math notranslate nohighlight">\(H\)</span> (where <span class="math notranslate nohighlight">\(H\)</span> is the tropopause height) on a sphere</p></li>
+<li><p>The flow is <em>steady in time</em></p></li>
+<li><p>The flow is <em>zonally symmetric</em>, i.e. it has no variations in longitude</p></li>
+<li><p>Turbulence and frictional effects can be modeled by a vertical down-gradient diffusion</p></li>
+<li><p>Diabatic heating can be modeled by a Newtonian relaxation to a reference profile with a constant timescale <span class="math notranslate nohighlight">\(\tau\)</span></p></li>
 </ul>
-<p>Students can work alone or in teams of two, subject to approval. Students will write short proposals for their project ideas and get feedback from the instructor before starting (due dates TBD).</p>
-<p>Both written and oral presentations are required. Oral presentations will happen in the last week of class. Details for these and the written presentations will follow later, but expect a focus on <em>reproducibility</em> of calculations. Written reports will likely take the form of self-computing Jupyter notebooks.</p>
+<section id="governing-equations">
+<h3>Governing equations<a class="headerlink" href="#governing-equations" title="Permalink to this headline">#</a></h3>
+<p>We’ll define the zonally symmetric overturning circulation vector</p>
+<div class="math notranslate nohighlight">
+\[ \vec{v} = (v,w) \]</div>
+<p>And write the governing set of equations like this:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{Momentum:} &amp; &amp; \nabla\cdot (\vec{v} u) - \left( f + \frac{u \tan\phi}{a} \right) v &amp;= \frac{\partial}{\partial z} \left( \nu \frac{\partial u}{\partial z} \right) \\
+&amp;&amp; (\vec{v} v) + \left( f + \frac{u \tan\phi}{a} \right) u &amp;= -\frac{1}{a}\frac{\partial \Phi}{\partial \phi} + \frac{\partial}{\partial z} \left( \nu \frac{\partial v}{\partial z} \right) \\
+\text{Continuity} &amp; &amp; \nabla \cdot \vec{v} &amp;= 0 \\
+\text{Thermodynamic} &amp; &amp; \nabla \cdot ( \vec{v} \theta ) &amp;= \frac{\partial}{\partial z} \left( \nu \frac{\partial \theta}{\partial z} \right) - \frac{(\theta-\theta_{eq})}{\tau} \\
+\text{Hydrostatic} &amp; &amp; \frac{\partial \Phi}{\partial z} &amp;= g \frac{\theta}{\theta_0} 
+\end{align*}\]</div>
+<p>Here recall that the Boussinesq pressure is</p>
+<div class="math notranslate nohighlight">
+\[\Phi = \frac{p}{\rho_0} \]</div>
+<p>and <span class="math notranslate nohighlight">\(\theta_0, \rho_0\)</span> are reference values.</p>
+<p>An appropriate radiative relaxation timescale for the troposphere is <span class="math notranslate nohighlight">\(\tau \approx 30\)</span> days.</p>
 </section>
-<section id="academic-integrity">
-<h3>Academic integrity<a class="headerlink" href="#academic-integrity" title="Permalink to this headline">#</a></h3>
-<p>In this class we will strive to be interactive, learning by doing and by discussion. Some collaboration on exercises is therefore encouraged. However you are ultimately expected to submit your own work and your own thoughts, and to give proper credit to others for previous work and ideas.</p>
-<p>This is very important when writing computer code! There is nothing wrong with borrowing useful pieces of code from classmates or online sources – that is in fact the central principle of open-source software. However, you must always acknowledge the original author(s). You must also, wherever practical, understand the code you are borrowing and be able to explain what it does.</p>
-<p>It is every student’s responsibility to become familiar with the standards of academic integrity at UAlbany. Claims of ignorance, of unintentional error, or of academic or personal pressures are not sufficient reasons for violations of academic integrity. Please refer to the UAlbany academic integrity policies here: <a class="reference external" href="http://www.albany.edu/graduatebulletin/requirements_degree.htm#standards_integrity">http://www.albany.edu/graduatebulletin/requirements_degree.htm#standards_integrity</a></p>
+<section id="the-radiative-convective-equilibrium-temperature-profile">
+<h3>The radiative-convective equilibrium temperature profile<a class="headerlink" href="#the-radiative-convective-equilibrium-temperature-profile" title="Permalink to this headline">#</a></h3>
+<p>Following <a href="#id2"><span class="problematic" id="id3">:citet:`Held:1980hu`</span></a>, we define our equilibrium temperature like this</p>
+<div class="math notranslate nohighlight">
+\[ \theta_{eq} = \theta_0 \left[ 1 - \Delta_H \sin^2\phi + \Delta_V \left( \frac{z}{H} - \frac{1}{2} \right) \right] \]</div>
+<p>where we take</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\theta_0 = 400\)</span> K as a reference potential temperature</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta_H = 0.3\)</span> is the fractional potential temperature drop from equator to pole in radiative-convective equilibrium</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta_V = 0.3\)</span> is the fractional potential temperature drop from <span class="math notranslate nohighlight">\(z=H\)</span> to the surface in radiative-convective equilibrium</p></li>
+</ul>
+</section>
+<section id="boundary-conditions">
+<h3>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">#</a></h3>
 </section>
 </section>
 </section>
@@ -532,7 +582,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./info"
+            path: "./lectures"
         },
         predefinedOutput: true
     }
@@ -546,17 +596,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../home.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="ape.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">ATM 622: General Circulation of the Atmosphere</p>
+            <p class="prev-next-title"><span class="section-number">7. </span>Available Potential Energy</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="schedule.html" title="next page">
+    <a class='right-next' id="next-link" href="../assignments/assignment-toa-budget.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Schedule</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Top-of-Atmosphere Radiation Budget and Meridional Energy Transport</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
