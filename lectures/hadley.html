@@ -468,6 +468,11 @@ title="Print to PDF"
      Solving for the zonal wind profile
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#profile-of-absolute-angular-momentum">
+     Profile of absolute angular momentum
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -524,6 +529,11 @@ title="Print to PDF"
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solving-for-the-zonal-wind-profile">
      Solving for the zonal wind profile
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#profile-of-absolute-angular-momentum">
+     Profile of absolute angular momentum
     </a>
    </li>
   </ul>
@@ -592,9 +602,49 @@ title="Print to PDF"
 <p>where we take</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\theta_0 = 400\)</span> K as a reference potential temperature</p></li>
-<li><p><span class="math notranslate nohighlight">\(\theta_H = 0.3\)</span> is the fractional potential temperature drop from equator to pole in radiative-convective equilibrium</p></li>
-<li><p><span class="math notranslate nohighlight">\(\theta_V = 0.3\)</span> is the fractional potential temperature drop from <span class="math notranslate nohighlight">\(z=H\)</span> to the surface in radiative-convective equilibrium</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta_H = 0.3\)</span> is the fractional potential temperature drop from equator to pole in radiative-convective equilibrium</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta_V = 0.3\)</span> is the fractional potential temperature drop from <span class="math notranslate nohighlight">\(z=H\)</span> to the surface in radiative-convective equilibrium</p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta0</span> <span class="o">=</span> <span class="mf">400.</span>
+<span class="n">DeltaH</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="n">DeltaV</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="n">H</span> <span class="o">=</span> <span class="mf">10.</span>  <span class="c1"># tropopause height in km -- for illustration purposes</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">latarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">181</span><span class="p">)</span>
+<span class="n">lat</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">latarray</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="n">latarray</span><span class="p">})</span>
+<span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">lat</span><span class="p">)</span>
+
+<span class="n">zarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">H</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">zarray</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="n">zarray</span><span class="p">})</span>
+
+<span class="n">theta_eq</span> <span class="o">=</span> <span class="n">theta0</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">DeltaH</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">DeltaV</span><span class="o">*</span><span class="p">(</span><span class="n">z</span><span class="o">/</span><span class="n">H</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">theta_eq</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;lat&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.contour.QuadContourSet at 0x7f03a0b8e530&gt;
+</pre></div>
+</div>
+<img alt="../_images/hadley_6_1.png" src="../_images/hadley_6_1.png" />
+</div>
+</div>
 </section>
 <section id="boundary-conditions">
 <h3>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">#</a></h3>
@@ -656,6 +706,45 @@ w &amp;= 0
 \[u_{eq} = \Omega a \cos\phi \left( \sqrt{1 + \frac{2 z}{H} \left(\frac{g H \Delta_H}{(\Omega a)^2}\right)} - 1 \right)\]</div>
 <p>… more to come</p>
 </section>
+<section id="profile-of-absolute-angular-momentum">
+<h3>Profile of absolute angular momentum<a class="headerlink" href="#profile-of-absolute-angular-momentum" title="Permalink to this headline">#</a></h3>
+<div class="math notranslate nohighlight">
+\[M_eq = \Omega a^2 \cos^2\phi \sqrt{1 + \frac{2z}{H} R_{OT}}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sidereal_day</span> <span class="o">=</span> <span class="mf">86164.0905</span>  <span class="c1"># in seconds -- we definitely don&#39;t need this accuracy but hey</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">6.373E6</span>      <span class="c1"># Radius of Earth (m)</span>
+<span class="n">Omega</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">sidereal_day</span>
+<span class="n">uT</span> <span class="o">=</span> <span class="mf">100.</span> <span class="c1"># tropopause-level wind speed in m/s -- order of magnitude estimate</span>
+
+<span class="c1"># The temporal Rossby number</span>
+<span class="n">RoT</span> <span class="o">=</span> <span class="n">uT</span> <span class="o">/</span> <span class="n">Omega</span> <span class="o">/</span> <span class="n">a</span>
+<span class="n">RoT</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.2151803062936203
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Meq</span> <span class="o">=</span> <span class="n">Omega</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">z</span><span class="o">/</span><span class="n">H</span><span class="o">*</span><span class="n">RoT</span><span class="p">)</span>
+<span class="n">Meq</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;lat&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.contour.QuadContourSet at 0x7f03a07ceef0&gt;
+</pre></div>
+</div>
+<img alt="../_images/hadley_13_1.png" src="../_images/hadley_13_1.png" />
+</div>
+</div>
+<p>The key point here is the existence of a local maximum of absolute angular momentum away from the surface, which cannot exist in a fluid with any viscosity at all.</p>
+</section>
 </section>
 </section>
 
@@ -668,16 +757,16 @@ w &amp;= 0
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "aug22"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "aug22",
             path: "./lectures"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'aug22'</script>
 
               </div>
               
