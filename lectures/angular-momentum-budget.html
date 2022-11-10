@@ -2994,8 +2994,9 @@ Coordinates:
 \[ M = \Omega a^2 \]</div>
 <p>Now suppose this parcel moves toward the pole. Its <em>planetary</em> angular momentum decreases (since <span class="math notranslate nohighlight">\(\cos\phi\)</span> is a decreasing function). This reflects the fact that the moment arm of the parcel (distance to the axis of rotation) gets smaller as the parcel moves poleward.</p>
 <p>So to conserve total <span class="math notranslate nohighlight">\(M\)</span>, the zonal wind must increase!</p>
-<p>Specifically in this situation, setting <span class="math notranslate nohighlight">\(M = \Omega a^2\)</span> and solving for <span class="math notranslate nohighlight">\(u\)</span> gives
-$<span class="math notranslate nohighlight">\( u = \Omega a \frac{ \sin^2\phi }{\cos\phi} \)</span>$</p>
+<p>Specifically in this situation, setting <span class="math notranslate nohighlight">\(M = \Omega a^2\)</span> and solving for <span class="math notranslate nohighlight">\(u\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[ u = \Omega a \frac{ \sin^2\phi }{\cos\phi} \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">u_conserved</span> <span class="o">=</span> <span class="p">(</span><span class="n">Omega</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">)))</span>
@@ -7184,16 +7185,16 @@ Coordinates:
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "aug22"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "aug22",
+            kernelName: "python3",
             path: "./lectures"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'aug22'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
