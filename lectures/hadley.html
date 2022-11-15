@@ -540,6 +540,42 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#an-idealized-eddy-driven-hadley-cell-model">
    An idealized eddy-driven Hadley cell model
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zonally-averaged-boussinesq-equations">
+     Zonally averaged Boussinesq equations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#momentum">
+       Momentum
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#thermodynamics">
+       Thermodynamics
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivation-of-a-balanced-overturning-circulation">
+     Derivation of a balanced overturning circulation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#thermal-wind">
+       Thermal wind
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#define-the-overturning-streamfunction">
+       Define the overturning streamfunction
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -669,6 +705,42 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#an-idealized-eddy-driven-hadley-cell-model">
    An idealized eddy-driven Hadley cell model
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zonally-averaged-boussinesq-equations">
+     Zonally averaged Boussinesq equations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#momentum">
+       Momentum
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#thermodynamics">
+       Thermodynamics
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivation-of-a-balanced-overturning-circulation">
+     Derivation of a balanced overturning circulation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#thermal-wind">
+       Thermal wind
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#define-the-overturning-streamfunction">
+       Define the overturning streamfunction
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -2582,6 +2654,80 @@ Coordinates:
 </section>
 <section id="an-idealized-eddy-driven-hadley-cell-model">
 <h2>An idealized eddy-driven Hadley cell model<a class="headerlink" href="#an-idealized-eddy-driven-hadley-cell-model" title="Permalink to this headline">#</a></h2>
+<p>We can more formally quantify the above arguments into a model for the Hadley circulation in the purely eddy-driven limit.</p>
+<p>So we will now write down equations where we neglect meridional fluxes by the mean flow (like <span class="math notranslate nohighlight">\([u][v]\)</span>) and instead include the eddy fluxes (such as <span class="math notranslate nohighlight">\([u^* v^*]\)</span>.</p>
+<section id="zonally-averaged-boussinesq-equations">
+<h3>Zonally averaged Boussinesq equations<a class="headerlink" href="#zonally-averaged-boussinesq-equations" title="Permalink to this headline">#</a></h3>
+<p>Keeping things simple, we will continue to use Boussinesq equations, ignore vertical fluxes, and also ignore the curvature terms in the momentum equation.</p>
+<section id="momentum">
+<h4>Momentum<a class="headerlink" href="#momentum" title="Permalink to this headline">#</a></h4>
+<p>A zonally averaged zonal momentum equation in this regime looks like</p>
+<div class="math notranslate nohighlight">
+\[ \frac{Du}{Dt} - f[v] = 0\]</div>
+<p>or, writing out the material derivative in flux form and moving things over to the RHS,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{\partial [u]}{\partial t} &amp;= f[v] -\frac{1}{a\cos\phi} \frac{\partial}{\partial \phi} ([u^*v^*] \cos\phi) \\
+&amp;= f[v] - J_u 
+\end{align*}\]</div>
+<p>defining an eddy source term <span class="math notranslate nohighlight">\(J_u\)</span> that we will be using shortly.</p>
+</section>
+<section id="thermodynamics">
+<h4>Thermodynamics<a class="headerlink" href="#thermodynamics" title="Permalink to this headline">#</a></h4>
+<p>A corresponding thermodynamic equation is</p>
+<div class="math notranslate nohighlight">
+\[ \frac{D[b]}{Dt} + N^2 [w] = 0 \]</div>
+<p>where we are assuming a fixed mean stratification <span class="math notranslate nohighlight">\(N^2\)</span> – as we do in the quasigeostrophic approximation.</p>
+<p>Expanding the same way as we did above with the momentum equation, we can write</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{\partial [b]}{\partial t} &amp;= -N^2 [w] -\frac{1}{a\cos\phi} \frac{\partial}{\partial \phi} ( [v^* b^*] \cos\phi ) \\
+&amp;= -N^2 [w] - J_b
+\end{align*}\]</div>
+<p>defining an eddy heat flux source term <span class="math notranslate nohighlight">\(J_b\)</span></p>
+</section>
+</section>
+<section id="derivation-of-a-balanced-overturning-circulation">
+<h3>Derivation of a balanced overturning circulation<a class="headerlink" href="#derivation-of-a-balanced-overturning-circulation" title="Permalink to this headline">#</a></h3>
+<section id="thermal-wind">
+<h4>Thermal wind<a class="headerlink" href="#thermal-wind" title="Permalink to this headline">#</a></h4>
+<p>We can use geostrophic balance</p>
+<div class="math notranslate nohighlight">
+\[ f[u] = -\frac{1}{a} \frac{\partial \Phi}{\partial \phi} \]</div>
+<p>and hydrostatic balance</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial \Phi}{\partial z} = b \]</div>
+<p>to define a thermal wind relation</p>
+<div class="math notranslate nohighlight">
+\[ f \frac{\partial [u]}{\partial z} = -\frac{1}{a} \frac{\partial [b]}{\partial \phi} \]</div>
+<p>Now take time derivatives of both sides of the thermal wind equation, and substitute in from our momentum and thermodynamic equations to get</p>
+<div class="math notranslate nohighlight">
+\[ f^2 \frac{\partial [v]}{\partial z} - \frac{N^2}{a} \frac{\partial [w]}{\partial \phi} = f \frac{\partial J_u}{\partial z} + \frac{1}{a} \frac{\partial J_b}{\partial \phi}\]</div>
+</section>
+<section id="define-the-overturning-streamfunction">
+<h4>Define the overturning streamfunction<a class="headerlink" href="#define-the-overturning-streamfunction" title="Permalink to this headline">#</a></h4>
+<p>Define <span class="math notranslate nohighlight">\(\psi\)</span> so that a positive value is clockwise in the <span class="math notranslate nohighlight">\(\phi, z\)</span> plane:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+[v] &amp;= -\frac{1}{a\cos\phi} \frac{\partial \psi}{\partial z} &amp;. [w] &amp;= +\frac{1}{a^2 \cos\phi} \frac{\partial \psi}{\partial \phi}
+\end{align*}\]</div>
+<p>Then we have an equation for <span class="math notranslate nohighlight">\(\psi\)</span> from our thermal wind relation that looks like</p>
+<div class="math notranslate nohighlight">
+\[ -\frac{f^2}{a\cos\phi} \frac{\partial^2 \psi}{\partial z^2} - \frac{N^2}{a^3 \cos\phi} \frac{\partial^2 \psi}{\partial \phi^2} = f \frac{\partial J_u}{\partial z} + \frac{1}{a} \frac{\partial J_b}{\partial \phi}\]</div>
+<p>This is a 2nd order PDE for <span class="math notranslate nohighlight">\(\psi\)</span> that’s potentially solvable, subject to boundary conditions and known eddy forcings <span class="math notranslate nohighlight">\(J_u, J_b\)</span>.</p>
+<p>In fact the LHS of equation is essentially <span class="math notranslate nohighlight">\(-\nabla^2 \psi\)</span>, from which we can infer that the LHS is proportional to <span class="math notranslate nohighlight">\(\psi\)</span> itself.</p>
+<p>So the equation has the form</p>
+<div class="math notranslate nohighlight">
+\[\psi \propto f \frac{\partial J_u}{\partial z} + \frac{1}{a} \frac{\partial J_b}{\partial \phi}\]</div>
+<p>This tells us two things:</p>
+<ol class="simple">
+<li><p>an increased vertical gradient of eddy momentum flux divergence wil act to increase <span class="math notranslate nohighlight">\(\psi\)</span></p></li>
+<li><p>an increased horizontal gradient of eddy heat flux divergence will also act to increase <span class="math notranslate nohighlight">\(\psi\)</span></p></li>
+</ol>
+<p>When we looked at the observed fluxes in the winter hemisphere, we found that both forcing terms are positive.</p>
+<p>We conclude that during winter, the eddies are driving a stronger Hadley cell.</p>
+</section>
+</section>
 </section>
 </section>
 
