@@ -26,4 +26,6 @@ parts:
     - file: assignments/assignment-toa-budget
   - caption: The stuff at the end
     chapters:
+      - file: info/dask_test
+      - file: info/dask_test_snow
       - file: info/references
