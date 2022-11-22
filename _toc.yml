@@ -20,6 +20,7 @@ parts:
     - file: lectures/energy-budget
     - file: lectures/ape
     - file: lectures/hadley
+    - file: lectures/tem
   - caption: Assignments and labs
     numbered: 1
     chapters:
