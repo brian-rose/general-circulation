@@ -474,8 +474,40 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-potential-vorticity-perspective">
+   A potential vorticity perspective
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-idea">
+     The idea
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zonal-average-qgpv-equation">
+     Zonal average QGPV equation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-perspective-on-the-steady-balanced-circulation">
+     A perspective on the steady, balanced circulation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tem-equations-for-the-atmosphere">
    TEM equations for the atmosphere
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-the-eliassen-palm-cross-section-from-reanalysis-data">
+   Plotting the Eliassen-Palm cross-section from reanalysis data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-residual-overturning-from-reanalysis-data">
+   The residual overturning from reanalysis data
   </a>
  </li>
 </ul>
@@ -525,8 +557,40 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-potential-vorticity-perspective">
+   A potential vorticity perspective
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-idea">
+     The idea
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zonal-average-qgpv-equation">
+     Zonal average QGPV equation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-perspective-on-the-steady-balanced-circulation">
+     A perspective on the steady, balanced circulation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tem-equations-for-the-atmosphere">
    TEM equations for the atmosphere
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-the-eliassen-palm-cross-section-from-reanalysis-data">
+   Plotting the Eliassen-Palm cross-section from reanalysis data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-residual-overturning-from-reanalysis-data">
+   The residual overturning from reanalysis data
   </a>
  </li>
 </ul>
@@ -613,9 +677,59 @@ title="Print to PDF"
 <p>The vector <span class="math notranslate nohighlight">\(\vec{F}\)</span> is called the Eliassen-Palm flux, after a pioneering paper by <span id="id1">Eliassen and Palm [<a class="reference internal" href="../info/references.html#id17" title="Arnt Eliassen and Enok Palm. On the transfer of energy in stationary mountain waves. Geofysiske Publikasjoner, 22(3):1–23, 1961.">1961</a>]</span>.</p>
 </section>
 </section>
+<section id="a-potential-vorticity-perspective">
+<h2>A potential vorticity perspective<a class="headerlink" href="#a-potential-vorticity-perspective" title="Permalink to this headline">#</a></h2>
+<section id="the-idea">
+<h3>The idea<a class="headerlink" href="#the-idea" title="Permalink to this headline">#</a></h3>
+<p>We’ve been talking about combining momentum and thermodynamic constraints together into a single quantity <span class="math notranslate nohighlight">\(\vec{F}\)</span>. That may sound familiar.</p>
+<p>Recall that under the Quasi-Geostrophic approximation, we boil down all the dynamics into a single prognostic scalar, the quasi-geostrophic potential vorticity (QGPV).  We might therefore expect a deep relationship between PV dynamics and the Eliassen-Palm flux <span class="math notranslate nohighlight">\(\vec{F}\)</span>.</p>
+<p>And there is!</p>
+</section>
+<section id="zonal-average-qgpv-equation">
+<h3>Zonal average QGPV equation<a class="headerlink" href="#zonal-average-qgpv-equation" title="Permalink to this headline">#</a></h3>
+<p>Let’s write</p>
+<p>The key result</p>
+<div class="math notranslate nohighlight">
+\[[v^*q^*] = \nabla \cdot \vec{F} \]</div>
+<p>The divergence of the EP flux (which is a specific combination of eddy heat and momentum fluxes) is equivalent to a northward eddy flux of QGPV!</p>
+<p>So another form of the TEM equations is (under the quasi-geostrophic approximation):</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{\partial [u]}{\partial t} - f v_{res} &amp;= [v^* q^*] \\
+\frac{\partial [b]}{\partial t} &amp;= -N^2 w_{res} + \dot{Q} 
+\end{align*}\]</div>
+</section>
+<section id="a-perspective-on-the-steady-balanced-circulation">
+<h3>A perspective on the steady, balanced circulation<a class="headerlink" href="#a-perspective-on-the-steady-balanced-circulation" title="Permalink to this headline">#</a></h3>
+<p>For a balanced time-mean flow, our TEM equations thus say</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ - f v_{res} &amp;= [v^* q^*] \\
+N^2 w_{res} &amp;=  \dot{Q} 
+\end{align*}\]</div>
+<p>Now consider the fact that the diabatic heating tends to decrease from equator to pole. So <span class="math notranslate nohighlight">\(w_[res]\)</span> might be upward near the equator and downward near the pole.</p>
+<p>We infer from this that <span class="math notranslate nohighlight">\(v_{res}\)</span> must be poleward aloft (to conserve mass) – i.e. <span class="math notranslate nohighlight">\(v_{res} &gt; 0\)</span>. The residual circulation should look something like a big equator-to-pole scale Hadley cell!</p>
+<p>But this poleward residual circulation applies an <em>eastward</em> Coriolis force on the zonal wind. To have a steady balance, the eddies must be arranged to produce an equal and opposite <em>westward</em> force.</p>
+<p>We can infer from this that the eddies must be fluxing QGPV <em>equatorward</em>, i.e. <span class="math notranslate nohighlight">\([v^* q^*] &lt; 0\)</span></p>
+<p>Since the planetary PV increases toward the poles, the eddies are thus flux PV down the mean gradient. Unlike for momentum, the eddies behave diffusively in the PV framework – acting to transport PV from the high reservoir near the poles to the low reservoir near the equator.</p>
+</section>
+</section>
 <section id="tem-equations-for-the-atmosphere">
 <h2>TEM equations for the atmosphere<a class="headerlink" href="#tem-equations-for-the-atmosphere" title="Permalink to this headline">#</a></h2>
 <p>The theory and diagnostic method are laid out in a well-known paper by <span id="id2">Edmon Jr. <em>et al.</em> [<a class="reference internal" href="../info/references.html#id16" title="H. J. Edmon Jr., B.J. Hoskins, and M.E. McIntyre. Eliassen-Palm cross sections for the troposphere. J. Atmos. Sci., 37:2600–2616, 1980. doi:10.1175/1520-0469(1980)037&lt;2600:EPCSFT&gt;2.0.CO;2.">1980</a>]</span>.</p>
+</section>
+<section id="plotting-the-eliassen-palm-cross-section-from-reanalysis-data">
+<h2>Plotting the Eliassen-Palm cross-section from reanalysis data<a class="headerlink" href="#plotting-the-eliassen-palm-cross-section-from-reanalysis-data" title="Permalink to this headline">#</a></h2>
+<p>We are going to make an updated version of this famous figure:</p>
+<figure class="align-default" id="markdown-fig">
+<a class="reference internal image-reference" href="../_images/Edmon_Fig5.pdf"><img alt="Eliassen-Palm cross-section" src="../_images/Edmon_Fig5.pdf" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9.1 </span><span class="caption-text">Source: <span id="id3">Edmon Jr. <em>et al.</em> [<a class="reference internal" href="../info/references.html#id16" title="H. J. Edmon Jr., B.J. Hoskins, and M.E. McIntyre. Eliassen-Palm cross sections for the troposphere. J. Atmos. Sci., 37:2600–2616, 1980. doi:10.1175/1520-0469(1980)037&lt;2600:EPCSFT&gt;2.0.CO;2.">1980</a>]</span> (Their Figure 5).</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-residual-overturning-from-reanalysis-data">
+<h2>The residual overturning from reanalysis data<a class="headerlink" href="#the-residual-overturning-from-reanalysis-data" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
