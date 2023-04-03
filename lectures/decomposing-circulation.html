@@ -1,35 +1,45 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>4. Decompositions of the circulation &#8212; ATM 622: General Circulation of the Atmosphere</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -37,12 +47,12 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -52,61 +62,93 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lectures/decomposing-circulation';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="5. Angular Momentum Budget" href="angular-momentum-budget.html" />
     <link rel="prev" title="3. The observed circulation" href="observed-circulation.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../home.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">ATM 622: General Circulation of the Atmosphere</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -115,596 +157,297 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Course info
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course info</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../info/syllabus.html">
-   Syllabus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../info/schedule.html">
-   Schedule
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../info/how-to.html">
-   How to use this book
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../info/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info/schedule.html">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info/how-to.html">How to use this book</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Lectures
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="radiation-budget.html">
-   1. Earth’s radiation budget
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="computing-seasonal.html">
-   2. Computing seasonal and monthly means from CFSR data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="observed-circulation.html">
-   3. The observed circulation
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   4. Decompositions of the circulation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="angular-momentum-budget.html">
-   5. Angular Momentum Budget
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="energy-budget.html">
-   6. Energy Budget
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ape.html">
-   7. Available Potential Energy
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="hadley.html">
-   8. Theories of the Hadley circulation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tem.html">
-   9. Effect of eddies on the zonal mean circulation
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="radiation-budget.html">1. Earth’s radiation budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="computing-seasonal.html">2. Computing seasonal and monthly means from CFSR data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed-circulation.html">3. The observed circulation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Decompositions of the circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="angular-momentum-budget.html">5. Angular Momentum Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="energy-budget.html">6. Energy Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ape.html">7. Available Potential Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hadley.html">8. Theories of the Hadley circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tem.html">9. Effect of eddies on the zonal mean circulation</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Assignments and labs
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments and labs</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../assignments/assignment-toa-budget.html">
-   1. Top-of-Atmosphere Radiation Budget and Meridional Energy Transport
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/assignment-toa-budget.html">1. Top-of-Atmosphere Radiation Budget and Meridional Energy Transport</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  The stuff at the end
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The stuff at the end</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../info/dask_test.html">
-   Benchmarking a data-intensive operation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../info/dask_test_snow.html">
-   Benchmarking a data-intensive operation (snow version)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../info/references.html">
-   References
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../info/dask_test.html">Benchmarking a data-intensive operation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info/dask_test_snow.html">Benchmarking a data-intensive operation (snow version)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info/references.html">References</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/brian-rose/general-circulation/main?urlpath=lab/tree/./lectures/decomposing-circulation.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
   
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
+  <div id="rtd-footer-container"></div>
 
-      </li>
+
+      </div>
       
-      <li>
-        <a href="https://lore.atmos.albany.edu:8000/hub/user-redirect/git-pull?repo=https%3A//github.com/brian-rose/general-circulation&urlpath=lab/tree/general-circulation/./lectures/decomposing-circulation.ipynb&branch=main"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on JupyterHub"
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://lore.atmos.albany.edu:8000/hub/user-redirect/git-pull?repo=https%3A//github.com/brian-rose/general-circulation&urlpath=lab/tree/general-circulation/./lectures/decomposing-circulation.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../_static/images/logo_jupyterhub.svg">
   </span>
-<span class="headerbtn__text-container">JupyterHub</span>
+<span class="btn__text-container">JupyterHub</span>
 </a>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/brian-rose/general-circulation" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Flectures/decomposing-circulation.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/lectures/decomposing-circulation.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/brian-rose/general-circulation"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/brian-rose/general-circulation/issues/new?title=Issue%20on%20page%20%2Flectures/decomposing-circulation.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/lectures/decomposing-circulation.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#time-mean-and-zonal-mean">
-   Time mean and zonal mean
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example">
-     Example
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#departures-from-the-mean">
-   Departures from the mean
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#departure-from-time-mean">
-     Departure from time mean
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#departure-from-zonal-mean">
-     Departure from zonal mean
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#some-identities">
-     Some identities
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#combining-zonal-and-time-expansions">
-     Combining zonal and time expansions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#examples-using-some-real-data">
-   Examples using some real data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#covariances-between-quantities">
-   Covariances between quantities
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-the-meridional-heat-flux-vt-at-500-hpa">
-   Example: the meridional heat flux
-   <span class="math notranslate nohighlight">
-    \(vT\)
-   </span>
-   at 500 hPa
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#now-look-at-contributions-to-the-zonal-average">
-     Now look at contributions to the zonal average
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-does-it-mean-to-have-a-positive-stationary-eddy-component">
-     What does it mean to have a positive “stationary eddy” component?
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#map-of-zonal-temperature-anomalies-overline-t">
-       Map of zonal temperature anomalies
-       <span class="math notranslate nohighlight">
-        \(\overline{T}^*\)
-       </span>
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#map-of-zonal-wind-anomalies-overline-v">
-       Map of zonal wind anomalies
-       <span class="math notranslate nohighlight">
-        \(\overline{v}^*\)
-       </span>
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zonal-mean-heat-fluxes-in-the-opposite-season">
-     Zonal mean heat fluxes in the opposite season
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dependence-on-averaging-period">
-   Dependence on averaging period
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zonal-mean-flux-over-1-week">
-     Zonal mean flux over 1 week
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zonal-mean-heat-flux-over-1-year">
-     Zonal mean heat flux over 1 year
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Decompositions of the circulation</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#time-mean-and-zonal-mean">
-   Time mean and zonal mean
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example">
-     Example
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#departures-from-the-mean">
-   Departures from the mean
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#departure-from-time-mean">
-     Departure from time mean
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#departure-from-zonal-mean">
-     Departure from zonal mean
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#some-identities">
-     Some identities
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#combining-zonal-and-time-expansions">
-     Combining zonal and time expansions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#examples-using-some-real-data">
-   Examples using some real data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#covariances-between-quantities">
-   Covariances between quantities
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-the-meridional-heat-flux-vt-at-500-hpa">
-   Example: the meridional heat flux
-   <span class="math notranslate nohighlight">
-    \(vT\)
-   </span>
-   at 500 hPa
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#now-look-at-contributions-to-the-zonal-average">
-     Now look at contributions to the zonal average
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-does-it-mean-to-have-a-positive-stationary-eddy-component">
-     What does it mean to have a positive “stationary eddy” component?
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#map-of-zonal-temperature-anomalies-overline-t">
-       Map of zonal temperature anomalies
-       <span class="math notranslate nohighlight">
-        \(\overline{T}^*\)
-       </span>
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#map-of-zonal-wind-anomalies-overline-v">
-       Map of zonal wind anomalies
-       <span class="math notranslate nohighlight">
-        \(\overline{v}^*\)
-       </span>
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zonal-mean-heat-fluxes-in-the-opposite-season">
-     Zonal mean heat fluxes in the opposite season
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dependence-on-averaging-period">
-   Dependence on averaging period
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zonal-mean-flux-over-1-week">
-     Zonal mean flux over 1 week
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zonal-mean-heat-flux-over-1-year">
-     Zonal mean heat flux over 1 year
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Decompositions of the circulation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-mean-and-zonal-mean">Time mean and zonal mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#departures-from-the-mean">Departures from the mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departure-from-time-mean">Departure from time mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departure-from-zonal-mean">Departure from zonal mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-identities">Some identities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-zonal-and-time-expansions">Combining zonal and time expansions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-using-some-real-data">Examples using some real data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#covariances-between-quantities">Covariances between quantities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-the-meridional-heat-flux-vt-at-500-hpa">Example: the meridional heat flux <span class="math notranslate nohighlight">\(vT\)</span> at 500 hPa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-look-at-contributions-to-the-zonal-average">Now look at contributions to the zonal average</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-it-mean-to-have-a-positive-stationary-eddy-component">What does it mean to have a positive “stationary eddy” component?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-of-zonal-temperature-anomalies-overline-t">Map of zonal temperature anomalies <span class="math notranslate nohighlight">\(\overline{T}^*\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-of-zonal-wind-anomalies-overline-v">Map of zonal wind anomalies <span class="math notranslate nohighlight">\(\overline{v}^*\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-mean-heat-fluxes-in-the-opposite-season">Zonal mean heat fluxes in the opposite season</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependence-on-averaging-period">Dependence on averaging period</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-mean-flux-over-1-week">Zonal mean flux over 1 week</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-mean-heat-flux-over-1-year">Zonal mean heat flux over 1 year</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="decompositions-of-the-circulation">
 <h1><span class="section-number">4. </span>Decompositions of the circulation<a class="headerlink" href="#decompositions-of-the-circulation" title="Permalink to this headline">#</a></h1>
 <section id="introduction">
@@ -794,7 +537,7 @@ title="Print to PDF"
 <div class="math notranslate nohighlight">
 \[ A = \overline{A} + A^\prime = \left[\overline{A}\right] + \overline{A}^* + \left[ A^\prime \right] + A^{\prime *} \]</div>
 <p>where our four terms are</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Zonally symmetric part of the steady time-averaged quantities, e.g. trade winds and midlatitude westerlies <span class="math notranslate nohighlight">\(\left[ \overline{u} \right]\)</span></p></li>
 <li><p>Asymmetric part of the time-averaged quantities, e.g. monsoon circulations, PNA, NAO (patterns which vary on only low frequencies)</p></li>
 <li><p>Instantaneous fluctutations of symmetric part of quantities, e.g. time fluctuations in Hadley cells, mean jet locations</p></li>
@@ -1598,7 +1341,7 @@ Attributes:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_10_0.png" src="../_images/decomposing-circulation_10_0.png" />
+<img alt="../_images/f07c6e0fba1f1fb5eecdce87bb9e4b0d33a6690b296449b7d89906bd057e2979.png" src="../_images/f07c6e0fba1f1fb5eecdce87bb9e4b0d33a6690b296449b7d89906bd057e2979.png" />
 </div>
 </div>
 <p>To do some seasonal averaging, we need to pick a time interval. Let’s choose all dates in January, February and March.</p>
@@ -1989,7 +1732,7 @@ Attributes:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_15_0.png" src="../_images/decomposing-circulation_15_0.png" />
+<img alt="../_images/01b837c3f9ddb9c9fa8160e2d2698b5efc074bc5bb65d95b5f1ce6733823e54d.png" src="../_images/01b837c3f9ddb9c9fa8160e2d2698b5efc074bc5bb65d95b5f1ce6733823e54d.png" />
 </div>
 </div>
 <p>If we further take the zonal average, we get <span class="math notranslate nohighlight">\([\overline{u}]\)</span></p>
@@ -2003,7 +1746,7 @@ Attributes:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_17_0.png" src="../_images/decomposing-circulation_17_0.png" />
+<img alt="../_images/5e9aa6d35507cc3bf229227686f82c2d7aed3eadcca2d0b0c8370a836b55c5ca.png" src="../_images/5e9aa6d35507cc3bf229227686f82c2d7aed3eadcca2d0b0c8370a836b55c5ca.png" />
 </div>
 </div>
 <p>Now here’s <span class="math notranslate nohighlight">\(\overline{u^*}\)</span>, the time averaged departures from zonal mean:</p>
@@ -2016,7 +1759,7 @@ Attributes:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_19_0.png" src="../_images/decomposing-circulation_19_0.png" />
+<img alt="../_images/8819b281d6c6514f427548eaacc99fb778860a48eefd556783a4f2ee36681ead.png" src="../_images/8819b281d6c6514f427548eaacc99fb778860a48eefd556783a4f2ee36681ead.png" />
 </div>
 </div>
 <p>And here’s <span class="math notranslate nohighlight">\(u^\prime\)</span> (departures from time average) at one instant:</p>
@@ -2028,7 +1771,7 @@ Attributes:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_21_0.png" src="../_images/decomposing-circulation_21_0.png" />
+<img alt="../_images/46131ebe88f8e742004e3b1c30b11a9234c56be832e033abe83be44c682d60d2.png" src="../_images/46131ebe88f8e742004e3b1c30b11a9234c56be832e033abe83be44c682d60d2.png" />
 </div>
 </div>
 <p>and its zonal average <span class="math notranslate nohighlight">\([u^\prime]\)</span> as a line plot:</p>
@@ -2042,7 +1785,7 @@ Attributes:
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f9d79249360&gt;]
 </pre></div>
 </div>
-<img alt="../_images/decomposing-circulation_23_1.png" src="../_images/decomposing-circulation_23_1.png" />
+<img alt="../_images/3b6f8f9861d2e125fbbece447bf1d4c4cb3272262abe29c139b67540aac5e66b.png" src="../_images/3b6f8f9861d2e125fbbece447bf1d4c4cb3272262abe29c139b67540aac5e66b.png" />
 </div>
 </div>
 <p>And finally the deviations away from that zonal average <span class="math notranslate nohighlight">\(u^{\prime*}\)</span></p>
@@ -2056,7 +1799,7 @@ Attributes:
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;cartopy.mpl.contour.GeoContourSet at 0x7f9d7909f610&gt;
 </pre></div>
 </div>
-<img alt="../_images/decomposing-circulation_25_1.png" src="../_images/decomposing-circulation_25_1.png" />
+<img alt="../_images/d013b58958744988b17e419a0b6acaff41f319139aafd6c150355f3c6291ee7c.png" src="../_images/d013b58958744988b17e419a0b6acaff41f319139aafd6c150355f3c6291ee7c.png" />
 </div>
 </div>
 </section>
@@ -2082,7 +1825,7 @@ Attributes:
 &amp;= \left[\overline{A}\right]\left[\overline{B}\right] + \left[ \overline{A}^* \overline{B}^* \right] + \left[\overline{A^\prime B^\prime} \right]
 \end{align*}\]</div>
 <p>Three terms:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Mean meridional component</p></li>
 <li><p>Stationary eddy component (zonal variations in time mean</p></li>
 <li><p>Transient eddy component (time variations in time mean)</p></li>
@@ -2852,7 +2595,7 @@ Coordinates:
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;cartopy.mpl.contour.GeoContourSet at 0x7f9d78e89420&gt;
 </pre></div>
 </div>
-<img alt="../_images/decomposing-circulation_31_1.png" src="../_images/decomposing-circulation_31_1.png" />
+<img alt="../_images/ec8f6e8aca0dcdd762a08554d63e4df296929a212530a34731ee83f16d6fff4a.png" src="../_images/ec8f6e8aca0dcdd762a08554d63e4df296929a212530a34731ee83f16d6fff4a.png" />
 </div>
 </div>
 <p>How much of the full field is captured by the time mean advection of the time mean temperature?</p>
@@ -2870,7 +2613,7 @@ Coordinates:
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;cartopy.mpl.contour.GeoContourSet at 0x7f9d7986bd60&gt;
 </pre></div>
 </div>
-<img alt="../_images/decomposing-circulation_33_1.png" src="../_images/decomposing-circulation_33_1.png" />
+<img alt="../_images/0716c7cf4e7e1d26e28578b8804755349216df961ae1a4442e9177a275ab85ff.png" src="../_images/0716c7cf4e7e1d26e28578b8804755349216df961ae1a4442e9177a275ab85ff.png" />
 </div>
 </div>
 <p>And now let’s look at the transient eddy contribution</p>
@@ -2887,7 +2630,7 @@ Coordinates:
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;cartopy.mpl.contour.GeoContourSet at 0x7f9d79567bb0&gt;
 </pre></div>
 </div>
-<img alt="../_images/decomposing-circulation_35_1.png" src="../_images/decomposing-circulation_35_1.png" />
+<img alt="../_images/65fa33cbcacbcbe7b61b6fe46687cfc52d3994f24b87bfb2c78bca479a824f28.png" src="../_images/65fa33cbcacbcbe7b61b6fe46687cfc52d3994f24b87bfb2c78bca479a824f28.png" />
 </div>
 </div>
 <section id="now-look-at-contributions-to-the-zonal-average">
@@ -2917,7 +2660,7 @@ Coordinates:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_37_0.png" src="../_images/decomposing-circulation_37_0.png" />
+<img alt="../_images/3dd5db04ece12fdfe4a78629efbd3ff60e2c34dd0bbb56e6d38e9fda2b39b0cb.png" src="../_images/3dd5db04ece12fdfe4a78629efbd3ff60e2c34dd0bbb56e6d38e9fda2b39b0cb.png" />
 </div>
 </div>
 </section>
@@ -2935,7 +2678,7 @@ Coordinates:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_39_0.png" src="../_images/decomposing-circulation_39_0.png" />
+<img alt="../_images/ca4b901af67f85edc9a8e28f1f1f014c044a1d2a8f70e8653a0bf5bcbff40245.png" src="../_images/ca4b901af67f85edc9a8e28f1f1f014c044a1d2a8f70e8653a0bf5bcbff40245.png" />
 </div>
 </div>
 <p>Focussing on the Northern mid-latitudes, there is a prominent wavenumber-2 pattern with alternating warm and cold anomalies. The warm anomalies are centered over the eastern parts of the ocean basins, while the cold anomalies are centered over the eastern continents.</p>
@@ -2951,7 +2694,7 @@ Coordinates:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_41_0.png" src="../_images/decomposing-circulation_41_0.png" />
+<img alt="../_images/711d7674ddd000b931d716057678e6a40d45dc64baa6d1524aede3772f763c1d.png" src="../_images/711d7674ddd000b931d716057678e6a40d45dc64baa6d1524aede3772f763c1d.png" />
 </div>
 </div>
 <p>Here, focussing again on the Northern mid-latitudes, we can see that there are regions where the seasonally-averaged meridional flow is anomalously <em>northward</em> (red) and <em>southward</em> (blue).</p>
@@ -3013,7 +2756,7 @@ Coordinates:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_45_0.png" src="../_images/decomposing-circulation_45_0.png" />
+<img alt="../_images/abde03d181370edf3aed5a9cb12220d0ac85c73c29f93192c7da1054aac13072.png" src="../_images/abde03d181370edf3aed5a9cb12220d0ac85c73c29f93192c7da1054aac13072.png" />
 </div>
 </div>
 <p>Here we can see a few differences:</p>
@@ -3041,7 +2784,7 @@ Coordinates:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_49_0.png" src="../_images/decomposing-circulation_49_0.png" />
+<img alt="../_images/a56fcf8cd06082fa19d58ec54626cb85ba3eeffe86cb252dd21c4be42d8f77c0.png" src="../_images/a56fcf8cd06082fa19d58ec54626cb85ba3eeffe86cb252dd21c4be42d8f77c0.png" />
 </div>
 </div>
 </section>
@@ -3056,7 +2799,7 @@ Coordinates:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/decomposing-circulation_51_0.png" src="../_images/decomposing-circulation_51_0.png" />
+<img alt="../_images/e1aa3be710c48736b649f9c15fab5f03cabb54cefcff43f8294ebadc0d08500e.png" src="../_images/e1aa3be710c48736b649f9c15fab5f03cabb54cefcff43f8294ebadc0d08500e.png" />
 </div>
 </div>
 <p>We can see that the partition between <em>stationary eddy</em> and <em>transient eddy</em> is particularly sensitive to our choice of averaging interval.</p>
@@ -3076,7 +2819,7 @@ Coordinates:
             mode: "aug22"
         },
         kernelOptions: {
-            kernelName: "aug22",
+            name: "aug22",
             path: "./lectures"
         },
         predefinedOutput: true
@@ -3084,50 +2827,133 @@ Coordinates:
     </script>
     <script>kernelName = 'aug22'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="observed-circulation.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">3. </span>The observed circulation</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="observed-circulation.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>The observed circulation</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="angular-momentum-budget.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="angular-momentum-budget.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">5. </span>Angular Momentum Budget</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Brian E. J. Rose<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
-
-
       </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-mean-and-zonal-mean">Time mean and zonal mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#departures-from-the-mean">Departures from the mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departure-from-time-mean">Departure from time mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departure-from-zonal-mean">Departure from zonal mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-identities">Some identities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-zonal-and-time-expansions">Combining zonal and time expansions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-using-some-real-data">Examples using some real data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#covariances-between-quantities">Covariances between quantities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-the-meridional-heat-flux-vt-at-500-hpa">Example: the meridional heat flux <span class="math notranslate nohighlight">\(vT\)</span> at 500 hPa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-look-at-contributions-to-the-zonal-average">Now look at contributions to the zonal average</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-it-mean-to-have-a-positive-stationary-eddy-component">What does it mean to have a positive “stationary eddy” component?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-of-zonal-temperature-anomalies-overline-t">Map of zonal temperature anomalies <span class="math notranslate nohighlight">\(\overline{T}^*\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-of-zonal-wind-anomalies-overline-v">Map of zonal wind anomalies <span class="math notranslate nohighlight">\(\overline{v}^*\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-mean-heat-fluxes-in-the-opposite-season">Zonal mean heat fluxes in the opposite season</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependence-on-averaging-period">Dependence on averaging period</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-mean-flux-over-1-week">Zonal mean flux over 1 week</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-mean-heat-flux-over-1-year">Zonal mean heat flux over 1 year</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Brian E. J. Rose
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
