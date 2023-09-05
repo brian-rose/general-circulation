@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>7. Available Potential Energy &#8212; ATM 622: General Circulation of the Atmosphere</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -68,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="8. Theories of the Hadley circulation" href="hadley.html" />
     <link rel="prev" title="6. Energy Budget" href="energy-budget.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -491,18 +492,18 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="available-potential-energy">
-<h1><span class="section-number">7. </span>Available Potential Energy<a class="headerlink" href="#available-potential-energy" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">7. </span>Available Potential Energy<a class="headerlink" href="#available-potential-energy" title="Permalink to this heading">#</a></h1>
 <p>These notes largely follow Chapter 7 of David Randall’s <em>An Introduction to the Global Circulation of the Atmosphere</em> <span id="id1">[<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">Randall, 2015</a>]</span></p>
 <section id="definitions">
-<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
 <section id="column-energetics">
-<h3>Column energetics<a class="headerlink" href="#column-energetics" title="Permalink to this headline">#</a></h3>
+<h3>Column energetics<a class="headerlink" href="#column-energetics" title="Permalink to this heading">#</a></h3>
 <p>Under dry adiabatic and frictionless processes, the total energy of the atmosphere is conserved:</p>
 <div class="math notranslate nohighlight">
 \[ \frac{d}{dt} \int_V (c_v T + \Phi + K ) \rho dV \]</div>
 <p>where the integral is over the mass of the whole atmopshere.</p>
 <section id="hydrostatic-relations">
-<h4>Hydrostatic relations<a class="headerlink" href="#hydrostatic-relations" title="Permalink to this headline">#</a></h4>
+<h4>Hydrostatic relations<a class="headerlink" href="#hydrostatic-relations" title="Permalink to this heading">#</a></h4>
 <p>Consider a single column of air. The total (vertically integrated) potential energy in a column is</p>
 <div class="math notranslate nohighlight">
 \[P \equiv \int_0^\infty g z \rho dz \]</div>
@@ -516,7 +517,7 @@ document.write(`
 <p>This essentially expresses the fact a warmer column is “taller” than a cooler column and so contains more potential energy.</p>
 </section>
 <section id="column-enthalpy">
-<h4>Column enthalpy<a class="headerlink" href="#column-enthalpy" title="Permalink to this headline">#</a></h4>
+<h4>Column enthalpy<a class="headerlink" href="#column-enthalpy" title="Permalink to this heading">#</a></h4>
 <p>Now the internal energy of the column is</p>
 <div class="math notranslate nohighlight">
 \[ I \equiv \int_0^\infty c_v T \rho dz \]</div>
@@ -539,7 +540,7 @@ $<span class="math notranslate nohighlight">\( H \equiv \int_0^\infty c_p T \rho
 </section>
 </section>
 <section id="available-potential-idea-basic-definition">
-<h3>Available potential idea: basic definition<a class="headerlink" href="#available-potential-idea-basic-definition" title="Permalink to this headline">#</a></h3>
+<h3>Available potential idea: basic definition<a class="headerlink" href="#available-potential-idea-basic-definition" title="Permalink to this heading">#</a></h3>
 <p>Suppose we rearrange the atmopshere by moving parcels around adiabatically and without friction. The parcels’ potential temperature (or entropy) do not change but their enthalpy / temperature do change. Suppose there is a unique state that minimizes <span class="math notranslate nohighlight">\(H\)</span> – i.e. we have reduced <span class="math notranslate nohighlight">\(H\)</span> as much as possible from its given initial value.</p>
 <p>Because <span class="math notranslate nohighlight">\(H +K\)</span> does not change, <span class="math notranslate nohighlight">\(K\)</span> must be maximized in this special state.</p>
 <p>The special state was called the <em>reference state</em> in the seminal work on this subject by Ed Lorenz <span id="id2">[<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">Lorenz, 1955</a>]</span>. Following <span id="id3">Randall [<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">2015</a>]</span> here, we’ll call it the A-state.</p>
@@ -563,9 +564,9 @@ K_{\text{given}} &amp;\rightarrow K_{\text{given}} + (H_{\text{given}} - H_{\tex
 </section>
 </section>
 <section id="quantifying-ape">
-<h2>Quantifying APE<a class="headerlink" href="#quantifying-ape" title="Permalink to this headline">#</a></h2>
+<h2>Quantifying APE<a class="headerlink" href="#quantifying-ape" title="Permalink to this heading">#</a></h2>
 <section id="properties-of-the-a-state">
-<h3>Properties of the A-state<a class="headerlink" href="#properties-of-the-a-state" title="Permalink to this headline">#</a></h3>
+<h3>Properties of the A-state<a class="headerlink" href="#properties-of-the-a-state" title="Permalink to this heading">#</a></h3>
 <p>To compute <span class="math notranslate nohighlight">\(A\)</span>, we have to find the enthalpy of the A-state. Some properties of the A-state include:</p>
 <ul class="simple">
 <li><p>No horizontal pressure gradients! Because otherwise there would be accelerations (generation of kinetic energy)</p>
@@ -580,7 +581,7 @@ K_{\text{given}} &amp;\rightarrow K_{\text{given}} + (H_{\text{given}} - H_{\tex
 <p>To reach the A-state (i.e. to release APE), warm air must rise (move to lower pressure) and cold air must sink (more to higher pressure)!</p>
 </section>
 <section id="the-concept-of-the-massless-layer">
-<h3>The concept of the massless layer<a class="headerlink" href="#the-concept-of-the-massless-layer" title="Permalink to this headline">#</a></h3>
+<h3>The concept of the massless layer<a class="headerlink" href="#the-concept-of-the-massless-layer" title="Permalink to this heading">#</a></h3>
 <p>Since we’re limiting our analysis to dry adiabatic processes, <span class="math notranslate nohighlight">\(\theta\)</span> is conserved on every parcel. So our rearrangements cannot involve mass crossing isentropic surfaces!</p>
 <p>This then implies that the average pressure on an isentropic surface cannot change, so must be the same in the A-state. We’ll denote this average pressure by <span class="math notranslate nohighlight">\(\overline{p}^\theta\)</span>.</p>
 <p>Following Lorenz, we will deal with the lower boundary (where <span class="math notranslate nohighlight">\(\theta\)</span> surfaces intersect the ground) by thinking about so-called massless layers</p>
@@ -591,9 +592,9 @@ K_{\text{given}} &amp;\rightarrow K_{\text{given}} + (H_{\text{given}} - H_{\tex
 <p>The massless layer concept lets us set the lower bound on the integral on the right-hand side to zero.</p>
 </section>
 <section id="derivation-of-the-ape-formula">
-<h3>Derivation of the APE formula<a class="headerlink" href="#derivation-of-the-ape-formula" title="Permalink to this headline">#</a></h3>
+<h3>Derivation of the APE formula<a class="headerlink" href="#derivation-of-the-ape-formula" title="Permalink to this heading">#</a></h3>
 <section id="the-total-enthalpy">
-<h4>The total enthalpy<a class="headerlink" href="#the-total-enthalpy" title="Permalink to this headline">#</a></h4>
+<h4>The total enthalpy<a class="headerlink" href="#the-total-enthalpy" title="Permalink to this heading">#</a></h4>
 <p>We want to express <span class="math notranslate nohighlight">\(A\)</span> in terms of <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> rather than <span class="math notranslate nohighlight">\(T\)</span>. Recall that</p>
 <div class="math notranslate nohighlight">
 \[ T = \theta \left( \frac{p}{p_0} \right)^{\kappa} \]</div>
@@ -610,7 +611,7 @@ H &amp;= c_p \int_M T dM \\
 \[ H = \frac{c_p a^2}{(1+\kappa) g p_0^\kappa} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty p^{(1+\kappa)} \cos\phi d\theta d\lambda d\phi \]</div>
 </section>
 <section id="expressing-a-as-the-difference-in-total-enthalpy">
-<h4>Expressing <span class="math notranslate nohighlight">\(A\)</span> as the difference in total enthalpy<a class="headerlink" href="#expressing-a-as-the-difference-in-total-enthalpy" title="Permalink to this headline">#</a></h4>
+<h4>Expressing <span class="math notranslate nohighlight">\(A\)</span> as the difference in total enthalpy<a class="headerlink" href="#expressing-a-as-the-difference-in-total-enthalpy" title="Permalink to this heading">#</a></h4>
 <p>We now apply the difference</p>
 <div class="math notranslate nohighlight">
 \[ A = H_{\text{given}} - H_{\text{min}} \]</div>
@@ -620,7 +621,7 @@ H &amp;= c_p \int_M T dM \\
 \[ A = \frac{c_p a^2}{(1+\kappa) g p_0^\kappa} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^\infty \left[ p^{(1+\kappa)} - (\overline{p}^\theta)^{(1+\kappa)} \right] \cos\phi d\theta d\lambda d\phi \]</div>
 </section>
 <section id="expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces">
-<h4>Expressing <span class="math notranslate nohighlight">\(A\)</span> as a variance of pressure on isentropic surfaces<a class="headerlink" href="#expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces" title="Permalink to this headline">#</a></h4>
+<h4>Expressing <span class="math notranslate nohighlight">\(A\)</span> as a variance of pressure on isentropic surfaces<a class="headerlink" href="#expressing-a-as-a-variance-of-pressure-on-isentropic-surfaces" title="Permalink to this heading">#</a></h4>
 <p>The above expression is accurate but unwieldy. Following <span id="id5">Lorenz [<a class="reference internal" href="../info/references.html#id10" title="Edward N. Lorenz. Available potential energy and the maintenance of the general circulation. Tellus, 7(2):157–167, 1955. doi:10.3402/tellusa.v7i2.8796.">1955</a>]</span>, we can decompose</p>
 <div class="math notranslate nohighlight">
 \[ p(\theta) = \overline{p}^\theta + p^\prime(\theta) \]</div>
@@ -642,7 +643,7 @@ H &amp;= c_p \int_M T dM \\
 <p>which says that the APE proportional to the total (integral) variance of pressure on isentropic surfaces.</p>
 </section>
 <section id="more-readily-computable-form-variance-of-temperature-on-isobaric-surfaces">
-<h4>More readily computable form: variance of temperature on isobaric surfaces<a class="headerlink" href="#more-readily-computable-form-variance-of-temperature-on-isobaric-surfaces" title="Permalink to this headline">#</a></h4>
+<h4>More readily computable form: variance of temperature on isobaric surfaces<a class="headerlink" href="#more-readily-computable-form-variance-of-temperature-on-isobaric-surfaces" title="Permalink to this heading">#</a></h4>
 <p>Since we usually have data on pressure surfaces rather than <span class="math notranslate nohighlight">\(\theta\)</span> surfaces, it’s more practical to transform this expression back into pressure coordinates using</p>
 <div class="math notranslate nohighlight">
 \[ p^\prime(\theta) = \theta^\prime(p) \left(\frac{\partial \overline{\theta}}{\partial p}\right)^{-1} \]</div>
@@ -664,7 +665,7 @@ H &amp;= c_p \int_M T dM \\
 \[ A \approx \frac{a^2}{2 g} \int_{-\pi/2}^{\pi/2} \int_0^{2\pi} \int_0^{p_s} \tilde{\Gamma} \frac{T^\prime(p)^2}{\overline{T}} \cos\phi dp d\lambda d\phi \]</div>
 </section>
 <section id="conclusions">
-<h4>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">#</a></h4>
+<h4>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h4>
 <p>The formula above shows us that APE increases in two different ways:</p>
 <ol class="arabic simple">
 <li><p>APE increases with the variance of temperature on pressure surfaces</p></li>
@@ -677,9 +678,9 @@ H &amp;= c_p \int_M T dM \\
 </section>
 </section>
 <section id="balance-equations-for-mean-and-eddy-ape-and-ke">
-<h2>Balance equations for mean and eddy APE and KE<a class="headerlink" href="#balance-equations-for-mean-and-eddy-ape-and-ke" title="Permalink to this headline">#</a></h2>
+<h2>Balance equations for mean and eddy APE and KE<a class="headerlink" href="#balance-equations-for-mean-and-eddy-ape-and-ke" title="Permalink to this heading">#</a></h2>
 <section id="goal">
-<h3>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">#</a></h3>
+<h3>Goal<a class="headerlink" href="#goal" title="Permalink to this heading">#</a></h3>
 <p>We want to consider how energy flows through a system containing four distinct energy reservoirs</p>
 <ul class="simple">
 <li><p>mean kinetic energy <span class="math notranslate nohighlight">\(K_M\)</span></p></li>
@@ -700,14 +701,14 @@ K &amp;= K_M + K_E \\
 <p>We’ll need to go back to the equations of motion to see how to quantify <em>conversions</em> between the various reservoirs.</p>
 </section>
 <section id="variance-budgets-for-a-general-scalar">
-<h3>Variance budgets for a general scalar<a class="headerlink" href="#variance-budgets-for-a-general-scalar" title="Permalink to this headline">#</a></h3>
+<h3>Variance budgets for a general scalar<a class="headerlink" href="#variance-budgets-for-a-general-scalar" title="Permalink to this heading">#</a></h3>
 <p>It will help to write down some generic formulas that are true for any scalar for which we have a budget equation in flux form:</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial B}{\partial t} = - \nabla \cdot (\vec{v} B) + \dot{B} \]</div>
 <p>where <span class="math notranslate nohighlight">\(\dot{B}\)</span> are any local sources/sinks of <span class="math notranslate nohighlight">\(B\)</span>.</p>
 <p>Our goal here is to come up with expressions for the <strong>variance</strong> of the mean and eddy components of <span class="math notranslate nohighlight">\(B\)</span>.</p>
 <section id="mean-component">
-<h4>Mean component<a class="headerlink" href="#mean-component" title="Permalink to this headline">#</a></h4>
+<h4>Mean component<a class="headerlink" href="#mean-component" title="Permalink to this heading">#</a></h4>
 <p>Start by taking the zonal mean and multiplying through by <span class="math notranslate nohighlight">\([B]\)</span> so that</p>
 <div class="math notranslate nohighlight">
 \[ [B] \frac{\partial [B]}{\partial t} = -\frac{[B]}{a \cos \phi} \frac{\partial}{\partial \phi} \left( [vB] \cos\phi \right) -[B] \frac{\partial}{\partial p} [\omega B] + [B] \dot{B} \]</div>
@@ -725,7 +726,7 @@ K &amp;= K_M + K_E \\
 \end{align*}\]</div>
 </section>
 <section id="eddy-component">
-<h4>Eddy component<a class="headerlink" href="#eddy-component" title="Permalink to this headline">#</a></h4>
+<h4>Eddy component<a class="headerlink" href="#eddy-component" title="Permalink to this heading">#</a></h4>
 <p>We’ll omit details here, but see Chapter 7 of <span id="id6">[<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">Randall, 2015</a>]</span>.</p>
 <p>The steps are essentially</p>
 <ol class="arabic simple">
@@ -743,7 +744,7 @@ K &amp;= K_M + K_E \\
 \end{align*}\]</div>
 </section>
 <section id="interpretation-of-terms">
-<h4>Interpretation of terms<a class="headerlink" href="#interpretation-of-terms" title="Permalink to this headline">#</a></h4>
+<h4>Interpretation of terms<a class="headerlink" href="#interpretation-of-terms" title="Permalink to this heading">#</a></h4>
 <p>For both the mean and eddy variance equations, the rows of terms are</p>
 <ol class="arabic simple">
 <li><p>Flux divergence terms due to mean zonal flow</p>
@@ -764,7 +765,7 @@ K &amp;= K_M + K_E \\
 </section>
 </section>
 <section id="mean-kinetic-energy-budget">
-<h3>Mean kinetic energy budget<a class="headerlink" href="#mean-kinetic-energy-budget" title="Permalink to this headline">#</a></h3>
+<h3>Mean kinetic energy budget<a class="headerlink" href="#mean-kinetic-energy-budget" title="Permalink to this heading">#</a></h3>
 <p>We can straightaway apply the above variance equations since kinetic energy is the sum of the variance of the velocity components <span class="math notranslate nohighlight">\(u, v\)</span>.</p>
 <p>Horizontal momentum equations look like</p>
 <div class="amsmath math notranslate nohighlight">
@@ -774,7 +775,7 @@ K &amp;= K_M + K_E \\
 \end{align*}\]</div>
 <p>where the terms on the RHS aside from the flux divergence represent our local sources/sinks <span class="math notranslate nohighlight">\(\dot{u}, \dot{v}\)</span> (including Coriolis forces, pressure gradient forces, and friction)</p>
 <section id="zonal-mean-ke-budget-and-conversion-terms">
-<h4>Zonal mean KE budget and conversion terms<a class="headerlink" href="#zonal-mean-ke-budget-and-conversion-terms" title="Permalink to this headline">#</a></h4>
+<h4>Zonal mean KE budget and conversion terms<a class="headerlink" href="#zonal-mean-ke-budget-and-conversion-terms" title="Permalink to this heading">#</a></h4>
 <p>Let’s use the variance budgets expressions above to write down a budget for the <em>zonal mean kinetic energy</em> for the whole atmosphere.</p>
 <p>Since we’re integrating over the whole atmosphere, the boundary terms vanish.  The budget becomes</p>
 <div class="amsmath math notranslate nohighlight">
@@ -788,7 +789,7 @@ K &amp;= K_M + K_E \\
 <p>We will also neglect the mountain term here, assuming it is small compared the meridional geopotential height gradient.</p>
 </section>
 <section id="conversion-from-mean-ape-to-mean-ke">
-<h4>Conversion from mean APE to mean KE<a class="headerlink" href="#conversion-from-mean-ape-to-mean-ke" title="Permalink to this headline">#</a></h4>
+<h4>Conversion from mean APE to mean KE<a class="headerlink" href="#conversion-from-mean-ape-to-mean-ke" title="Permalink to this heading">#</a></h4>
 <p>One of the terms on the RHS side above we are going to a-priori call the <strong>conversion from mean APE to mean KE</strong>:</p>
 <div class="math notranslate nohighlight">
 \[ C(A_M, K_M) = - \int \frac{g [v]}{a} \frac{\partial [z]}{\partial \phi} dm \]</div>
@@ -798,7 +799,7 @@ K &amp;= K_M + K_E \\
 <p>This term represents conversion of mean APE to mean KE by cross-isobaric flow down the north-south geopotential or pressure gradient.</p>
 </section>
 <section id="converstion-from-mean-ape-to-mean-ke-is-thermally-direct-overturning">
-<h4>Converstion from mean APE to mean KE is <em>Thermally Direct</em> overturning<a class="headerlink" href="#converstion-from-mean-ape-to-mean-ke-is-thermally-direct-overturning" title="Permalink to this headline">#</a></h4>
+<h4>Converstion from mean APE to mean KE is <em>Thermally Direct</em> overturning<a class="headerlink" href="#converstion-from-mean-ape-to-mean-ke-is-thermally-direct-overturning" title="Permalink to this heading">#</a></h4>
 <p>There is another, possibly more physically intuitive way of writing this same term as a weighted integral of vertical motion. To get there, we need some integration by parts and conservation of mass.</p>
 <p>Since by the product rule</p>
 <div class="math notranslate nohighlight">
@@ -827,7 +828,7 @@ C(A_M, K_M) &amp;= - \int \frac{g}{a \cos\phi} \frac{\partial}{\partial \phi} \l
 <p>This says that there is conversion FROM mean APE TO mean KE when / wherever light air (high specific volume) rises and heavy air (low specific volume) sinks in symmetric meridional overturning circulations that are so-called <strong>THERMALLY DIRECT</strong>.</p>
 </section>
 <section id="conversion-between-eddy-and-mean-ke">
-<h4>Conversion between eddy and mean KE<a class="headerlink" href="#conversion-between-eddy-and-mean-ke" title="Permalink to this headline">#</a></h4>
+<h4>Conversion between eddy and mean KE<a class="headerlink" href="#conversion-between-eddy-and-mean-ke" title="Permalink to this heading">#</a></h4>
 <p>We can write the conversion FROM eddy KE TO mean KE as</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*} 
@@ -840,14 +841,14 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 <p>The eddy momentum transport here is <em>up the mean gradient</em>, leading to an increase in the mean KE.</p>
 </section>
 <section id="frictional-sink">
-<h4>Frictional sink<a class="headerlink" href="#frictional-sink" title="Permalink to this headline">#</a></h4>
+<h4>Frictional sink<a class="headerlink" href="#frictional-sink" title="Permalink to this heading">#</a></h4>
 <p>The last term in our mean KE budget is the destruction of mean KE by friction:</p>
 <div class="math notranslate nohighlight">
 \[ D(K_M) = -\int \left( [u][F_u] + [v][F_v] \right) dm \]</div>
 <p>which is clearly <em>positive</em> if the frictional forces act the opposite direction to the velocity vector.</p>
 </section>
 <section id="summary">
-<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h4>
+<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h4>
 <p>We have written the mean KE budget as</p>
 <div class="math notranslate nohighlight">
 \[ \frac{1}{2} \frac{\partial}{\partial t} \int_M \left( [u]^2 + [v]^2 \right) dm = C(K_E, K_M) + C(A_M, K_M) - D(K_M) \]</div>
@@ -855,7 +856,7 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 </section>
 </section>
 <section id="eddy-kinetic-energy-budget">
-<h3>Eddy kinetic energy budget<a class="headerlink" href="#eddy-kinetic-energy-budget" title="Permalink to this headline">#</a></h3>
+<h3>Eddy kinetic energy budget<a class="headerlink" href="#eddy-kinetic-energy-budget" title="Permalink to this heading">#</a></h3>
 <p>Applying the formula above for the eddy component of the variance budget gives the following budget for eddy KE (for the entire atmosphere – boundary fluxes must vanish again):</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -866,13 +867,13 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 \end{align*}\]</div>
 <p>and the Coriolis terms cancel out again, as they must.</p>
 <section id="id7">
-<h4>Conversion between eddy and mean KE<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h4>
+<h4>Conversion between eddy and mean KE<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h4>
 <p>We can see some equal-and-opposite conversion terms here between eddy and mean KE, i.e.,</p>
 <div class="math notranslate nohighlight">
 \[ C(K_M, K_E) = -C(K_E, K_M) \]</div>
 </section>
 <section id="conversion-between-eddy-ape-and-eddy-ke">
-<h4>Conversion between eddy APE and eddy KE<a class="headerlink" href="#conversion-between-eddy-ape-and-eddy-ke" title="Permalink to this headline">#</a></h4>
+<h4>Conversion between eddy APE and eddy KE<a class="headerlink" href="#conversion-between-eddy-ape-and-eddy-ke" title="Permalink to this heading">#</a></h4>
 <p>The new conversion term appearing in this budget is</p>
 <div class="math notranslate nohighlight">
 \[ C(A_E, K_E) = - \int \left( \frac{g }{a \cos\phi} \left[u^* \frac{\partial z^*}{\partial \lambda}\right] + \frac{g}{a} \left[ v^* \frac{\partial z^*}{\partial \phi} \right]   \right)dm\]</div>
@@ -884,27 +885,27 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 <p>Another way of saying this is that <strong>eddy flow that has an ageostrophic component down the pressure gradient</strong> generates eddy KE.</p>
 </section>
 <section id="interpretation-in-terms-of-vertical-motion">
-<h4>Interpretation in terms of vertical motion<a class="headerlink" href="#interpretation-in-terms-of-vertical-motion" title="Permalink to this headline">#</a></h4>
+<h4>Interpretation in terms of vertical motion<a class="headerlink" href="#interpretation-in-terms-of-vertical-motion" title="Permalink to this heading">#</a></h4>
 <p>As was the case for the mean conversion term <span class="math notranslate nohighlight">\(C(A_M, K_M)\)</span>, we can rewrite this using continuity and hydrostatic balance as a statement about eddy vertical motions:</p>
 <div class="math notranslate nohighlight">
 \[ C(A_E, K_E) = -\int [\omega^* \alpha^*] dm \]</div>
 <p>which says that eddy KE is created when less-dense air rises and more-dense air sinks along a latitude circle. [SKETCH]</p>
 </section>
 <section id="frictional-sink-eddies">
-<h4>Frictional sink: eddies<a class="headerlink" href="#frictional-sink-eddies" title="Permalink to this headline">#</a></h4>
+<h4>Frictional sink: eddies<a class="headerlink" href="#frictional-sink-eddies" title="Permalink to this heading">#</a></h4>
 <p>The sink term is just</p>
 <div class="math notranslate nohighlight">
 \[ D(K_E) = -\int  \left( [u^* F_u^*] + \int [v^* F_v^*] \right) dm \]</div>
 </section>
 <section id="id8">
-<h4>Summary<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h4>
+<h4>Summary<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h4>
 <p>The budget for eddy KE looks like</p>
 <div class="math notranslate nohighlight">
 \[\frac{1}{2} \frac{\partial}{\partial t} \int_M \left( [u^{*2}] + [v^{*2}] \right) dm = -C(K_E, K_M) + C(A_E, K_E) - D(K_E) \]</div>
 </section>
 </section>
 <section id="mean-ape-budget-for-the-whole-atmosphere">
-<h3>Mean APE budget for the whole atmosphere<a class="headerlink" href="#mean-ape-budget-for-the-whole-atmosphere" title="Permalink to this headline">#</a></h3>
+<h3>Mean APE budget for the whole atmosphere<a class="headerlink" href="#mean-ape-budget-for-the-whole-atmosphere" title="Permalink to this heading">#</a></h3>
 <p>From our (hard) work above, we can write the mean Available Potential Energy for the entire atmosphere as</p>
 <div class="math notranslate nohighlight">
 \[A_M = \frac{1}{2} \int \tilde{\Gamma} \frac{[T^{\prime 2}]}{\overline{T}} dm \]</div>
@@ -920,7 +921,7 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 &amp;-\int [T^\prime] \left[ \frac{\omega}{\bar{T}} \frac{T}{\theta} \frac{\partial \theta}{\partial p} \tilde{\Gamma} \right] + \int [T^\prime] \left( \frac{\tilde{\Gamma}[\dot{Q}]}{c_p \bar{T}} \right)
 \end{align*}\]</div>
 <section id="conversion-from-eddy-to-mean-ape">
-<h4>Conversion from eddy to mean APE<a class="headerlink" href="#conversion-from-eddy-to-mean-ape" title="Permalink to this headline">#</a></h4>
+<h4>Conversion from eddy to mean APE<a class="headerlink" href="#conversion-from-eddy-to-mean-ape" title="Permalink to this heading">#</a></h4>
 <p>The eddy-to-mean conversion term here is</p>
 <div class="math notranslate nohighlight">
 \[ C(A_E, A_M) = \int \frac{[v^*T^*]}{a} \frac{\partial}{\partial\phi} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right) + \int [\omega^*T^*] \frac{\partial}{\partial p} \left( \frac{\tilde{\Gamma} [T^\prime]}{\bar{T}} \right)\]</div>
@@ -930,7 +931,7 @@ C(K_E, K_M) = &amp;+\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 <p>In this situation, the eddies are transporting heat DOWN the mean zonal temperature gradient.</p>
 </section>
 <section id="conversion-between-mean-ke-and-mean-ape">
-<h4>Conversion between mean KE and mean APE<a class="headerlink" href="#conversion-between-mean-ke-and-mean-ape" title="Permalink to this headline">#</a></h4>
+<h4>Conversion between mean KE and mean APE<a class="headerlink" href="#conversion-between-mean-ke-and-mean-ape" title="Permalink to this heading">#</a></h4>
 <p>In our mean KE budget, we previously identified a conversion term</p>
 <div class="math notranslate nohighlight">
 \[ C(A_M, K_M) = -\int [\omega] [\alpha] dm \]</div>
@@ -943,7 +944,7 @@ C(K_M, A_M) &amp;= -\int [T^\prime] \left[ \frac{\omega}{\bar{T}} \frac{T}{\thet
 <p><em>To see this, use the definition of <span class="math notranslate nohighlight">\(\tilde{\Gamma}\)</span> along with hydrostatic balance and the relationship between temperature and potential temperature <span class="math notranslate nohighlight">\(\frac{T}{\bar{T}} = \frac{\theta}{\bar{\theta}}\)</span> – details omitted here.</em></p>
 </section>
 <section id="diabatic-source-term">
-<h4>Diabatic source term<a class="headerlink" href="#diabatic-source-term" title="Permalink to this headline">#</a></h4>
+<h4>Diabatic source term<a class="headerlink" href="#diabatic-source-term" title="Permalink to this heading">#</a></h4>
 <p>The last term in our mean APE budget is a key <em>generation</em> or source term</p>
 <div class="math notranslate nohighlight">
 \[ G(A_M) = \int \frac{\tilde{\Gamma}[T^\prime] [\dot{Q}]}{c_p \bar{T}} dm \]</div>
@@ -953,14 +954,14 @@ C(K_M, A_M) &amp;= -\int [T^\prime] \left[ \frac{\omega}{\bar{T}} \frac{T}{\thet
 <p>As we will see when we look at the numbers, this radiative heating process tends to <strong>increase the mean APE</strong> of the atmosphere by tilting isentropic surfaces.</p>
 </section>
 <section id="id9">
-<h4>Summary<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
+<h4>Summary<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h4>
 <p>We have written the mean APE budget as</p>
 <div class="math notranslate nohighlight">
 \[\frac{d A_M}{dt} = +C(A_E, A_M) - C(A_M, K_M) + G(A_M) \]</div>
 </section>
 </section>
 <section id="eddy-ape-budget">
-<h3>Eddy APE budget<a class="headerlink" href="#eddy-ape-budget" title="Permalink to this headline">#</a></h3>
+<h3>Eddy APE budget<a class="headerlink" href="#eddy-ape-budget" title="Permalink to this heading">#</a></h3>
 <p>Finally we can write a budget for the eddy component of the APE:</p>
 <div class="math notranslate nohighlight">
 \[ A_E = \frac{1}{2} \int \tilde{\Gamma} \frac{[T^{\prime*2}]}{\bar{T}} dm \]</div>
@@ -971,7 +972,7 @@ C(K_M, A_M) &amp;= -\int [T^\prime] \left[ \frac{\omega}{\bar{T}} \frac{T}{\thet
 &amp;+\int [\alpha^{\prime*} \omega^*] + \int \frac{\tilde{\Gamma}[T^{\prime*} \dot{Q}^* ]}{c_p \bar{T}} 
 \end{align*}\]</div>
 <section id="conversion-and-generation-terms">
-<h4>Conversion and generation terms<a class="headerlink" href="#conversion-and-generation-terms" title="Permalink to this headline">#</a></h4>
+<h4>Conversion and generation terms<a class="headerlink" href="#conversion-and-generation-terms" title="Permalink to this heading">#</a></h4>
 <p>We can identify the following</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -985,7 +986,7 @@ G(A_E) &amp;= \int \frac{\tilde{\Gamma}[T^{\prime*} \dot{Q}^* ]}{c_p \bar{T}} dm
 <p>which increases the east-west variance of temperature.</p>
 </section>
 <section id="id10">
-<h4>Summary<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
+<h4>Summary<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h4>
 <p>We have written the eddy APE budget as</p>
 <div class="math notranslate nohighlight">
 \[\frac{d A_E}{dt} = C(A_M, A_E) - C(A_E, K_E) + G(A_E) \]</div>
@@ -993,7 +994,7 @@ G(A_E) &amp;= \int \frac{\tilde{\Gamma}[T^{\prime*} \dot{Q}^* ]}{c_p \bar{T}} dm
 </section>
 </section>
 <section id="diagram-of-the-lorenz-energy-cycle">
-<h2>Diagram of the Lorenz energy cycle<a class="headerlink" href="#diagram-of-the-lorenz-energy-cycle" title="Permalink to this headline">#</a></h2>
+<h2>Diagram of the Lorenz energy cycle<a class="headerlink" href="#diagram-of-the-lorenz-energy-cycle" title="Permalink to this heading">#</a></h2>
 <p>Our four budget equations are</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1012,11 +1013,11 @@ G(A_E) &amp;= \int \frac{\tilde{\Gamma}[T^{\prime*} \dot{Q}^* ]}{c_p \bar{T}} dm
 </figure>
 </section>
 <section id="computing-terms-in-the-lorenz-energy-cycle">
-<h2>Computing terms in the Lorenz energy cycle<a class="headerlink" href="#computing-terms-in-the-lorenz-energy-cycle" title="Permalink to this headline">#</a></h2>
+<h2>Computing terms in the Lorenz energy cycle<a class="headerlink" href="#computing-terms-in-the-lorenz-energy-cycle" title="Permalink to this heading">#</a></h2>
 <section id="recap-of-formulas">
-<h3>Recap of formulas<a class="headerlink" href="#recap-of-formulas" title="Permalink to this headline">#</a></h3>
+<h3>Recap of formulas<a class="headerlink" href="#recap-of-formulas" title="Permalink to this heading">#</a></h3>
 <section id="amounts">
-<h4>Amounts<a class="headerlink" href="#amounts" title="Permalink to this headline">#</a></h4>
+<h4>Amounts<a class="headerlink" href="#amounts" title="Permalink to this heading">#</a></h4>
 <p>Our four budget quantities are</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1027,7 +1028,7 @@ A_E &amp;= \frac{1}{2} \int \tilde{\Gamma} \frac{[T^{\prime*2}]}{\bar{T}} dm
 \end{align*}\]</div>
 </section>
 <section id="conversions">
-<h4>Conversions<a class="headerlink" href="#conversions" title="Permalink to this headline">#</a></h4>
+<h4>Conversions<a class="headerlink" href="#conversions" title="Permalink to this heading">#</a></h4>
 <p>The four conversion terms are</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1039,7 +1040,7 @@ C(K_E, K_M) &amp;= +\int \frac{[v^*u^*]}{a} \frac{\partial}{\partial \phi} [u] +
 \end{align*}\]</div>
 </section>
 <section id="other-definitions">
-<h4>Other definitions<a class="headerlink" href="#other-definitions" title="Permalink to this headline">#</a></h4>
+<h4>Other definitions<a class="headerlink" href="#other-definitions" title="Permalink to this heading">#</a></h4>
 <p>The inverse static stability parameter appearing in our APE formulas is</p>
 <div class="math notranslate nohighlight">
 \[ \tilde{\Gamma} \equiv -\frac{R \theta}{p} \left( \frac{\partial \theta}{\partial p} \right)^{-1} \]</div>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>3. The observed circulation &#8212; ATM 622: General Circulation of the Atmosphere</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -68,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="4. Decompositions of the circulation" href="decomposing-circulation.html" />
     <link rel="prev" title="2. Computing seasonal and monthly means from CFSR data" href="computing-seasonal.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -429,7 +430,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-observed-circulation">
-<h1><span class="section-number">3. </span>The observed circulation<a class="headerlink" href="#the-observed-circulation" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">3. </span>The observed circulation<a class="headerlink" href="#the-observed-circulation" title="Permalink to this heading">#</a></h1>
 <p>… work in progress.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -442,7 +443,7 @@ document.write(`
 </div>
 </div>
 <section id="the-cfsr-climatology-datasets">
-<h2>The CFSR climatology datasets<a class="headerlink" href="#the-cfsr-climatology-datasets" title="Permalink to this headline">#</a></h2>
+<h2>The CFSR climatology datasets<a class="headerlink" href="#the-cfsr-climatology-datasets" title="Permalink to this heading">#</a></h2>
 <p>We pre-computed 30-year seasonal and monthly climatologies from the 6-hourly CFSR dataset, see <span class="xref myst">Computing seasonal and monthly means from CFSR data</span>.</p>
 <p>Here we’ll use those datasets to make some nice reference figures.</p>
 <div class="cell docutils container">
@@ -2858,7 +2859,7 @@ Data variables:
 </div>
 </section>
 <section id="sea-level-pressure">
-<h2>Sea level pressure<a class="headerlink" href="#sea-level-pressure" title="Permalink to this headline">#</a></h2>
+<h2>Sea level pressure<a class="headerlink" href="#sea-level-pressure" title="Permalink to this heading">#</a></h2>
 <p>For many fields, we will make three individual plots:</p>
 <ul class="simple">
 <li><p>annual mean</p></li>
@@ -2907,7 +2908,7 @@ Data variables:
 </div>
 </section>
 <section id="list-of-figures">
-<h2>List of figures<a class="headerlink" href="#list-of-figures" title="Permalink to this headline">#</a></h2>
+<h2>List of figures<a class="headerlink" href="#list-of-figures" title="Permalink to this heading">#</a></h2>
 <p>The following figures appear in the slide deck we saw in class, <a class="reference external" href="https://www.atmos.albany.edu/facstaff/tang/classes/atm622/Lecture2.pdf">which you can find at this link</a> (courtesy of <a class="reference external" href="https://www.atmos.albany.edu/facstaff/tang/index.html">Professor Brian Tang</a>, University at Albany).</p>
 <p>Our objective here is to build recipes to make all (or at least most of) these figures from the CFSR climatology.</p>
 <ol class="arabic simple">
@@ -3007,9 +3008,9 @@ Data variables:
 </ol>
 </section>
 <section id="mass-overturning-circulation">
-<h2>Mass overturning circulation<a class="headerlink" href="#mass-overturning-circulation" title="Permalink to this headline">#</a></h2>
+<h2>Mass overturning circulation<a class="headerlink" href="#mass-overturning-circulation" title="Permalink to this heading">#</a></h2>
 <section id="basic-ideas-and-theory">
-<h3>Basic ideas and theory<a class="headerlink" href="#basic-ideas-and-theory" title="Permalink to this headline">#</a></h3>
+<h3>Basic ideas and theory<a class="headerlink" href="#basic-ideas-and-theory" title="Permalink to this heading">#</a></h3>
 <p>An element of northward mass flux (in units of kg s<span class="math notranslate nohighlight">\({^-1}\)</span>) across latitude line <span class="math notranslate nohighlight">\(\phi\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[ d\psi = a \cos\phi d\lambda ~ v ~ \frac{dp}{g} \]</div>
@@ -3035,7 +3036,7 @@ Data variables:
 <p>Contours of <span class="math notranslate nohighlight">\(\psi\)</span> can then be interpreted as streamlines for the <strong>mean meridional circulation</strong>, that is, the zonal- and time-averaged overturning of mass in the latitude-pressure plane.</p>
 </section>
 <section id="computing-the-overturning-streamfunction-from-meridonal-velocities">
-<h3>Computing the overturning streamfunction from meridonal velocities<a class="headerlink" href="#computing-the-overturning-streamfunction-from-meridonal-velocities" title="Permalink to this headline">#</a></h3>
+<h3>Computing the overturning streamfunction from meridonal velocities<a class="headerlink" href="#computing-the-overturning-streamfunction-from-meridonal-velocities" title="Permalink to this heading">#</a></h3>
 <p>We’ll start by taking averages of the <span class="math notranslate nohighlight">\(v\)</span> data:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4003,7 +4004,7 @@ Coordinates:
 <p>Now we’ve got the streamfunction defined for four seasons. Time to make plots!</p>
 </section>
 <section id="plotting-the-mass-overturning">
-<h3>Plotting the mass overturning<a class="headerlink" href="#plotting-the-mass-overturning" title="Permalink to this headline">#</a></h3>
+<h3>Plotting the mass overturning<a class="headerlink" href="#plotting-the-mass-overturning" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">psi_levels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">230</span><span class="p">,</span> <span class="mi">240</span><span class="p">,</span> <span class="mf">10.</span><span class="p">)</span>

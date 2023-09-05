@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1. Earth’s radiation budget &#8212; ATM 622: General Circulation of the Atmosphere</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -68,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="2. Computing seasonal and monthly means from CFSR data" href="computing-seasonal.html" />
     <link rel="prev" title="How to use this book" href="../info/how-to.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -443,9 +444,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="earth-s-radiation-budget">
-<h1><span class="section-number">1. </span>Earth’s radiation budget<a class="headerlink" href="#earth-s-radiation-budget" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1. </span>Earth’s radiation budget<a class="headerlink" href="#earth-s-radiation-budget" title="Permalink to this heading">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>The “General Circulation of the Atmosphere” is the science of understanding the mean flow on scales from synoptic to global</p>
 <ul class="simple">
 <li><p>What does it do?</p></li>
@@ -469,7 +470,7 @@ document.write(`
 </div>
 </section>
 <section id="id1">
-<h2>Earth’s Radiation Budget<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<h2>Earth’s Radiation Budget<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <figure class="align-default" id="markdown-fig">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/stephens2012.png"><img alt="Earth's Energy Balance" class="bg-primary mb-1" src="../_images/stephens2012.png" style="width: 800px;" /></a>
 <figcaption>
@@ -478,7 +479,7 @@ document.write(`
 </figure>
 </section>
 <section id="incoming-solar-radiation">
-<h2>Incoming solar radiation<a class="headerlink" href="#incoming-solar-radiation" title="Permalink to this headline">#</a></h2>
+<h2>Incoming solar radiation<a class="headerlink" href="#incoming-solar-radiation" title="Permalink to this heading">#</a></h2>
 <p>Computing the incident sunlight hitting the Earth is a geometrical problem with a known solution so long as we know the details of the Earth’s orbit. For details, see <a class="reference external" href="https://brian-rose.github.io/ClimateLaboratoryBook/courseware/insolation.html#">this lecture in Brian Rose’s <em>The Climate Laboratory</em></a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -516,7 +517,7 @@ document.write(`
 </div>
 </section>
 <section id="ceres-ebaf-data">
-<h2>CERES EBAF data<a class="headerlink" href="#ceres-ebaf-data" title="Permalink to this headline">#</a></h2>
+<h2>CERES EBAF data<a class="headerlink" href="#ceres-ebaf-data" title="Permalink to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://ceres.larc.nasa.gov">CERES-EBAF</a> product is described by <span id="id3">Kato <em>et al.</em> [<a class="reference internal" href="../info/references.html#id3" title="Seiji Kato, Fred G. Rose, David A. Rutan, Tyler J. Thorsen, Norman G. Loeb, David R. Doelling, Xianglei Huang, William L. Smith, Wenying Su, and Seung-Hee Ham. Surface irradiances of edition 4.0 clouds and the earth's radiant energy system (ceres) energy balanced and filled (ebaf) data product. J. Climate, 31:4501–4527, 2018. doi:10.1175/JCLI-D-17-0523.1.">2018</a>]</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4305,7 +4306,7 @@ Attributes:
 </div>
 </div>
 <section id="computing-monthly-climatologies-of-ceres-data">
-<h3>Computing monthly climatologies of CERES data<a class="headerlink" href="#computing-monthly-climatologies-of-ceres-data" title="Permalink to this headline">#</a></h3>
+<h3>Computing monthly climatologies of CERES data<a class="headerlink" href="#computing-monthly-climatologies-of-ceres-data" title="Permalink to this heading">#</a></h3>
 <p>We can use Xarray’s <code class="docutils literal notranslate"><span class="pre">groupby</span></code> method to easily applying averaging operators over each calendar month.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4761,7 +4762,7 @@ Coordinates:
 </div>
 </section>
 <section id="the-monthly-mean-insolation-as-represented-in-ceres-data">
-<h3>The monthly mean insolation as represented in CERES data<a class="headerlink" href="#the-monthly-mean-insolation-as-represented-in-ceres-data" title="Permalink to this headline">#</a></h3>
+<h3>The monthly mean insolation as represented in CERES data<a class="headerlink" href="#the-monthly-mean-insolation-as-represented-in-ceres-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span> <span class="s1">&#39;Jul&#39;</span><span class="p">,</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span> <span class="s1">&#39;Oct&#39;</span><span class="p">,</span> <span class="s1">&#39;Nov&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">]</span>
@@ -4813,7 +4814,7 @@ Coordinates:
 </div>
 </section>
 <section id="albedo">
-<h3>Albedo<a class="headerlink" href="#albedo" title="Permalink to this headline">#</a></h3>
+<h3>Albedo<a class="headerlink" href="#albedo" title="Permalink to this heading">#</a></h3>
 <p>The ratio of outgoing to incoming SW radiation:</p>
 <div class="math notranslate nohighlight">
 \[ \alpha = \frac{F_{SW}^{\uparrow}}{F_{SW}^{\downarrow}} \]</div>
@@ -4835,7 +4836,7 @@ Coordinates:
 </div>
 </section>
 <section id="absorbed-shortwave-radiation">
-<h3>Absorbed shortwave radiation<a class="headerlink" href="#absorbed-shortwave-radiation" title="Permalink to this headline">#</a></h3>
+<h3>Absorbed shortwave radiation<a class="headerlink" href="#absorbed-shortwave-radiation" title="Permalink to this heading">#</a></h3>
 <p>The residual between what comes in and what goes out:</p>
 <div class="math notranslate nohighlight">
 \[\text{ASR} = F_{SW}^{\downarrow} - F_{SW}^{\uparrow} = F_{SW}^{\downarrow} (1-\alpha)\]</div>
@@ -4857,7 +4858,7 @@ Coordinates:
 </div>
 </section>
 <section id="outgoing-longwave-radiation">
-<h3>Outgoing longwave radiation<a class="headerlink" href="#outgoing-longwave-radiation" title="Permalink to this headline">#</a></h3>
+<h3>Outgoing longwave radiation<a class="headerlink" href="#outgoing-longwave-radiation" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[ \text{OLR} = F_{LW}^{\uparrow} \]</div>
 <div class="cell docutils container">
@@ -4874,7 +4875,7 @@ Coordinates:
 </div>
 </section>
 <section id="net-radiation-at-toa">
-<h3>Net radiation at TOA<a class="headerlink" href="#net-radiation-at-toa" title="Permalink to this headline">#</a></h3>
+<h3>Net radiation at TOA<a class="headerlink" href="#net-radiation-at-toa" title="Permalink to this heading">#</a></h3>
 <p>The net radiation is the difference between Absorbed Solar Radiation (ASR) and the Outgoing Longwave Radiation (OLR):</p>
 <div class="math notranslate nohighlight">
 \[ F_{net}^{\downarrow} = \text{ASR} - \text{OLR} = F_{SW}^{\downarrow} (1-\alpha) - F_{LW}^{\uparrow} \]</div>
@@ -4900,7 +4901,7 @@ Coordinates:
 </section>
 </section>
 <section id="hemispheric-energy-balance">
-<h2>Hemispheric energy balance<a class="headerlink" href="#hemispheric-energy-balance" title="Permalink to this headline">#</a></h2>
+<h2>Hemispheric energy balance<a class="headerlink" href="#hemispheric-energy-balance" title="Permalink to this heading">#</a></h2>
 <figure class="align-default" id="id5">
 <a class="bg-primary mb-1 reference internal image-reference" href="https://ars.els-cdn.com/content/image/1-s2.0-S0169809515002070-gr3.jpg"><img alt="Earth's Hemispheric Energy Balance" class="bg-primary mb-1" src="https://ars.els-cdn.com/content/image/1-s2.0-S0169809515002070-gr3.jpg" style="width: 400px;" /></a>
 <figcaption>
@@ -4908,9 +4909,9 @@ Coordinates:
 </figcaption>
 </figure>
 <section id="energy-storage-by-latitude-and-season">
-<h3>Energy storage by latitude and season<a class="headerlink" href="#energy-storage-by-latitude-and-season" title="Permalink to this headline">#</a></h3>
+<h3>Energy storage by latitude and season<a class="headerlink" href="#energy-storage-by-latitude-and-season" title="Permalink to this heading">#</a></h3>
 <section id="a-published-version">
-<h4>A published version<a class="headerlink" href="#a-published-version" title="Permalink to this headline">#</a></h4>
+<h4>A published version<a class="headerlink" href="#a-published-version" title="Permalink to this heading">#</a></h4>
 <figure class="align-default" id="id7">
 <a class="bg-primary mb-1 reference internal image-reference" href="https://ars.els-cdn.com/content/image/1-s2.0-S0169809515002070-gr7.jpg"><img alt="Heat storage of the Earth–atmosphere system" class="bg-primary mb-1" src="https://ars.els-cdn.com/content/image/1-s2.0-S0169809515002070-gr7.jpg" style="width: 400px;" /></a>
 <figcaption>
@@ -4919,7 +4920,7 @@ Coordinates:
 </figure>
 </section>
 <section id="and-our-own-version-based-on-the-full-ceres-ebaf-dataset">
-<h4>And our own version based on the full CERES-EBAF dataset<a class="headerlink" href="#and-our-own-version-based-on-the-full-ceres-ebaf-dataset" title="Permalink to this headline">#</a></h4>
+<h4>And our own version based on the full CERES-EBAF dataset<a class="headerlink" href="#and-our-own-version-based-on-the-full-ceres-ebaf-dataset" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="n">fsize</span><span class="p">)</span>
@@ -4941,7 +4942,7 @@ Coordinates:
 </section>
 </section>
 <section id="meridional-energy-transport">
-<h3>Meridional energy transport<a class="headerlink" href="#meridional-energy-transport" title="Permalink to this headline">#</a></h3>
+<h3>Meridional energy transport<a class="headerlink" href="#meridional-energy-transport" title="Permalink to this heading">#</a></h3>
 <figure class="align-default" id="id9">
 <a class="bg-primary mb-1 reference internal image-reference" href="https://ars.els-cdn.com/content/image/1-s2.0-S0169809515002070-gr8.jpg"><img alt="Seasonal heat transport" class="bg-primary mb-1" src="https://ars.els-cdn.com/content/image/1-s2.0-S0169809515002070-gr8.jpg" style="width: 400px;" /></a>
 <figcaption>
@@ -4950,7 +4951,7 @@ Coordinates:
 </figure>
 </section>
 <section id="precipitation-and-the-itcz">
-<h3>Precipitation and the ITCZ<a class="headerlink" href="#precipitation-and-the-itcz" title="Permalink to this headline">#</a></h3>
+<h3>Precipitation and the ITCZ<a class="headerlink" href="#precipitation-and-the-itcz" title="Permalink to this heading">#</a></h3>
 <figure class="align-default" id="id11">
 <a class="bg-primary mb-1 reference internal image-reference" href="https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00382-013-1767-z/MediaObjects/382_2013_1767_Fig1_HTML.gif?as=webp"><img alt="Annual mean precipitation" class="bg-primary mb-1" src="https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00382-013-1767-z/MediaObjects/382_2013_1767_Fig1_HTML.gif?as=webp" style="width: 800px;" /></a>
 <figcaption>
@@ -4960,7 +4961,7 @@ Coordinates:
 </section>
 </section>
 <section id="inferring-energy-transport-from-net-radiation">
-<h2>Inferring energy transport from net radiation<a class="headerlink" href="#inferring-energy-transport-from-net-radiation" title="Permalink to this headline">#</a></h2>
+<h2>Inferring energy transport from net radiation<a class="headerlink" href="#inferring-energy-transport-from-net-radiation" title="Permalink to this heading">#</a></h2>
 <p>Consider the energy budget of a column:</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial E}{\partial t} = F_{net}^{\downarrow} - \nabla \cdot (\vec{v} E) \]</div>

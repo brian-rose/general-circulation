@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1. Top-of-Atmosphere Radiation Budget and Meridional Energy Transport &#8212; ATM 622: General Circulation of the Atmosphere</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -66,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Benchmarking a data-intensive operation" href="../info/dask_test.html" />
     <link rel="prev" title="9. Effect of eddies on the zonal mean circulation" href="../lectures/tem.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -428,9 +429,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="top-of-atmosphere-radiation-budget-and-meridional-energy-transport">
-<h1><span class="section-number">1. </span>Top-of-Atmosphere Radiation Budget and Meridional Energy Transport<a class="headerlink" href="#top-of-atmosphere-radiation-budget-and-meridional-energy-transport" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1. </span>Top-of-Atmosphere Radiation Budget and Meridional Energy Transport<a class="headerlink" href="#top-of-atmosphere-radiation-budget-and-meridional-energy-transport" title="Permalink to this heading">#</a></h1>
 <section id="overview-and-goals">
-<h2>Overview and goals<a class="headerlink" href="#overview-and-goals" title="Permalink to this headline">#</a></h2>
+<h2>Overview and goals<a class="headerlink" href="#overview-and-goals" title="Permalink to this heading">#</a></h2>
 <p>In this assignment you will use data from the <a class="reference external" href="https://ceres.larc.nasa.gov">CERES-EBAF</a> product as we did in the <a class="reference internal" href="../lectures/radiation-budget.html"><span class="doc std std-doc">first set of lecture notes</span></a>.</p>
 <p>This assigment has several goals:</p>
 <ol class="arabic simple">
@@ -442,7 +443,7 @@ document.write(`
 </ol>
 </section>
 <section id="instructions">
-<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>In a local copy of this notebook <strong>add your answers in additional cells</strong>.</p></li>
 <li><p><strong>Complete both problems</strong> below.</p></li>
@@ -462,7 +463,7 @@ document.write(`
 </ul>
 </section>
 <section id="problem-1-global-annual-mean-energy-budgets">
-<h2>Problem 1: global, annual mean energy budgets<a class="headerlink" href="#problem-1-global-annual-mean-energy-budgets" title="Permalink to this headline">#</a></h2>
+<h2>Problem 1: global, annual mean energy budgets<a class="headerlink" href="#problem-1-global-annual-mean-energy-budgets" title="Permalink to this heading">#</a></h2>
 <p>Consider the first figure in our lecture notes from <span id="id1">Stephens <em>et al.</em> [<a class="reference internal" href="../info/references.html#id2" title="Graeme L. Stephens, Juilin Li, Martin Wild, Carol Anne Clayson, Norman G. Loeb, Seiji Kato, Tristan L'Ecuyer, Paul W. Stackhouse Jr., Matthew Lebsock, and Timothy Andrews. An update on earth's energy balance in light of the latest global observations. Nature Geoscience, 5:691–696, 2012. doi:10.1038/NGEO1580.">2012</a>]</span> and reproduced again here:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/stephens2012.png"><img alt="Earth's Energy Balance" class="bg-primary mb-1" src="../_images/stephens2012.png" style="width: 800px;" /></a>
 <p>Your task here is simply to <strong>reproduce as many of the values shown in this figure as you can</strong> from the CERES-EBAF dataset. Remember that these values all represent long-term time averages and global averages, and that global averages must be properly weighted to account for the area of grid cells. <em>If you’re looking for help on the area weighting, check out <a class="reference external" href="https://docs.xarray.dev/en/stable/examples/area_weighted_temperature.html?highlight=weighted%20average">this short lesson from the xarray docs</a></em>.</p>
@@ -4256,19 +4257,19 @@ Attributes:
 </div>
 </section>
 <section id="problem-2-computing-meridonal-energy-transport">
-<h2>Problem 2: Computing meridonal energy transport<a class="headerlink" href="#problem-2-computing-meridonal-energy-transport" title="Permalink to this headline">#</a></h2>
+<h2>Problem 2: Computing meridonal energy transport<a class="headerlink" href="#problem-2-computing-meridonal-energy-transport" title="Permalink to this heading">#</a></h2>
 <section id="the-problem">
-<h3>The problem<a class="headerlink" href="#the-problem" title="Permalink to this headline">#</a></h3>
+<h3>The problem<a class="headerlink" href="#the-problem" title="Permalink to this heading">#</a></h3>
 <p>In this problem you will tackle the problem of computing the total meridional (i.e. north-south) energy transport that is implied from the net radiation imbalance at each latitude found in the CERES-EBAF data.</p>
 <p>An example of this was shown in <a class="reference external" href="https://brian-rose.github.io/general-circulation/lectures/radiation-budget.html#meridional-energy-transport">this figure in our lecture notes</a>. For this question, we will focus just on the <em>annual mean</em> energy transport.</p>
 </section>
 <section id="a-reading-assignment">
-<h3>A reading assignment<a class="headerlink" href="#a-reading-assignment" title="Permalink to this headline">#</a></h3>
+<h3>A reading assignment<a class="headerlink" href="#a-reading-assignment" title="Permalink to this heading">#</a></h3>
 <p>The calculation involves <strong>integrating the net imbalance (ASR - OLR) in latitude starting from one pole</strong>. To understand how this works and see the specific formula for the integral, please read through <a class="reference external" href="https://brian-rose.github.io/ClimateLaboratoryBook/courseware/heat-transport.html#the-energy-budget-for-a-zonal-band">sections 4 and 5 of these notes from Brian Rose’s <em>The Climate Laboratory</em></a>.</p>
 <p><strong>IMPORTANT: if anything in those notes is unclear, please ask! This is material I want you to understand.</strong></p>
 </section>
 <section id="the-specific-goal">
-<h3>The specific goal<a class="headerlink" href="#the-specific-goal" title="Permalink to this headline">#</a></h3>
+<h3>The specific goal<a class="headerlink" href="#the-specific-goal" title="Permalink to this heading">#</a></h3>
 <p>Your specific goal here is to produce one figure: a plot of the poleward energy transport (labeled in units of PW) implied by the CERES-EBAF data. A few notes about this:</p>
 <ul class="simple">
 <li><p>You will need to take a long-term annual time average and also zonal average of the data, and carry out the integration in latitude.</p></li>
@@ -4277,7 +4278,7 @@ Attributes:
 </ul>
 </section>
 <section id="from-your-results-a-few-things-to-comment-on">
-<h3>From your results, a few things to comment on:<a class="headerlink" href="#from-your-results-a-few-things-to-comment-on" title="Permalink to this headline">#</a></h3>
+<h3>From your results, a few things to comment on:<a class="headerlink" href="#from-your-results-a-few-things-to-comment-on" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>What is the energy transport at the equator?</p>
 <ul>

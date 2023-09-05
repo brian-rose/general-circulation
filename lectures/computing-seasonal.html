@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>2. Computing seasonal and monthly means from CFSR data &#8212; ATM 622: General Circulation of the Atmosphere</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -68,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="3. The observed circulation" href="observed-circulation.html" />
     <link rel="prev" title="1. Earth’s radiation budget" href="radiation-budget.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -439,9 +440,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="computing-seasonal-and-monthly-means-from-cfsr-data">
-<h1><span class="section-number">2. </span>Computing seasonal and monthly means from CFSR data<a class="headerlink" href="#computing-seasonal-and-monthly-means-from-cfsr-data" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">2. </span>Computing seasonal and monthly means from CFSR data<a class="headerlink" href="#computing-seasonal-and-monthly-means-from-cfsr-data" title="Permalink to this heading">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>These notes will show how to:</p>
 <ol class="arabic simple">
 <li><p>Access the 6-hourly CFSR dataset on our local disks</p></li>
@@ -453,7 +454,7 @@ document.write(`
 <p>This is just for demonstration purposes.</p>
 </section>
 <section id="the-cfsr-data">
-<h2>The CFSR data<a class="headerlink" href="#the-cfsr-data" title="Permalink to this headline">#</a></h2>
+<h2>The CFSR data<a class="headerlink" href="#the-cfsr-data" title="Permalink to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://climatedataguide.ucar.edu/climate-data/climate-forecast-system-reanalysis-cfsr">Climate Forecase System Reanalysis</a> or CFSR is a reanalysis data product giving a best estimate of the state of the coupled climate system since 1979 based on a blend of observations and numerical model.</p>
 <blockquote>
 <div><p>The CFSR is a third generation reanalysis product. It is a global, high resolution, coupled atmosphere-ocean-land surface-sea ice system designed to provide the best estimate of the state of these coupled domains over this period. The CFSR includes (1) coupling of atmosphere and ocean during the generation of the 6 hour guess field, (2) an interactive sea-ice model, and (3) assimilation of satellite radiances. The CFSR global atmosphere resolution is ~38 km (T382) with 64 levels. The global ocean is 0.25° at the equator, extending to a global 0.5° beyond the tropics, with 40 levels. The global land surface model has 4 soil levels and the global sea ice model has 3 levels. The CFSR atmospheric model contains observed variations in carbon dioxide (CO2), together with changes in aerosols and other trace gases and solar variations. With these variable parameters, the analyzed state will include estimates of changes in the Earth system climate due to these factors. The current CFSR will be extended as an operational, real time product into the future.</p>
@@ -518,10 +519,10 @@ pwat.2000.0p5.anl.nc     u_isen.2000.0p5.anl.nc
 </div>
 </section>
 <section id="opening-handles-to-the-dataset">
-<h2>Opening handles to the dataset<a class="headerlink" href="#opening-handles-to-the-dataset" title="Permalink to this headline">#</a></h2>
+<h2>Opening handles to the dataset<a class="headerlink" href="#opening-handles-to-the-dataset" title="Permalink to this heading">#</a></h2>
 <p>Here we are going to assemble a list of paths to every data file that we want to concatenate into a single dataset.</p>
 <section id="assembling-paths-to-all-the-data">
-<h3>Assembling paths to all the data<a class="headerlink" href="#assembling-paths-to-all-the-data" title="Permalink to this headline">#</a></h3>
+<h3>Assembling paths to all the data<a class="headerlink" href="#assembling-paths-to-all-the-data" title="Permalink to this heading">#</a></h3>
 <p>Here’s the logic for a single variable:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -591,7 +592,7 @@ pwat.2000.0p5.anl.nc     u_isen.2000.0p5.anl.nc
 </div>
 </section>
 <section id="passing-through-paths-to-xarray-open-mfdataset">
-<h3>Passing through paths to <code class="docutils literal notranslate"><span class="pre">xarray.open_mfdataset()</span></code><a class="headerlink" href="#passing-through-paths-to-xarray-open-mfdataset" title="Permalink to this headline">#</a></h3>
+<h3>Passing through paths to <code class="docutils literal notranslate"><span class="pre">xarray.open_mfdataset()</span></code><a class="headerlink" href="#passing-through-paths-to-xarray-open-mfdataset" title="Permalink to this heading">#</a></h3>
 <p>Now we pass our list of path and let Xarray (with Dask in the background) handle the concatenation:</p>
 <p><em>Note the <code class="docutils literal notranslate"><span class="pre">chunks=</span></code> argument, which gives instructions about how to divide up the data into “chunks” that can be moved in and out of memory. I needed some trial and error to find chunk sizes that seemed to make sense here.</em></p>
 <div class="cell docutils container">
@@ -3279,7 +3280,7 @@ Attributes:
 </ul>
 </section>
 <section id="dask-and-lazy-execution">
-<h3>Dask and lazy execution<a class="headerlink" href="#dask-and-lazy-execution" title="Permalink to this headline">#</a></h3>
+<h3>Dask and lazy execution<a class="headerlink" href="#dask-and-lazy-execution" title="Permalink to this heading">#</a></h3>
 <p>Note that we’ve just loaded in handles to a LOT of data. Each 4-dimensional field (lat,lon,pressure,time) is roughly <span class="math notranslate nohighlight">\(4.6 \times 10^{11}\)</span> data points, which at single-precision floating point storage works out to about 1.7 TB per variable!</p>
 <p>The total size of this 30-year dataset is about 24 TB.</p>
 <p>Actually we can see this in the dataset object like this:</p>
@@ -3300,10 +3301,10 @@ Attributes:
 </section>
 </section>
 <section id="creating-the-seasonal-climatology">
-<h2>Creating the seasonal climatology<a class="headerlink" href="#creating-the-seasonal-climatology" title="Permalink to this headline">#</a></h2>
+<h2>Creating the seasonal climatology<a class="headerlink" href="#creating-the-seasonal-climatology" title="Permalink to this heading">#</a></h2>
 <p>Now let’s get started on <em>reducing</em> this dataset into a form more amenable to our analysis. We are going to take <em>time averages</em> over individual seasons.</p>
 <section id="grouping-by-season">
-<h3>Grouping by season<a class="headerlink" href="#grouping-by-season" title="Permalink to this headline">#</a></h3>
+<h3>Grouping by season<a class="headerlink" href="#grouping-by-season" title="Permalink to this heading">#</a></h3>
 <p>Our time axis already understands meteorological seasons DJF (December, January, February), JJA (June, July, August), etc. So creating groups for the four seasons is very simple. Here’s a quick example of using a <code class="docutils literal notranslate"><span class="pre">groupby</span></code> operation (using one variable as example: <code class="docutils literal notranslate"><span class="pre">t</span></code> or air temperature):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3320,7 +3321,7 @@ Attributes:
 </div>
 </section>
 <section id="definining-the-climatology">
-<h3>Definining the climatology<a class="headerlink" href="#definining-the-climatology" title="Permalink to this headline">#</a></h3>
+<h3>Definining the climatology<a class="headerlink" href="#definining-the-climatology" title="Permalink to this heading">#</a></h3>
 <p>We use a grouped operation to take averages over all data points within each season.</p>
 <p><em>Note, this operation is very fast because no actualy computations are being done at this point, just laying out a map for <strong>how to do the computations</strong>.</em></p>
 <div class="cell docutils container">
@@ -3828,7 +3829,7 @@ Coordinates:
 </section>
 </section>
 <section id="saving-the-climatology-to-disk">
-<h2>Saving the climatology to disk<a class="headerlink" href="#saving-the-climatology-to-disk" title="Permalink to this headline">#</a></h2>
+<h2>Saving the climatology to disk<a class="headerlink" href="#saving-the-climatology-to-disk" title="Permalink to this heading">#</a></h2>
 <p>The code is extremely simple to write, but the execution will be very slow.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3842,7 +3843,7 @@ Coordinates:
 </div>
 </section>
 <section id="the-production-run-compute-and-save-seasonal-climatologies-for-all-variables">
-<h2>The production run: compute and save seasonal climatologies for all variables<a class="headerlink" href="#the-production-run-compute-and-save-seasonal-climatologies-for-all-variables" title="Permalink to this headline">#</a></h2>
+<h2>The production run: compute and save seasonal climatologies for all variables<a class="headerlink" href="#the-production-run-compute-and-save-seasonal-climatologies-for-all-variables" title="Permalink to this heading">#</a></h2>
 <p>We’re going to define a function to do all the heavy lifting for us:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3881,7 +3882,7 @@ Coordinates:
 </div>
 </section>
 <section id="monthly-climatologies">
-<h2>Monthly climatologies<a class="headerlink" href="#monthly-climatologies" title="Permalink to this headline">#</a></h2>
+<h2>Monthly climatologies<a class="headerlink" href="#monthly-climatologies" title="Permalink to this heading">#</a></h2>
 <p>In addition to the seasonal climatologies (DJF, MAM, JJA, SON), we’ll also compute monthly climatologies.</p>
 <p>Here’s what that looks like, again using lazy execution. We can easily define the climatology for the entire dataset like this:</p>
 <div class="cell docutils container">
@@ -6180,7 +6181,7 @@ Data variables: (12/17)
 </div>
 <p>Here instead of the <code class="docutils literal notranslate"><span class="pre">season</span></code> axis, we have a <code class="docutils literal notranslate"><span class="pre">month</span></code> axis with integer values 1 = January, 2 = February, etc.</p>
 <section id="computing-monthly-results">
-<h3>Computing monthly results<a class="headerlink" href="#computing-monthly-results" title="Permalink to this headline">#</a></h3>
+<h3>Computing monthly results<a class="headerlink" href="#computing-monthly-results" title="Permalink to this heading">#</a></h3>
 <p>In principle we could compute the entire climatology in one line of code (and into a single file) like</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cfsr_monthly</span><span class="o">.</span><span class="n">to_netcdf</span><span class="p">(</span><span class="n">output_path</span> <span class="o">+</span> <span class="s1">&#39;cfsr.mon_clim.0p5.nc&#39;</span><span class="p">)</span>
 </pre></div>

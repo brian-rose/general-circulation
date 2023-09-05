@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Benchmarking a data-intensive operation &#8212; ATM 622: General Circulation of the Atmosphere</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -68,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Benchmarking a data-intensive operation (snow version)" href="dask_test_snow.html" />
     <link rel="prev" title="1. Top-of-Atmosphere Radiation Budget and Meridional Energy Transport" href="../assignments/assignment-toa-budget.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -436,7 +437,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="benchmarking-a-data-intensive-operation">
-<h1>Benchmarking a data-intensive operation<a class="headerlink" href="#benchmarking-a-data-intensive-operation" title="Permalink to this headline">#</a></h1>
+<h1>Benchmarking a data-intensive operation<a class="headerlink" href="#benchmarking-a-data-intensive-operation" title="Permalink to this heading">#</a></h1>
 <p>We’re going to compute the zonal, time average of a product of two high-frequency fields from the CFSR dataset.</p>
 <p>Specifically we will compute</p>
 <div class="math notranslate nohighlight">
@@ -444,13 +445,13 @@ document.write(`
 <p>for the month of January (one single year)</p>
 <p>I want to compare various ways of accelerating the calculation.</p>
 <section id="compute-environment">
-<h2>Compute environment<a class="headerlink" href="#compute-environment" title="Permalink to this headline">#</a></h2>
+<h2>Compute environment<a class="headerlink" href="#compute-environment" title="Permalink to this heading">#</a></h2>
 <p>I logged into <a class="reference external" href="https://jupyterlab.arcc.albany.edu">https://jupyterlab.arcc.albany.edu</a>, and spawned on <code class="docutils literal notranslate"><span class="pre">batch</span></code> with 4 cores and 32 GB memory</p>
 <p>This resource is open to anyone with UAlbany login credentials.</p>
 <p>Python kernel is <code class="docutils literal notranslate"><span class="pre">daes_nov22</span></code>.</p>
 </section>
 <section id="eager-execution-in-memory">
-<h2>Eager execution in memory<a class="headerlink" href="#eager-execution-in-memory" title="Permalink to this headline">#</a></h2>
+<h2>Eager execution in memory<a class="headerlink" href="#eager-execution-in-memory" title="Permalink to this heading">#</a></h2>
 <p>First we do the “normal” style: open the datasets, execute the calculation immediately</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -897,7 +898,7 @@ Attributes:
 <p>The month of January alone is about <span class="math notranslate nohighlight">\(1\times 10^9\)</span> points.</p>
 <p>Using 32-bit real numbers (4 bytes per numbers), this means we’re taking the product of two arrays of size around 4 GB each.</p>
 <section id="timing-the-eager-execution">
-<h3>Timing the eager execution<a class="headerlink" href="#timing-the-eager-execution" title="Permalink to this headline">#</a></h3>
+<h3>Timing the eager execution<a class="headerlink" href="#timing-the-eager-execution" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">time</span> (v_ds.v.groupby(v_ds.time.dt.month)[1] * T_ds.t.groupby(T_ds.time.dt.month)[1]).mean(dim=(&#39;lon&#39;,&#39;time&#39;))
@@ -1325,7 +1326,7 @@ Coordinates:
 </section>
 </section>
 <section id="lazy-execution-using-dask-locally">
-<h2>Lazy execution using Dask locally<a class="headerlink" href="#lazy-execution-using-dask-locally" title="Permalink to this headline">#</a></h2>
+<h2>Lazy execution using Dask locally<a class="headerlink" href="#lazy-execution-using-dask-locally" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_mfdataset</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;time&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;lev&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
@@ -3072,12 +3073,12 @@ Coordinates:
 </div>
 </div>
 <section id="conclusion">
-<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h3>
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
 <p>On this particular system, we seem to get about the same performance either way – giving advantage to the lazy method, because the code is nicer to work with.</p>
 </section>
 </section>
 <section id="lazy-execution-using-dask-and-a-distributed-cluster">
-<h2>Lazy execution using Dask and a distributed cluster<a class="headerlink" href="#lazy-execution-using-dask-and-a-distributed-cluster" title="Permalink to this headline">#</a></h2>
+<h2>Lazy execution using Dask and a distributed cluster<a class="headerlink" href="#lazy-execution-using-dask-and-a-distributed-cluster" title="Permalink to this heading">#</a></h2>
 <p>Now we’ll try the same thing but farm the computation out to a dask cluster.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3212,7 +3213,7 @@ Coordinates:
 </div></div></div>
 </div>
 <section id="effects-of-different-chunking">
-<h3>Effects of different chunking<a class="headerlink" href="#effects-of-different-chunking" title="Permalink to this headline">#</a></h3>
+<h3>Effects of different chunking<a class="headerlink" href="#effects-of-different-chunking" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_mfdataset</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;time&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;lev&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
@@ -4763,7 +4764,7 @@ Coordinates:
 </div>
 </section>
 <section id="same-thing-different-chunking">
-<h3>Same thing, different chunking<a class="headerlink" href="#same-thing-different-chunking" title="Permalink to this headline">#</a></h3>
+<h3>Same thing, different chunking<a class="headerlink" href="#same-thing-different-chunking" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_mfdataset</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;time&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;lev&#39;</span><span class="p">:</span> <span class="mi">32</span><span class="p">})</span>
@@ -5687,7 +5688,7 @@ Coordinates:
 </div>
 </section>
 <section id="and-yet-another-chunking">
-<h3>And yet another chunking<a class="headerlink" href="#and-yet-another-chunking" title="Permalink to this headline">#</a></h3>
+<h3>And yet another chunking<a class="headerlink" href="#and-yet-another-chunking" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_mfdataset</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;time&#39;</span><span class="p">:</span><span class="mi">124</span><span class="p">,</span> <span class="s1">&#39;lev&#39;</span><span class="p">:</span> <span class="mi">32</span><span class="p">})</span>
@@ -7119,7 +7120,7 @@ Coordinates:
 </section>
 </section>
 <section id="results">
-<h2>Results<a class="headerlink" href="#results" title="Permalink to this headline">#</a></h2>
+<h2>Results<a class="headerlink" href="#results" title="Permalink to this heading">#</a></h2>
 <p>The smallest wall time for this calculation was achieved using the distributed cluster and a chunking strategy <code class="docutils literal notranslate"><span class="pre">chunks={'time':10,</span> <span class="pre">'lev':</span> <span class="pre">32}</span></code>.</p>
 <p>For this one-month calculation, using the distributed cluster <strong>reduces our wall time from about 50 s down to about 20 s</strong>.</p>
 <p>That’s close to a factor of three speed-up.</p>

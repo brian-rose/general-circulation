@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>6. Energy Budget &#8212; ATM 622: General Circulation of the Atmosphere</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -68,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="7. Available Potential Energy" href="ape.html" />
     <link rel="prev" title="5. Angular Momentum Budget" href="angular-momentum-budget.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -432,9 +433,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="energy-budget">
-<h1><span class="section-number">6. </span>Energy Budget<a class="headerlink" href="#energy-budget" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">6. </span>Energy Budget<a class="headerlink" href="#energy-budget" title="Permalink to this heading">#</a></h1>
 <section id="definitions">
-<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
 <p>There are four types of energy (per unit mass) that we need to keep track of in the fluid:</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(I = c_v T\)</span> is the <strong>internal energy</strong> <em>(valid for an ideal gas, see e.g. <span id="id1">Vallis [<a class="reference internal" href="../info/references.html#id9" title="Geoffrey K. Vallis. Atmospheric and Oceanic Fluid Dynamics: fundamentals and large-scale circulation. Cambridge University Press, Cambridge, U.K., 2nd edition, 2017.">2017</a>]</span>)</em> – this is a measure of the disorganized molecular-scale motion in the fluid</p></li>
@@ -450,29 +451,29 @@ E &amp;= I + \Phi + L + K \\
 \end{align*}\]</div>
 </section>
 <section id="budget-equations-for-energy-components">
-<h2>Budget equations for energy components<a class="headerlink" href="#budget-equations-for-energy-components" title="Permalink to this headline">#</a></h2>
+<h2>Budget equations for energy components<a class="headerlink" href="#budget-equations-for-energy-components" title="Permalink to this heading">#</a></h2>
 <section id="potential-energy">
-<h3>Potential energy<a class="headerlink" href="#potential-energy" title="Permalink to this headline">#</a></h3>
+<h3>Potential energy<a class="headerlink" href="#potential-energy" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="latent-energy">
-<h3>Latent energy<a class="headerlink" href="#latent-energy" title="Permalink to this headline">#</a></h3>
+<h3>Latent energy<a class="headerlink" href="#latent-energy" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="internal-energy">
-<h3>Internal energy<a class="headerlink" href="#internal-energy" title="Permalink to this headline">#</a></h3>
+<h3>Internal energy<a class="headerlink" href="#internal-energy" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="kinetic-energy">
-<h3>Kinetic energy<a class="headerlink" href="#kinetic-energy" title="Permalink to this headline">#</a></h3>
+<h3>Kinetic energy<a class="headerlink" href="#kinetic-energy" title="Permalink to this heading">#</a></h3>
 </section>
 </section>
 <section id="a-total-energy-equation-and-global-conservation">
-<h2>A total energy equation and global conservation<a class="headerlink" href="#a-total-energy-equation-and-global-conservation" title="Permalink to this headline">#</a></h2>
+<h2>A total energy equation and global conservation<a class="headerlink" href="#a-total-energy-equation-and-global-conservation" title="Permalink to this heading">#</a></h2>
 <p>After some work and cancellation of various conversion terms:</p>
 <div class="math notranslate nohighlight">
 \[ \frac{DE}{Dt} = -\alpha \nabla \cdot \left( \vec{v} p \right) - \alpha \nabla \cdot \vec{F}_{rad} + D_h \]</div>
 <p>with <span class="math notranslate nohighlight">\(D_h = c_p D_T + L_v D_q\)</span> the net surface enthalpy flux and <span class="math notranslate nohighlight">\(\vec{F}_{rad}\)</span> the radiative flux.</p>
 </section>
 <section id="alternate-form-and-moist-static-energy">
-<h2>Alternate form and Moist Static Energy<a class="headerlink" href="#alternate-form-and-moist-static-energy" title="Permalink to this headline">#</a></h2>
+<h2>Alternate form and Moist Static Energy<a class="headerlink" href="#alternate-form-and-moist-static-energy" title="Permalink to this heading">#</a></h2>
 <p>We can rewrite the first law of thermodynamics as</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -491,7 +492,7 @@ dQ &amp;= dI + p d\alpha \\
 <p>We’ll see from the data that <span class="math notranslate nohighlight">\(K\)</span> is typically a small fraction of <span class="math notranslate nohighlight">\(\mathcal{E}\)</span> so is often ignored in the total energy budget, and we will talk instead about fluxes of moist static energy rather than fluxes of total energy.</p>
 </section>
 <section id="merdional-energy-transport">
-<h2>Merdional energy transport<a class="headerlink" href="#merdional-energy-transport" title="Permalink to this headline">#</a></h2>
+<h2>Merdional energy transport<a class="headerlink" href="#merdional-energy-transport" title="Permalink to this heading">#</a></h2>
 <p>Write the zonal- and time-averaged energy budget in pressure coordinates and flux form:</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial}{\partial t} [\overline{\mathcal{E}}] = -\frac{1}{a \cos\phi} \frac{\partial}{\partial \phi} \left( [\overline{v\mathcal{E}}] \cos\phi \right) -\frac{\partial}{\partial p} \left( [\overline{\omega \mathcal{E}}] \right) + g \left[ \frac{\partial \overline{\vec{F}_{rad}}}{\partial p} \right] + [\overline{D_h}]\]</div>
@@ -504,7 +505,7 @@ dQ &amp;= dI + p d\alpha \\
 <p>and likewise for the other components.</p>
 </section>
 <section id="the-observed-energy-budget">
-<h2>The observed energy budget<a class="headerlink" href="#the-observed-energy-budget" title="Permalink to this headline">#</a></h2>
+<h2>The observed energy budget<a class="headerlink" href="#the-observed-energy-budget" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>

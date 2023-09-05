@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>5. Angular Momentum Budget &#8212; ATM 622: General Circulation of the Atmosphere</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -68,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="6. Energy Budget" href="energy-budget.html" />
     <link rel="prev" title="4. Decompositions of the circulation" href="decomposing-circulation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -470,9 +471,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="angular-momentum-budget">
-<h1><span class="section-number">5. </span>Angular Momentum Budget<a class="headerlink" href="#angular-momentum-budget" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">5. </span>Angular Momentum Budget<a class="headerlink" href="#angular-momentum-budget" title="Permalink to this heading">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>We’re going to talk about three key budgets of materially conserved quantities:</p>
 <ol class="arabic simple">
 <li><p>Angular Momentum</p></li>
@@ -482,7 +483,7 @@ document.write(`
 <p>The general idea running through these topics is that we have a quantity that <em>obeys some conservation principle</em> embeded in the equations of motion, and that over a “long enough” time period that quantity must be in <strong>steady state</strong> in the atmosphere.</p>
 <p>For any quantity in steady state, we must have a balance between local <em>sources</em> and <em>sinks</em> of that quantity and <em>flux divergence / convergence</em> of the same quantity.</p>
 <section id="vertical-integrals">
-<h3>Vertical integrals<a class="headerlink" href="#vertical-integrals" title="Permalink to this headline">#</a></h3>
+<h3>Vertical integrals<a class="headerlink" href="#vertical-integrals" title="Permalink to this heading">#</a></h3>
 <p>In addition to zonal and time averages, we will sometimes employ a vertical integral (weighted by mass):</p>
 <div class="math notranslate nohighlight">
 \[ &lt;A&gt; = \frac{1}{g} \int_0^{p_s} A dp \approx \int_0^{\infty} A \rho dz \]</div>
@@ -490,17 +491,17 @@ document.write(`
 </section>
 </section>
 <section id="angular-momentum-basics">
-<h2>Angular momentum basics<a class="headerlink" href="#angular-momentum-basics" title="Permalink to this headline">#</a></h2>
+<h2>Angular momentum basics<a class="headerlink" href="#angular-momentum-basics" title="Permalink to this heading">#</a></h2>
 <p>The total angular momentum of the solid Earth and its fluid components is approximately conserved.</p>
 <p>Angular momentum is exchanged between the solid Earth and the atmosphere, but on greater than annual timescales, there should be no net exchange.</p>
 <section id="length-of-day">
-<h3>Length of day<a class="headerlink" href="#length-of-day" title="Permalink to this headline">#</a></h3>
+<h3>Length of day<a class="headerlink" href="#length-of-day" title="Permalink to this heading">#</a></h3>
 <p>Changes in the angular momentum of the solid Earth are reflected in fluctuations of the <a class="reference external" href="https://en.wikipedia.org/wiki/Day_length_fluctuations">Length of Day</a>:</p>
 <p><a href="https://commons.wikimedia.org/wiki/File:Deviation_of_day_length_from_SI_day.svg#/media/File:Deviation_of_day_length_from_SI_day.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Deviation_of_day_length_from_SI_day.svg/1200px-Deviation_of_day_length_from_SI_day.svg.png" alt="Deviation of day length from SI day.svg"></a><br>By &lt;a href="//commons.wikimedia.org/w/index.php?title=User:%E2%85%A1_%E2%85%A6_%E2%85%AB&amp;amp;action=edit&amp;amp;redlink=1" class="new" title="User:Ⅱ Ⅶ Ⅻ (page does not exist)"&gt;Ⅱ Ⅶ Ⅻ&lt;/a&gt; - &lt;span class="int-own-work" lang="en"&gt;Own work&lt;/span&gt;, data: &lt;a href="https://en.wikipedia.org/wiki/IERS" class="extiw" title="en:IERS"&gt;IERS&lt;/a&gt; &lt;a rel="nofollow" class="external autonumber" href="http://hpiers.obspm.fr/eoppc/eop/eopc04/eopc04.62-now"&gt;[1]&lt;/a&gt;, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=9395571">Link</a></p>
 <p>There’s clearly lots of interesting low-frequency variability, but for our purposes we’ll pay most attention to the annual timescale: fluctuations of order 1 ms. It turns out that these are well-correlated with seasonal flucutations in atmospheric angular momentum.</p>
 </section>
 <section id="definitions-and-notation">
-<h3>Definitions and notation<a class="headerlink" href="#definitions-and-notation" title="Permalink to this headline">#</a></h3>
+<h3>Definitions and notation<a class="headerlink" href="#definitions-and-notation" title="Permalink to this heading">#</a></h3>
 <p>Let <span class="math notranslate nohighlight">\(\vec{r}\)</span> be the position vector from the axis of rotation, and let <span class="math notranslate nohighlight">\(\vec{u}_a\)</span> be the absolute velocity as measured in the <em>inertial</em> frame.</p>
 <p><strong>Sketch of sphere</strong></p>
 <p>Then we define the <strong>angular momentum</strong></p>
@@ -531,7 +532,7 @@ document.write(`
 </section>
 </section>
 <section id="absolute-versus-relative-angular-momentum-in-seasonal-extremes">
-<h2>Absolute versus relative angular momentum in seasonal extremes<a class="headerlink" href="#absolute-versus-relative-angular-momentum-in-seasonal-extremes" title="Permalink to this headline">#</a></h2>
+<h2>Absolute versus relative angular momentum in seasonal extremes<a class="headerlink" href="#absolute-versus-relative-angular-momentum-in-seasonal-extremes" title="Permalink to this heading">#</a></h2>
 <p>The plot below is reproduced from a very nice textbook, “An Introduction to the Global Circulation of the Atmosphere” by <a class="reference external" href="https://www.atmos.colostate.edu/people/faculty/randall/">David Randall</a> (Colorado State University) <span id="id1">Randall [<a class="reference internal" href="../info/references.html#id6" title="David Randall. An Introduction to the Global Circulation of the Atmosphere. Princeton University Press, Princeton, NJ, 2015.">2015</a>]</span>.</p>
 <p>It shows the absolute angular momentum <span class="math notranslate nohighlight">\(M\)</span> as well as just the relative component <span class="math notranslate nohighlight">\(M_{relative} = ua\cos\phi\)</span> for the seasonal extremes of January and July.</p>
 <p>Notice that the relative component is about two orders of magnitude smaller than the absolute.</p>
@@ -543,11 +544,11 @@ document.write(`
 </figure>
 </section>
 <section id="plotting-angular-momentum-from-cfsr-data">
-<h2>Plotting angular momentum from CFSR data<a class="headerlink" href="#plotting-angular-momentum-from-cfsr-data" title="Permalink to this headline">#</a></h2>
+<h2>Plotting angular momentum from CFSR data<a class="headerlink" href="#plotting-angular-momentum-from-cfsr-data" title="Permalink to this heading">#</a></h2>
 <p>Let’s duplicate the plot above using one year of zonal wind (<span class="math notranslate nohighlight">\(u\)</span>) data from the CFSR.</p>
 <p>Even though we’re just using a single year, it’s still a relatively big calculation because we start with a four dimensional dataset (lat, lon, time, and pressure levels) at 6-hourly resolution. We’ll use some “lazy execution” tricks along the way to get our calculation done.</p>
 <section id="load-the-data-using-chunks-to-store-as-dask-arrays">
-<h3>Load the data using <code class="docutils literal notranslate"><span class="pre">chunks</span></code> to store as dask arrays<a class="headerlink" href="#load-the-data-using-chunks-to-store-as-dask-arrays" title="Permalink to this headline">#</a></h3>
+<h3>Load the data using <code class="docutils literal notranslate"><span class="pre">chunks</span></code> to store as dask arrays<a class="headerlink" href="#load-the-data-using-chunks-to-store-as-dask-arrays" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1067,7 +1068,7 @@ Attributes:
 </div>
 </section>
 <section id="planetary-angular-momentum">
-<h3>Planetary angular momentum<a class="headerlink" href="#planetary-angular-momentum" title="Permalink to this headline">#</a></h3>
+<h3>Planetary angular momentum<a class="headerlink" href="#planetary-angular-momentum" title="Permalink to this heading">#</a></h3>
 <p>First we’ll do the easy part: computing the planetary angular momentum from</p>
 <div class="math notranslate nohighlight">
 \[ M_{planetary} = \Omega a^2 \cos^2\phi \]</div>
@@ -1091,7 +1092,7 @@ Attributes:
 </div>
 </section>
 <section id="computing-relative-angular-momentum-from-zonal-wind-data">
-<h3>Computing relative angular momentum from zonal wind data<a class="headerlink" href="#computing-relative-angular-momentum-from-zonal-wind-data" title="Permalink to this headline">#</a></h3>
+<h3>Computing relative angular momentum from zonal wind data<a class="headerlink" href="#computing-relative-angular-momentum-from-zonal-wind-data" title="Permalink to this heading">#</a></h3>
 <p>The formula is</p>
 <div class="math notranslate nohighlight">
 \[ M_{relative} = u a \cos\phi \]</div>
@@ -1588,7 +1589,7 @@ Coordinates:
 <p>Note that this is a very “cheap” operation because we haven’t actually done the computation yet!</p>
 <p>This is an example of “lazy” execution. We’ve just set up instructions about <strong>how</strong> to calculate the result. The actual computation will only occur when it’s need (like when we try to plot a result).</p>
 <section id="side-note-transforming-to-height-coordinates">
-<h4>Side note: transforming to height coordinates<a class="headerlink" href="#side-note-transforming-to-height-coordinates" title="Permalink to this headline">#</a></h4>
+<h4>Side note: transforming to height coordinates<a class="headerlink" href="#side-note-transforming-to-height-coordinates" title="Permalink to this heading">#</a></h4>
 <p>Since Randall’s figure is plotted with respect to height rather than pressure, let’s add a new coordinate dimension to our dataset that represents approximate geopotential height.</p>
 <p>This function just computes the integrated hydrostatic balance relation for an ideal gas at a constant reference temperature (which is all we need here since it’s just for visual comparison):</p>
 <div class="cell docutils container">
@@ -2112,7 +2113,7 @@ Attributes:
 </section>
 </section>
 <section id="taking-time-averages-over-months">
-<h3>Taking time averages over months<a class="headerlink" href="#taking-time-averages-over-months" title="Permalink to this headline">#</a></h3>
+<h3>Taking time averages over months<a class="headerlink" href="#taking-time-averages-over-months" title="Permalink to this heading">#</a></h3>
 <p>To match what’s in Randall’s figure, we need to take time averages over individual months (January and July). We can use <code class="docutils literal notranslate"><span class="pre">groupby</span></code> operations to our advantage here, and again take advantage of lazy execution.</p>
 <p>We define the averages over all months, but we will only actually compute the two months of interest.</p>
 <div class="cell docutils container">
@@ -2596,7 +2597,7 @@ Coordinates:
 </div>
 </section>
 <section id="time-to-actually-compute-a-result">
-<h3>Time to actually compute a result!<a class="headerlink" href="#time-to-actually-compute-a-result" title="Permalink to this headline">#</a></h3>
+<h3>Time to actually compute a result!<a class="headerlink" href="#time-to-actually-compute-a-result" title="Permalink to this heading">#</a></h3>
 <p>By appending <code class="docutils literal notranslate"><span class="pre">.load()</span></code> to the end of our data objects, we force xarray to compute a result and store as numpy arrays rather than dask.</p>
 <p>We’ll just do this for the two months that we want to plot, and store the results in a dictionary for later.</p>
 <div class="cell docutils container">
@@ -2610,7 +2611,7 @@ Coordinates:
 </div>
 </section>
 <section id="and-finally-let-s-make-the-plot">
-<h3>And finally, let’s make the plot!<a class="headerlink" href="#and-finally-let-s-make-the-plot" title="Permalink to this headline">#</a></h3>
+<h3>And finally, let’s make the plot!<a class="headerlink" href="#and-finally-let-s-make-the-plot" title="Permalink to this heading">#</a></h3>
 <p>I’ll try to match the format and contour intervals of Randall’s figure.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2635,9 +2636,9 @@ Coordinates:
 </section>
 </section>
 <section id="conservation-of-angular-momentum">
-<h2>Conservation of angular momentum<a class="headerlink" href="#conservation-of-angular-momentum" title="Permalink to this headline">#</a></h2>
+<h2>Conservation of angular momentum<a class="headerlink" href="#conservation-of-angular-momentum" title="Permalink to this heading">#</a></h2>
 <section id="a-motionless-parcel-moves-poleward">
-<h3>A motionless parcel moves poleward…<a class="headerlink" href="#a-motionless-parcel-moves-poleward" title="Permalink to this headline">#</a></h3>
+<h3>A motionless parcel moves poleward…<a class="headerlink" href="#a-motionless-parcel-moves-poleward" title="Permalink to this heading">#</a></h3>
 <p>The total angular momentum of a parcel is conserved in the absence of torques:</p>
 <div class="math notranslate nohighlight">
 \[\frac{DM}{dt} = 0\]</div>
@@ -2675,18 +2676,18 @@ Coordinates:
 </section>
 </section>
 <section id="torques-on-the-atmosphere">
-<h2>Torques on the atmosphere<a class="headerlink" href="#torques-on-the-atmosphere" title="Permalink to this headline">#</a></h2>
+<h2>Torques on the atmosphere<a class="headerlink" href="#torques-on-the-atmosphere" title="Permalink to this heading">#</a></h2>
 <p><em>Notes for this section haven’t been written up yet. We will work on the board in class.</em></p>
 <section id="conservation-of-angular-momentum-and-torques">
-<h3>Conservation of angular momentum and torques<a class="headerlink" href="#conservation-of-angular-momentum-and-torques" title="Permalink to this headline">#</a></h3>
+<h3>Conservation of angular momentum and torques<a class="headerlink" href="#conservation-of-angular-momentum-and-torques" title="Permalink to this heading">#</a></h3>
 <p><em>in-class board work</em></p>
 </section>
 <section id="global-conservation-and-mountain-torque">
-<h3>Global conservation and mountain torque<a class="headerlink" href="#global-conservation-and-mountain-torque" title="Permalink to this headline">#</a></h3>
+<h3>Global conservation and mountain torque<a class="headerlink" href="#global-conservation-and-mountain-torque" title="Permalink to this heading">#</a></h3>
 <p><em>in-class board work</em></p>
 </section>
 <section id="observed-torques">
-<h3>Observed torques<a class="headerlink" href="#observed-torques" title="Permalink to this headline">#</a></h3>
+<h3>Observed torques<a class="headerlink" href="#observed-torques" title="Permalink to this heading">#</a></h3>
 <figure class="align-default" id="id4">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/Huang_torque.pdf"><img alt="Zonally integrated torques" class="bg-primary mb-1" src="../_images/Huang_torque.pdf" style="width: 800px;" /></a>
 <figcaption>
@@ -2696,11 +2697,11 @@ Coordinates:
 </section>
 </section>
 <section id="fluxes-of-angular-momentum">
-<h2>Fluxes of angular momentum<a class="headerlink" href="#fluxes-of-angular-momentum" title="Permalink to this headline">#</a></h2>
+<h2>Fluxes of angular momentum<a class="headerlink" href="#fluxes-of-angular-momentum" title="Permalink to this heading">#</a></h2>
 <p>The above figures of torques show that there is a net supply of angular momentum in the tropics and net sink of angular momentum in the midlatitudes.</p>
 <p>How does the angular momentum get redistributed with latitude?</p>
 <section id="zonal-and-time-averaged-angular-momentum-budget">
-<h3>Zonal and time averaged angular momentum budget<a class="headerlink" href="#zonal-and-time-averaged-angular-momentum-budget" title="Permalink to this headline">#</a></h3>
+<h3>Zonal and time averaged angular momentum budget<a class="headerlink" href="#zonal-and-time-averaged-angular-momentum-budget" title="Permalink to this heading">#</a></h3>
 <p>We can write the angular momentum equation in flux form and in pressure coordinates, and then take zonal and time averages:</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial \overline{[M]}}{\partial t} = -\frac{1}{a \cos\phi} \frac{\partial}{\partial \phi} \left( \cos\phi [\overline{vM}] \right) - \frac{\partial}{\partial p} \left( [\overline{\omega M}] \right) - g \left[\frac{\partial \overline{z}}{\partial \lambda} \right]\]</div>
@@ -2723,7 +2724,7 @@ Coordinates:
 </ol>
 </section>
 <section id="a-classic-view-of-the-vertical-structure-of-momentum-fluxes">
-<h3>A classic view of the vertical structure of momentum fluxes<a class="headerlink" href="#a-classic-view-of-the-vertical-structure-of-momentum-fluxes" title="Permalink to this headline">#</a></h3>
+<h3>A classic view of the vertical structure of momentum fluxes<a class="headerlink" href="#a-classic-view-of-the-vertical-structure-of-momentum-fluxes" title="Permalink to this heading">#</a></h3>
 <figure class="align-default" id="id6">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/PO_fig11.7.pdf"><img alt="Momentum flux cross-sections" class="bg-primary mb-1" src="../_images/PO_fig11.7.pdf" style="width: 800px;" /></a>
 <figcaption>
@@ -2732,7 +2733,7 @@ Coordinates:
 </figure>
 </section>
 <section id="let-s-try-to-recreate-this-figure-from-the-cfsr-data">
-<h3>Let’s try to recreate this figure from the CFSR data<a class="headerlink" href="#let-s-try-to-recreate-this-figure-from-the-cfsr-data" title="Permalink to this headline">#</a></h3>
+<h3>Let’s try to recreate this figure from the CFSR data<a class="headerlink" href="#let-s-try-to-recreate-this-figure-from-the-cfsr-data" title="Permalink to this heading">#</a></h3>
 <p>We need to compute <span class="math notranslate nohighlight">\([\overline{uv}]\)</span> and its decomposition, so we’ll need to load data for <span class="math notranslate nohighlight">\(v\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -6666,7 +6667,7 @@ Coordinates:
          20.,   10.], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>month</span></div><div class='xr-var-dims'>(month)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>1 2 3 4 5 6 7 8 9 10 11 12</div><input id='attrs-8f6d931f-961c-41a0-b48f-0b96acd634c9' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-8f6d931f-961c-41a0-b48f-0b96acd634c9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-290aeb34-ad84-4ebb-94e8-4e2741da8671' class='xr-var-data-in' type='checkbox'><label for='data-290aeb34-ad84-4ebb-94e8-4e2741da8671' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-c79b0ffa-d1e6-4a32-930c-c704e36d73f7' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c79b0ffa-d1e6-4a32-930c-c704e36d73f7' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <section id="time-to-actually-compute-some-results">
-<h4>Time to actually compute some results!<a class="headerlink" href="#time-to-actually-compute-some-results" title="Permalink to this headline">#</a></h4>
+<h4>Time to actually compute some results!<a class="headerlink" href="#time-to-actually-compute-some-results" title="Permalink to this heading">#</a></h4>
 <p>As before, we’ll carry out the calculation for the months of January and July:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -6707,7 +6708,7 @@ Coordinates:
 </section>
 </section>
 <section id="now-it-s-time-to-make-some-plots">
-<h3>Now it’s time to make some plots<a class="headerlink" href="#now-it-s-time-to-make-some-plots" title="Permalink to this headline">#</a></h3>
+<h3>Now it’s time to make some plots<a class="headerlink" href="#now-it-s-time-to-make-some-plots" title="Permalink to this heading">#</a></h3>
 <p>Let’s make a plot like the one above from Peixoto and Oort showing the vertical cross-section of the fluxes and their decomposition</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -6745,7 +6746,7 @@ Coordinates:
 <li><p>MMC term is smaller but carries the signature of the overturning circulation</p></li>
 </ul>
 <section id="what-does-this-look-like-in-the-opposite-season">
-<h4>What does this look like in the opposite season?<a class="headerlink" href="#what-does-this-look-like-in-the-opposite-season" title="Permalink to this headline">#</a></h4>
+<h4>What does this look like in the opposite season?<a class="headerlink" href="#what-does-this-look-like-in-the-opposite-season" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">month</span> <span class="o">=</span> <span class="s1">&#39;July&#39;</span>
@@ -6779,7 +6780,7 @@ Coordinates:
 </section>
 </section>
 <section id="a-vertically-integrated-view">
-<h3>A vertically integrated view<a class="headerlink" href="#a-vertically-integrated-view" title="Permalink to this headline">#</a></h3>
+<h3>A vertically integrated view<a class="headerlink" href="#a-vertically-integrated-view" title="Permalink to this heading">#</a></h3>
 <figure class="align-default" id="id8">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/PO_fig11.8.pdf"><img alt="Northward transport of momentum" class="bg-primary mb-1" src="../_images/PO_fig11.8.pdf" style="width: 800px;" /></a>
 <figcaption>
@@ -6789,7 +6790,7 @@ Coordinates:
 </section>
 </section>
 <section id="streamlines-of-angular-momentum-flux">
-<h2>Streamlines of angular momentum flux<a class="headerlink" href="#streamlines-of-angular-momentum-flux" title="Permalink to this headline">#</a></h2>
+<h2>Streamlines of angular momentum flux<a class="headerlink" href="#streamlines-of-angular-momentum-flux" title="Permalink to this heading">#</a></h2>
 <p>In the long term mean, we suppose there’s a steady state at each latitude</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial [\overline{M}]}{\partial t} = 0 \]</div>
@@ -6812,7 +6813,7 @@ Coordinates:
 <p>(This defintion should satisfy non-divergence in the <span class="math notranslate nohighlight">\(p-\phi\)</span> plane. Does it?)</p>
 <p>The streamfunction <span class="math notranslate nohighlight">\(\psi_M\)</span> is a function in the <span class="math notranslate nohighlight">\((\phi, p)\)</span> plane whose contours give the direction of the angular momentum transport.</p>
 <section id="a-plot-of-the-streamlines">
-<h3>A plot of the streamlines<a class="headerlink" href="#a-plot-of-the-streamlines" title="Permalink to this headline">#</a></h3>
+<h3>A plot of the streamlines<a class="headerlink" href="#a-plot-of-the-streamlines" title="Permalink to this heading">#</a></h3>
 <p>This gives a visual sense of the direction of angular momentum transport by various components of the flow:</p>
 <figure class="align-default" id="id10">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/PO_fig11.13.pdf"><img alt="Northward transport of momentum" class="bg-primary mb-1" src="../_images/PO_fig11.13.pdf" style="width: 800px;" /></a>
