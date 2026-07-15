@@ -1,0 +1,50 @@
+version: 1
+extends: 
+  - https://raw.githubusercontent.com/brian-rose/ClimateLaboratoryBook/main/authors.yml
+project:
+  title: "ATM 622: General Circulation of the Atmosphere"
+  authors: brian-rose
+  doi: https://doi.org/10.5281/zenodo.4265097
+  github: brian-rose/general-circulation
+  bibliography:
+    - references.bib
+  license: CC-BY-4.0
+  open_access: true
+  jupyter:
+    binder:
+      url: https://binder.projectpythia.org
+      repo: brian-rose/general-circulation
+    server:
+      url: https://lore.atmos.albany.edu:8000
+
+  toc:
+    - file: home.md
+    - title: Course info
+      children:
+        - file: info/syllabus.md
+        - file: info/schedule.md
+        - file: info/how-to.md
+    - title: Lectures
+      children:
+        - file: lectures/radiation-budget.ipynb
+        - file: lectures/computing-seasonal.ipynb
+        - file: lectures/observed-circulation.ipynb
+        - file: lectures/decomposing-circulation.ipynb
+        - file: lectures/angular-momentum-budget.ipynb
+        - file: lectures/energy-budget.ipynb
+        - file: lectures/ape.ipynb
+        - file: lectures/hadley.ipynb
+        - file: lectures/tem.ipynb
+    - title: Assignments and labs
+      children:
+        - file: assignments/assignment-toa-budget.ipynb
+    - title: The stuff at the end
+      children:
+        - file: info/dask_test.ipynb
+        - file: info/dask_test_snow.ipynb
+
+site:
+  options:
+    logo_text: General Circulation of the Atmosphere
+    folders: true
+  template: book-theme

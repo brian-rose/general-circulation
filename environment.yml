@@ -2,7 +2,7 @@ name: gencirc
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
+  - python
   - numpy
   - matplotlib
   - xarray
@@ -10,9 +10,8 @@ dependencies:
   - cartopy
   - sympy
   - ffmpeg
-  - jupyter
-  - jupyterlab
   - climlab
   - numba
   - nc-time-axis
-  - jupyter-book
+  - mystmd  # needed to rebuild the book from source
+  - jupyterlab-myst
