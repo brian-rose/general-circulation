@@ -16,3 +16,8 @@ dependencies:
   - mystmd  # needed to rebuild the book from source
   - jupyterlab-myst
   - jupyterlab
+  - arraylake
+  - dask
+  - pip
+  - pip:
+    - pcodec
