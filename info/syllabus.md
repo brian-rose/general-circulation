@@ -1,6 +1,6 @@
 # Syllabus
 
-## Course information
+## Course information for A ATM 622: General Circulation of the Atmosphere
 
 ### Essential details
 
