@@ -4,9 +4,13 @@ Here you can find the subject matter and assigned reading for every class day as
 
 **Please check back here frequently** as the schedule is subject to change.
 
-The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
+The class meets **every Tuesday, Thursday 1:30-2:50 PM** in **ETEC 480**.
 
-```{list-table} Class schedule
+:::{attention} Under construction
+A detailed schedule is forthcoming. 
+:::
+
+<!-- ```{list-table} Class schedule
 :header-rows: 1
 :name: schedule
 
@@ -14,27 +18,27 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
   - Class No.
   - Topic and reading
   - Notes
-* - 8/23
+* - 8/25
   - 0
   - Course overview
   -
-* - 8/25
+* - 8/27
   - 1
   - [Earth's radiation budget](../lectures/radiation-budget)
   -
-* - 8/30
+* - 9/1
   - 2
   - [Earth's radiation budget](../lectures/radiation-budget), continued.
   -
-* - 9/1
+* - 9/3
   - 3
   - The observed circulation
   -
-* - 9/6
+* - 9/8
   - 4
   - The observed circulation, continued. [Decomposition of the circulation](../lectures/decomposing-circulation), introduction.
   -
-* - 9/8
+* - 9/10
   - 5
   - [Decomposition of the circulation](../lectures/decomposing-circulation), continued
   - [Assignment 1](../assignments/assignment-toa-budget) out, due in one week on 9/15
@@ -135,4 +139,4 @@ The class meets **every Tuesday, Thursday 12-1:20 PM** in **ETEC 482**.
   - 27
   - Class presentations
   -
-```
+``` -->
