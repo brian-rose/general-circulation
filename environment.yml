@@ -13,6 +13,7 @@ dependencies:
   - climlab
   - numba
   - nc-time-axis
+  - imagemagick
   - mystmd  # needed to rebuild the book from source
   - jupyterlab-myst
   - jupyterlab
