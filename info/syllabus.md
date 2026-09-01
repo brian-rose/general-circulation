@@ -1,3 +1,13 @@
+---
+exports:
+  - id: syllabus-pdf
+    format: pdf
+    template: lapreprint
+    output: ../exports/syllabus.pdf
+downloads:
+  - file: ../exports/syllabus.pdf
+  - title: Syllabus in PDF format
+---
 # Syllabus
 
 ## Course information for A ATM 622: General Circulation of the Atmosphere
