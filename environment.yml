@@ -18,7 +18,6 @@ dependencies:
   - arraylake
   - pip
   - mystmd  # needed to rebuild the book from source
-  - nodejs<26.8  # temporary pin due to bug
   - jupyterlab-myst
   - jupyterlab
   - pip:
