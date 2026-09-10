@@ -24,6 +24,7 @@ project:
         - file: info/syllabus.md
         - file: info/schedule.md
         - file: info/how-to.md
+        - file: info/era5.ipynb
     - title: Lectures
       children:
         - file: lectures/radiation-budget.ipynb

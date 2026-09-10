@@ -8,14 +8,17 @@ dependencies:
   - xarray
   - dask
   - metpy
-  - cartopy
+  - cartopy<0.25  # until the 0.25.1 release, https://github.com/scitools/cartopy/issues/2646
   - sympy
   - ffmpeg
   - climlab
   - numba
   - nc-time-axis
   - imagemagick
+  - arraylake
+  - pip
   - mystmd  # needed to rebuild the book from source
-  - nodejs<26.8  # temporary pin due to bug
   - jupyterlab-myst
   - jupyterlab
+  - pip:
+    - pcodec
