@@ -10,7 +10,7 @@ The class meets **every Tuesday, Thursday 1:30-2:50 PM** in **ETEC 480**.
 A detailed schedule is forthcoming. 
 :::
 
-<!-- ```{list-table} Class schedule
+```{list-table} Class schedule
 :header-rows: 1
 :name: schedule
 
@@ -20,123 +20,122 @@ A detailed schedule is forthcoming.
   - Notes
 * - 8/25
   - 0
-  - Course overview
-  -
+  - **Class cancelled**. Read [syllabus](syllabus.md) and Chapter 1 of Wallace et al. (the observed circulation)
+  - 
 * - 8/27
   - 1
-  - [Earth's radiation budget](../lectures/radiation-budget)
-  -
+  - **Class cancelled**. 
+  - Homework: Excercises 1.2, 1.7, 1.8, 1.9, 1.10, 1.12, and 1.19 from Wallace et al.
 * - 9/1
   - 2
-  - [Earth's radiation budget](../lectures/radiation-budget), continued.
-  -
+  - Introductions and [Earth's radiation budget](../lectures/radiation-budget.ipynb)
+  - First homework due
 * - 9/3
   - 3
-  - The observed circulation
+  - [Earth's radiation budget](../lectures/radiation-budget.ipynb), continued
   -
 * - 9/8
   - 4
-  - The observed circulation, continued. [Decomposition of the circulation](../lectures/decomposing-circulation), introduction.
-  -
+  - Inferred heat transport from Earth's radiation budget. Introduction to the [Decomposition of the circulation](../lectures/decomposing-circulation).
+  - [Assignment on energy budget and transport](../assignments/assignment-toa-budget) out, due in one week on 9/15
 * - 9/10
   - 5
-  - [Decomposition of the circulation](../lectures/decomposing-circulation), continued
-  - [Assignment 1](../assignments/assignment-toa-budget) out, due in one week on 9/15
-* - 9/13
-  - 6
-  - In-class clarifications on [Assignment 1](../assignments/assignment-toa-budget). [Decomposition of the circulation](../lectures/decomposing-circulation), completed.
-  -
+  - [Decomposition of the circulation](../lectures/decomposing-circulation), continued.
+  - 
 * - 9/15
+  - 6
+  - 
+  - [Assignment on energy budget and transport](../assignments/assignment-toa-budget) due
+* - 9/17
   - 7
-  - [Angular momentum budget](../lectures/angular-momentum-budget)
-  - [Assignment 1](../assignments/assignment-toa-budget) due! **Actual due date extended to Friday 9/16**
-
-* - 9/20
-  - 8
-  - [Angular momentum budget: conservations and torques](../lectures/angular-momentum-budget)
-  -
+  - 
+  - 
 * - 9/22
-  - 9
-  - [Angular momentum budget: fluxes](../lectures/angular-momentum-budget)
+  - 8
+  - 
   -
-* - 9/27
-  - 10
-  - [Angular momentum budget: computing fluxes from CFSR data](../lectures/angular-momentum-budget)
+* - 9/24
+  - 9
+  - 
   -
 * - 9/29
-  - 11
-  - Energy budgets
+  - 10
+  - 
   -
-* - 10/4
-  - 12
+* - 10/1
+  - 11
   - 
   -
 * - 10/6
-  - 13
-  - Lorenz energy cycle
+  - 12
+  - 
   -
-* - 10/11
-  - Hadley circulation
+* - 10/8
+  - 13
+  - 
+  -
+* - 10/13
+  - 
   -
   - **NO CLASS** (Fall break)
-* - 10/13
+* - 10/15
   - 14
-  - **MIDTERM EXAM**
-  -
-* - 10/18
-  - 15
-  - Planetary waves
+  - 
   -
 * - 10/20
+  - 15
+  - 
+  -
+* - 10/22
   - 16
   -
   -
-* - 10/25
-  - 17
-  - Wave-mean-flow interaction
-  -
 * - 10/27
+  - 17
+  - 
+  -
+* - 10/29
   - 18
   -
   -
-* - 11/1
-  - 19
-  - Storm tracks
-  -
 * - 11/3
+  - 19
+  - 
+  -
+* - 11/5
   - 20
   -
   -
-* - 11/8
-  - 21
-  - The ocean's role in atmospheric general circulation
-  -
 * - 11/10
+  - 21
+  - 
+  -
+* - 11/12
   - 22
   -
   -
-* - 11/15
-  - 23
-  - Arctic amplification and mid-latitude jets
-  -
 * - 11/17
+  - 23
+  - 
+  -
+* - 11/19
   - 24
   -
   -
-* - 11/22
-  - 25
-  - Tropical-extratropical linkages
-  -
 * - 11/24
+  - 25
+  - 
+  -
+* - 11/26
   -
   -
   - **NO CLASS** (Thanksgiving break)
-* - 11/29
-  - 26
-  - Class presentations
-  -
 * - 12/1
+  - 26
+  - 
+  -
+* - 12/3
   - 27
   - Class presentations
   -
-``` -->
+```
