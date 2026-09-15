@@ -7,7 +7,7 @@ Here you can find the subject matter and assigned reading for every class day as
 The class meets **every Tuesday, Thursday 1:30-2:50 PM** in **ETEC 480**.
 
 :::{attention} Under construction
-A detailed schedule is forthcoming. 
+We're building the schedule as we go through the semester.
 :::
 
 ```{list-table} Class schedule
@@ -44,7 +44,7 @@ A detailed schedule is forthcoming.
   - 
 * - 9/15
   - 6
-  - 
+  - [Angular Momentum Budget](../lectures/angular-momentum-budget.ipynb)
   - [Assignment on energy budget and transport](../assignments/assignment-toa-budget) due
 * - 9/17
   - 7
