@@ -40,6 +40,10 @@ jobs:
           node-version: 24.x
       - name: Install MyST Markdown
         run: npm install -g mystmd
+      - name: Install imagemagick, inkscape, and webp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y inkscape imagemagick webp
       - name: Build HTML Assets
         run: myst build --html
       - name: Upload artifact
