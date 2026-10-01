@@ -64,7 +64,7 @@ We're building the schedule as we go through the semester.
   -
 * - 10/1
   - 11
-  - First discussion of Energy Budgets
+  - Vertical structure of the angular momentum budget and its streamlines
   - [Assignment on angular momentum budgets in the tank](../assignments/assignment-angular-momentum.md) handed out
 * - 10/6
   - 12
@@ -72,15 +72,15 @@ We're building the schedule as we go through the semester.
   - [Assignment on angular momentum budgets in the tank](../assignments/assignment-angular-momentum.md) due
 * - 10/8
   - 13
-  - Observed energy budgets
+  - Energy budget for the atmosphere
   -
 * - 10/13
-  - Available Potential Energy
+  - 
   -
   - **NO CLASS** (Fall break)
 * - 10/15
   - 14
-  - 
+  - Available Potential Energy
   -
 * - 10/20
   - 15
