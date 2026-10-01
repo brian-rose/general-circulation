@@ -48,34 +48,34 @@ We're building the schedule as we go through the semester.
   - [Assignment on energy budget and transport](../assignments/assignment-toa-budget) due
 * - 9/17
   - 7
-  - 
-  - 
+  - **Class cancelled**
+  - Independent study of [Angular Momentum Budget notes](../lectures/angular-momentum-budget.ipynb)
 * - 9/22
   - 8
-  - 
+  - **Class cancelled**
   -
 * - 9/24
   - 9
-  - 
-  -
+  - [Angular Momentum Budget](../lectures/angular-momentum-budget.ipynb), continued
+  - Independent study of computing tools: [How To](how-to.md), [ERA5 access example](era5.ipynb)
 * - 9/29
   - 10
-  - 
+  - Computational tools discussion, and [Angular Momentum Budget](../lectures/angular-momentum-budget.ipynb), continued
   -
 * - 10/1
   - 11
-  - 
-  -
+  - First discussion of Energy Budgets
+  - [Assignment on angular momentum budgets in the tank](../assignments/assignment-angular-momentum.md) handed out
 * - 10/6
   - 12
-  - 
-  -
+  - Lab Day! **Meet in the GFD teaching lab on the 1st floor of ETEC**
+  - [Assignment on angular momentum budgets in the tank](../assignments/assignment-angular-momentum.md) due
 * - 10/8
   - 13
-  - 
+  - Observed energy budgets
   -
 * - 10/13
-  - 
+  - Available Potential Energy
   -
   - **NO CLASS** (Fall break)
 * - 10/15
