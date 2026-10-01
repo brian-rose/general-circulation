@@ -39,6 +39,7 @@ project:
     - title: Assignments and labs
       children:
         - file: assignments/assignment-toa-budget.ipynb
+        - file: assignments/assignment-angular-momentum.md
     - title: The stuff at the end
       children:
         - file: info/dask_test.ipynb
