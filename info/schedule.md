@@ -116,8 +116,8 @@ We're building the schedule as we go through the semester.
   -
 * - 11/17
   - 23
-  - [Theories of the Hadley circulation](../lectures/hadley.ipynb)
-  -
+  - Class cancelled due to absences. Read [Theories of the Hadley circulation](../lectures/hadley.ipynb), up to the end of the section [The nearly-frictionless solution](../lectures/hadley#the-nearly-frictionless-solution).
+  - Also take a look at the original paper {cite:t}`Held:1980hu`, especially sections 1 and 2.
 * - 11/19
   - 24
   - [Theories of the Hadley circulation](../lectures/hadley.ipynb)
