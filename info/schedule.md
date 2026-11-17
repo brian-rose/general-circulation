@@ -68,63 +68,63 @@ We're building the schedule as we go through the semester.
   - [Assignment on angular momentum budgets in the tank](../assignments/assignment-angular-momentum.md) handed out
 * - 10/6
   - 12
-  - Lab Day! **Meet in the GFD teaching lab on the 1st floor of ETEC**
+  - [Energy budget for the atmosphere](../lectures/energy-budget.ipynb)
   - [Assignment on angular momentum budgets in the tank](../assignments/assignment-angular-momentum.md) due
 * - 10/8
   - 13
-  - Energy budget for the atmosphere
-  -
+  - [Energy budget for the atmosphere](../lectures/energy-budget.ipynb)
+  - [Assignment on angular momentum budgets in the tank](../assignments/assignment-angular-momentum.md) due
 * - 10/13
   - 
   -
   - **NO CLASS** (Fall break)
 * - 10/15
   - 14
-  - Available Potential Energy
-  -
+  - Class cancelled
+  - Group project: Angular momentum data exercises
 * - 10/20
   - 15
-  - 
-  -
+  - Lab Day! Circulation regimes under differential heating at different rotation rates
+  - Meet in the GFD teaching lab on the 1st floor of ETEC
 * - 10/22
   - 16
-  -
+  - [Energy budget for the atmosphere](../lectures/energy-budget.ipynb)
   -
 * - 10/27
   - 17
-  - 
+  - [Energy budget for the atmosphere](../lectures/energy-budget.ipynb)
   -
 * - 10/29
   - 18
-  -
-  -
+  - [Energy budget for the atmosphere](../lectures/energy-budget.ipynb)
+  - Special meeting time: 12:30 PM in ETEC 401
 * - 11/3
   - 19
-  - 
-  -
+  - [Available Potential Energy](../lectures/ape.ipynb)
+  - Angular momentum data exercises due
 * - 11/5
   - 20
-  -
-  -
+  - [Available Potential Energy](../lectures/ape.ipynb)
+  - Project proposals due
 * - 11/10
   - 21
-  - 
+  - [Available Potential Energy](../lectures/ape.ipynb)
   -
 * - 11/12
   - 22
-  -
+  - [Available Potential Energy](../lectures/ape.ipynb)
   -
 * - 11/17
   - 23
-  - 
+  - [Theories of the Hadley circulation](../lectures/hadley.ipynb)
   -
 * - 11/19
   - 24
-  -
+  - [Theories of the Hadley circulation](../lectures/hadley.ipynb)
   -
 * - 11/24
   - 25
-  - 
+  - [Effects of eddies on the zonal mean circulation](../lectures/tem.ipynb)
   -
 * - 11/26
   -
@@ -132,10 +132,10 @@ We're building the schedule as we go through the semester.
   - **NO CLASS** (Thanksgiving break)
 * - 12/1
   - 26
-  - 
+  - [Effects of eddies on the zonal mean circulation](../lectures/tem.ipynb)
   -
 * - 12/3
   - 27
-  - Class presentations
+  - Class presentations and wrap-up
   -
 ```
